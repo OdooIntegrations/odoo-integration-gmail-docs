@@ -26,11 +26,11 @@ Odoo Integration for Gmail is a Chrome extension that brings Odoo CRM functional
 
 ## 👤 Developer
 
-**Laciel Alonso**
-Email: laciel.alonso@gmail.com
+**OdooIntegrations Team**
+Email: odoointegrations@gmail.com
 
 ## 📜 License
 
-Copyright © 2025 Laciel Alonso. All rights reserved.
+Copyright © 2025 OdooIntegrations. All rights reserved.
 
 This website is for the Odoo Integration for Gmail extension and is not affiliated with Odoo S.A. or Google LLC.
