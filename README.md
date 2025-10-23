@@ -4,7 +4,7 @@ Official landing page and privacy policy for the Odoo Integration for Gmail Chro
 
 ## 🌐 Live Site
 
-Visit: [https://odoointegrations.github.io/odoo-integration-gmail](https://lacielalonsollanes.github.io/odoo-integration-gmail-docs)
+Visit: [https://odoointegrations.github.io/odoo-integration-gmail-docs](https://odoointegrations.github.io/odoo-integration-gmail-docs)
 
 ## 📄 Contents
 
