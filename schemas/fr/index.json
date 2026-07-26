@@ -50,8 +50,8 @@
                 "ratingValue": "5",
                 "bestRating": "5",
                 "worstRating": "1",
-                "ratingCount": "2",
-                "reviewCount": "2"
+                "ratingCount": "4",
+                "reviewCount": "4"
             },
             "review": [
                 {
@@ -87,6 +87,44 @@
                     },
                     "datePublished": "2026-06-30",
                     "reviewBody": "Depuis que j'ai découvert l'intégration Odoo - Gmail, je travaille de façon beaucoup plus confortable et agile, sans doublons, car je peux enregistrer les emails qui n'arrivent pas directement dans Odoo sans perdre de temps. Je suis très content de l'extension.",
+                    "publisher": {
+                        "@type": "Organization",
+                        "name": "Chrome Web Store"
+                    }
+                },
+                {
+                    "@type": "Review",
+                    "reviewRating": {
+                        "@type": "Rating",
+                        "ratingValue": "5",
+                        "bestRating": "5",
+                        "worstRating": "1"
+                    },
+                    "author": {
+                        "@type": "Person",
+                        "name": "Yolanda Jareño"
+                    },
+                    "datePublished": "2026-07-13",
+                    "reviewBody": "Pour l'instant, je l'utilise en version gratuite et la vérité c'est qu'elle apporte de la valeur et ne m'a posé aucun problème.",
+                    "publisher": {
+                        "@type": "Organization",
+                        "name": "Chrome Web Store"
+                    }
+                },
+                {
+                    "@type": "Review",
+                    "reviewRating": {
+                        "@type": "Rating",
+                        "ratingValue": "5",
+                        "bestRating": "5",
+                        "worstRating": "1"
+                    },
+                    "author": {
+                        "@type": "Person",
+                        "name": "Herbert Denk"
+                    },
+                    "datePublished": "2026-07-24",
+                    "reviewBody": "Jusqu'à présent, ça fonctionne parfaitement. Installée depuis une semaine.",
                     "publisher": {
                         "@type": "Organization",
                         "name": "Chrome Web Store"

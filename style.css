@@ -683,22 +683,52 @@ a:hover {
     margin-bottom: var(--spacing-md);
 }
 
+/* Single scrollable row: fits any number of testimonials without layout changes.
+   Up to 4 cards fill the row; from the 5th on, the row scrolls horizontally. */
 .testimonials-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 360px));
-    gap: var(--spacing-md);
-    justify-content: center;
+    grid-auto-flow: column;
+    grid-auto-columns: minmax(240px, 1fr);
+    gap: var(--spacing-sm);
     margin-top: var(--spacing-md);
+    overflow-x: auto;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+    scroll-padding-inline-start: 2px;
+    /* Room for the card hover lift and the scrollbar */
+    padding: 4px 2px 0.75rem;
+    scrollbar-width: thin;
+    scrollbar-color: var(--color-border) transparent;
+}
+
+.testimonials-grid:focus-visible {
+    outline: 2px solid var(--color-primary);
+    outline-offset: 4px;
+    border-radius: var(--radius-lg);
+}
+
+.testimonials-grid::-webkit-scrollbar {
+    height: 6px;
+}
+
+.testimonials-grid::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.testimonials-grid::-webkit-scrollbar-thumb {
+    background: var(--color-border);
+    border-radius: 999px;
 }
 
 .testimonial-card {
     background: var(--color-bg-light);
     border: 1px solid var(--color-border);
     border-radius: var(--radius-lg);
-    padding: var(--spacing-md);
+    padding: var(--spacing-sm);
     display: flex;
     flex-direction: column;
     gap: 0.75rem;
+    scroll-snap-align: start;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
@@ -719,8 +749,8 @@ a:hover {
 }
 
 .testimonial-quote {
-    font-size: 1.0625rem;
-    line-height: 1.6;
+    font-size: 1rem;
+    line-height: 1.55;
     color: var(--color-text);
     margin: 0;
 }
@@ -754,7 +784,7 @@ a:hover {
     display: flex;
     align-items: center;
     gap: 0.35rem;
-    font-size: 0.875rem;
+    font-size: 0.8125rem;
     color: var(--color-text-lighter);
 }
 
@@ -763,13 +793,16 @@ a:hover {
     color: var(--color-primary);
 }
 
-.testimonial-dot {
+.testimonial-date {
+    font-size: 0.8125rem;
     color: var(--color-text-lighter);
 }
 
 @media (max-width: 768px) {
     .testimonials-grid {
-        grid-template-columns: 1fr;
+        /* One card at a time, with the next one peeking to hint at the scroll */
+        grid-auto-columns: min(82vw, 320px);
+        scroll-snap-type: x mandatory;
     }
 }
 
