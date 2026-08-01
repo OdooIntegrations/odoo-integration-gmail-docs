@@ -169,7 +169,9 @@
       "updateStep3": "Geben Sie Ihre neuen Daten ein",
       "versionNote": "Das Hinzufügen eines API-Schlüssels ist optional. Wenn Sie einen hinzufügen, variieren die Erstellungsschritte je nach Odoo-Version.",
       "versionNoteLink": "Siehe die detaillierte Anleitung für Ihre Version →",
-      "updateApiKeyNote": "Um Ihren API-Schlüssel später hinzuzufügen oder zu aktualisieren, öffnen Sie Einstellungen → Konto → Verbindung — ohne sich abzumelden."
+      "updateApiKeyNote": "Um Ihren API-Schlüssel später hinzuzufügen oder zu aktualisieren, öffnen Sie Einstellungen → Konto → Verbindung — ohne sich abzumelden.",
+      "autoOpenTitle": "Festlegen, wann sich die Seitenleiste öffnet",
+      "autoOpenDesc": "Standardmäßig öffnet sich das Odoo-Panel bei jeder geöffneten E-Mail von selbst. Wenn Sie es nur bei Bedarf öffnen möchten, deaktivieren Sie „Seitenleiste automatisch öffnen\" unter Einstellungen → Konto → Einstellungen. Das Panel bleibt dann geschlossen, bis Sie auf das Odoo-Symbol in der rechten Seitenleiste von Gmail klicken. Die Änderung gilt sofort, ohne Gmail neu zu laden."
     },
     "features": {
       "title": "Funktionsübersicht",
@@ -204,7 +206,7 @@
         "financial": "Finanzielle Einblicke",
         "financialDesc": "Rechnungsstellung, Forderungen und Verbindlichkeiten anzeigen",
         "settings": "Einstellungspanel",
-        "settingsDesc": "Sichtbare Abschnitte anpassen",
+        "settingsDesc": "Wählen Sie, welche Bereiche in der Seitenleiste erscheinen: Verkaufschancen, Aufgaben, Tickets, Angebote, Unternehmen, Verknüpfte Kontakte, Letzte Aktivitäten und Finanzübersicht",
         "quoteLevels": "Zitatebenen",
         "quoteLevelsDesc": "Steuern Sie den Konversationsverlauf beim Protokollieren",
         "grouping": "Datensatz-Gruppierung",
@@ -350,6 +352,7 @@
       "happens2": "Der E-Mail-Inhalt wird als Beschreibung hinzugefügt",
       "happens3": "Der Kontakt aus der Seitenleiste wird verknüpft",
       "happens4": "Der Lead öffnet sich in Odoo in einem neuen Tab zur Bearbeitung",
+      "happens5": "Während der Datensatz angelegt wird, zeigt die Schaltfläche einen Verarbeitungsstatus; wiederholte Klicks erzeugen keine Duplikate",
       "importantTitle": "Wichtig:",
       "importantDesc": "Die E-Mail wird NICHT automatisch protokolliert. Um die E-Mail mit dem neuen Lead zu verknüpfen, kehren Sie zu Gmail zurück und klicken Sie auf das Briefumschlag-Symbol neben der Chance."
     },
@@ -382,7 +385,9 @@
       "taskRecords2": "Schließt abgeschlossene oder abgebrochene Aufgaben aus",
       "taskRecords3": "Sortiert nach Erstellungsdatum (neueste zuerst)",
       "managingTickets": "Helpdesk-Tickets verwalten",
-      "ticketRequirements": "Odoo Helpdesk-Modul (nur Enterprise)"
+      "ticketRequirements": "Odoo Helpdesk-Modul (nur Enterprise)",
+      "creatingTitle": "Eine Aufgabe oder ein Ticket aus einer E-Mail anlegen",
+      "creatingDesc": "Klicken Sie im Bereich auf Erstellen. Der Datensatz wird mit Betreff und Text der E-Mail angelegt, die Anhänge werden im Hintergrund hochgeladen, und er öffnet sich in Odoo in einem neuen Tab, damit Sie den Rest ergänzen können. Während des Anlegens zeigt die Schaltfläche einen Verarbeitungsstatus; wiederholte Klicks erzeugen keine Duplikate."
     },
     "notifications": {
       "title": "Benachrichtigungsorganisation",
@@ -493,8 +498,16 @@
       "contactNotFound": "\"Kontakt nicht gefunden\"-Meldung",
       "emailNotInOdoo": "E-Mail nicht in Odoo",
       "emailNotInOdooDesc": "Klicken Sie auf \"Kontakt erstellen\", um ihn hinzuzufügen",
-      "emailMismatch": "E-Mail-Schreibweisen-Unterschied",
-      "emailMismatchDesc": "Aktualisieren Sie die E-Mail in Odoo oder erstellen Sie einen neuen Kontakt",
+      "emailMismatch": "Die Adresse ist anders geschrieben",
+      "emailMismatchDesc": "Groß- und Kleinschreibung ist nicht das Problem: Eine in Odoo als John@Acme.com gespeicherte Adresse passt sehr wohl zu john@acme.com. Die Zuordnung scheitert an einer wirklich anderen Adresse — einem Alias, einem zusätzlichen Punkt oder einer anderen Domain. Aktualisieren Sie die E-Mail in Odoo oder legen Sie einen neuen Kontakt an.",
+      "sectionMissing": "Ein Bereich erscheint nicht",
+      "sectionMissingIntro": "Bereiche erscheinen nur, wenn Odoo sie liefern kann. Fehlt Verkaufschancen, Aufgaben, Tickets, Angebote oder Finanzübersicht, prüfen Sie in dieser Reihenfolge:",
+      "sectionMissingModule": "Das Modul ist nicht installiert",
+      "sectionMissingModuleDesc": "Verkaufschancen benötigt CRM, Aufgaben benötigt Projekt, Tickets benötigt Kundendienst (Enterprise), Angebote benötigt Verkauf und die Finanzübersicht benötigt Buchhaltung.",
+      "sectionMissingPermission": "Ihrem Odoo-Benutzer fehlt die Berechtigung",
+      "sectionMissingPermissionDesc": "Die Erweiterung blendet einen Bereich aus, wenn Ihr Benutzer diese Art von Datensatz nicht anlegen darf — reiner Lesezugriff genügt nicht. Bitten Sie Ihren Odoo-Administrator um die Berechtigung.",
+      "sectionMissingHidden": "Sie haben ihn ausgeschaltet",
+      "sectionMissingHiddenDesc": "Prüfen Sie Einstellungen → Personalisierung: ein dort ausgeblendeter Bereich bleibt bei jeder E-Mail ausgeblendet.",
       "sidebarEmpty": "Die Seitenleiste ist leer oder nach dem Verbinden lädt nichts",
       "sidebarEmptyIntro": "Das liegt fast immer an der Anmeldesitzung, nicht an einem API-Schlüssel. Prüfen Sie der Reihe nach:",
       "sidebarEmptyStep1": "Sind Sie im selben Browser bei Odoo angemeldet?",

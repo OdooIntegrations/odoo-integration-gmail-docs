@@ -169,7 +169,9 @@
       "updateStep3": "Wprowadź nowe dane",
       "versionNote": "Dodanie klucza API jest opcjonalne. Jeśli go dodasz, kroki tworzenia różnią się w zależności od wersji Odoo.",
       "versionNoteLink": "Zobacz szczegółowy przewodnik dla swojej wersji →",
-      "updateApiKeyNote": "Aby później dodać lub zaktualizować klucz API, otwórz Ustawienia → Konto → Połączenie — bez konieczności wylogowywania."
+      "updateApiKeyNote": "Aby później dodać lub zaktualizować klucz API, otwórz Ustawienia → Konto → Połączenie — bez konieczności wylogowywania.",
+      "autoOpenTitle": "Decydowanie, kiedy otwiera się panel",
+      "autoOpenDesc": "Domyślnie panel Odoo otwiera się sam przy każdym otwartym e-mailu. Aby otwierać go tylko wtedy, gdy jest potrzebny, wyłącz opcję „Otwieraj panel boczny automatycznie\" w Ustawienia → Konto → Preferencje. Panel pozostanie zamknięty, dopóki nie klikniesz ikony Odoo na prawym pasku bocznym Gmaila. Zmiana działa od razu, bez przeładowywania Gmaila."
     },
     "features": {
       "title": "Przegląd funkcji",
@@ -204,7 +206,7 @@
         "financial": "Informacje finansowe",
         "financialDesc": "Przeglądaj faktury, należności i zobowiązania",
         "settings": "Panel ustawień",
-        "settingsDesc": "Dostosuj widoczne sekcje",
+        "settingsDesc": "Wybierz, które sekcje pojawiają się w panelu: Szanse sprzedaży, Zadania, Zgłoszenia, Oferty, Firma, Powiązane kontakty, Ostatnie aktywności i Informacje finansowe",
         "quoteLevels": "Poziomy cytowania",
         "quoteLevelsDesc": "Kontroluj ile historii rozmowy zawrzeć podczas logowania",
         "grouping": "Grupowanie Rekordów",
@@ -350,6 +352,7 @@
       "happens2": "Treść e-maila jest dodawana jako opis",
       "happens3": "Kontakt z panelu bocznego jest powiązany",
       "happens4": "Lead otwiera się w Odoo w nowej karcie do dalszej edycji",
+      "happens5": "Podczas tworzenia rekordu przycisk pokazuje stan przetwarzania, a wielokrotne kliknięcia nie tworzą duplikatów",
       "importantTitle": "Ważne:",
       "importantDesc": "E-mail NIE jest automatycznie logowany. Aby powiązać e-mail z nową szansą, wróć do Gmail i kliknij ikonę koperty obok szansy."
     },
@@ -382,7 +385,9 @@
       "taskRecords2": "Wykluczone zakończone lub anulowane zadania",
       "taskRecords3": "Sortowane według daty utworzenia (najnowsze najpierw)",
       "managingTickets": "Zarządzanie zgłoszeniami Helpdesk",
-      "ticketRequirements": "Moduł Odoo Helpdesk (tylko Enterprise)"
+      "ticketRequirements": "Moduł Odoo Helpdesk (tylko Enterprise)",
+      "creatingTitle": "Tworzenie zadania lub zgłoszenia z e-maila",
+      "creatingDesc": "Kliknij Utwórz w sekcji. Rekord powstaje z tematem i treścią e-maila, załączniki wysyłane są w tle, a rekord otwiera się w Odoo w nowej karcie, żebyś mógł uzupełnić resztę. Podczas tworzenia przycisk pokazuje stan przetwarzania, a wielokrotne kliknięcia nie tworzą duplikatów."
     },
     "notifications": {
       "title": "Organizacja Powiadomień",
@@ -493,8 +498,16 @@
       "contactNotFound": "Komunikat \"Kontakt nie znaleziony\"",
       "emailNotInOdoo": "E-mail nie znajduje się w Odoo",
       "emailNotInOdooDesc": "Kliknij \"Utwórz kontakt\", aby go dodać",
-      "emailMismatch": "Niezgodność pisowni e-maila",
-      "emailMismatchDesc": "Zaktualizuj e-mail w Odoo lub utwórz nowy kontakt",
+      "emailMismatch": "Adres jest zapisany inaczej",
+      "emailMismatchDesc": "Wielkość liter nie jest problemem: adres zapisany w Odoo jako John@Acme.com pasuje do john@acme.com. Dopasowanie psuje dopiero naprawdę inny adres — alias, dodatkowa kropka albo inna domena. Zaktualizuj e-mail w Odoo lub utwórz nowy kontakt.",
+      "sectionMissing": "Sekcja się nie pojawia",
+      "sectionMissingIntro": "Sekcje pojawiają się tylko wtedy, gdy Odoo może je udostępnić. Jeśli brakuje Szans sprzedaży, Zadań, Zgłoszeń, Ofert albo Informacji finansowych, sprawdź w tej kolejności:",
+      "sectionMissingModule": "Moduł nie jest zainstalowany",
+      "sectionMissingModuleDesc": "Szanse sprzedaży wymagają CRM, Zadania — Projektu, Zgłoszenia — Helpdesku (Enterprise), Oferty — Sprzedaży, a Informacje finansowe — Księgowości.",
+      "sectionMissingPermission": "Twój użytkownik Odoo nie ma uprawnień",
+      "sectionMissingPermissionDesc": "Rozszerzenie ukrywa sekcję, gdy Twój użytkownik nie może tworzyć rekordów tego typu — sam dostęp do odczytu nie wystarczy. Poproś o uprawnienie administratora Odoo.",
+      "sectionMissingHidden": "Sam ją wyłączyłeś",
+      "sectionMissingHiddenDesc": "Sprawdź Ustawienia → Personalizacja: sekcja ukryta w tym miejscu pozostaje ukryta przy każdym e-mailu.",
       "sidebarEmpty": "Panel boczny jest pusty lub nic się nie ładuje po połączeniu",
       "sidebarEmptyIntro": "To prawie zawsze kwestia sesji logowania, a nie klucza API. Sprawdź po kolei:",
       "sidebarEmptyStep1": "Czy jesteś zalogowany do Odoo w tej samej przeglądarce?",

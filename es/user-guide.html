@@ -103,7 +103,7 @@
                 "headline": "Odoo Integration for Gmail - Complete User Guide",
                 "description": "Step-by-step guide to install, configure, and use Odoo Integration for Gmail. Learn about email logging, CRM features, tasks, tickets, and troubleshooting.",
                 "datePublished": "2025-11-22T00:00:00+00:00",
-                "dateModified": "2026-02-22T00:00:00+00:00",
+                "dateModified": "2026-08-01T00:00:00+00:00",
                 "author": { "@id": "https://integrationnode.com/gmail-odoo/#organization" },
                 "publisher": { "@id": "https://integrationnode.com/gmail-odoo/#organization" },
                 "mainEntityOfPage": {
@@ -296,6 +296,8 @@
                         <li>Introduce tus nuevos datos</li>
                     </ol>
                     <p>Para añadir o actualizar tu API key más adelante, abre Ajustes → Cuenta → Conexión — sin necesidad de cerrar sesión.</p>
+                    <h3>Decidir cuándo se abre el panel</h3>
+                    <p>Por defecto, el panel de Odoo se abre solo cada vez que abres un email. Para abrirlo únicamente cuando lo necesites, desactiva «Abrir el panel automáticamente» en Ajustes → Cuenta → Preferencias. El panel se queda cerrado hasta que pulses el icono de Odoo en la barra lateral derecha de Gmail. El cambio se aplica al momento, sin recargar Gmail.</p>
                 </section>
 
                 <!-- Features Overview Section -->
@@ -318,7 +320,7 @@
                         <li><strong>Pestañas Contacto/Empresa</strong>: <span>Cambia entre información del contacto y la empresa</span></li>
                         <li><strong>Contactos Relacionados</strong>: <span>Encuentra colegas de la misma empresa</span></li>
                         <li><strong>Información Financiera</strong>: <span>Ve facturación, cuentas por cobrar y por pagar</span></li>
-                        <li><strong>Panel de Configuración</strong>: <span>Personaliza las secciones visibles</span></li>
+                        <li><strong>Panel de Configuración</strong>: <span>Elige qué secciones aparecen en el panel: Oportunidades, Tareas, Tickets, Presupuestos, Empresa, Contactos relacionados, Actividad reciente e Información financiera</span></li>
                         <li><strong>Niveles de Citas</strong>: <span>Controla cuánto historial incluir al registrar emails</span></li>
                         <li><strong>Agrupación de Registros</strong>: <span>Agrupa oportunidades, tareas y tickets por etapa o estado</span></li>
                         <li><strong>Participantes del Email</strong>: <span>Ver información de contacto en Odoo de todos los participantes del email</span></li>
@@ -551,6 +553,7 @@
                         <li>El contenido del email se añade como descripción</li>
                         <li>El contacto de la barra lateral queda vinculado</li>
                         <li>El lead se abre en Odoo en una nueva pestaña para edición adicional</li>
+                        <li>Mientras se crea el registro, el botón muestra un estado de proceso, y pulsarlo varias veces seguidas no crea duplicados</li>
                     </ul>
                     <div class="info-box warning">
                         <strong>Importante:</strong> <span>El email NO se registra automáticamente. Para asociar el email con el nuevo lead, vuelve a Gmail y haz clic en el icono del sobre junto a la oportunidad.</span>
@@ -600,6 +603,8 @@
                     </ul>
                     <h3>Gestionar Tickets de Helpdesk</h3>
                     <p><strong>Requisitos:</strong> <span>Módulo Helpdesk de Odoo (solo Enterprise)</span></p>
+                    <h3>Crear una tarea o un ticket desde un email</h3>
+                    <p>Pulsa Crear en la sección. El registro se crea con el asunto y el cuerpo del email, sus adjuntos se suben en segundo plano y se abre en Odoo en una pestaña nueva para que completes el resto. Mientras se crea, el botón muestra un estado de proceso, y pulsarlo varias veces seguidas no crea duplicados.</p>
                 </section>
 
                 <!-- Notification Organization Section -->
@@ -743,8 +748,15 @@
                     <h3>Mensaje "Contacto No Encontrado"</h3>
                     <ul>
                         <li><strong>Email no está en Odoo</strong>: <span>Haz clic en "Crear Contacto" para añadirlo</span></li>
-                        <li><strong>Error de ortografía en email</strong>: <span>Actualiza el email en Odoo o crea un nuevo contacto</span></li>
+                        <li><strong>La dirección está escrita de otra forma</strong>: <span>Las mayúsculas no son el problema: una dirección guardada en Odoo como John@Acme.com sí coincide con john@acme.com. Lo que rompe la coincidencia es una dirección realmente distinta: un alias, un punto de más u otro dominio. Actualiza el email en Odoo o crea un contacto nuevo.</span></li>
                     </ul>
+                    <h3>Una sección no aparece</h3>
+                    <p>Las secciones solo se muestran cuando Odoo puede servirlas. Si falta Oportunidades, Tareas, Tickets, Presupuestos o Información financiera, comprueba en este orden:</p>
+                    <ol>
+                        <li><strong>El módulo no está instalado</strong>: <span>Oportunidades necesita CRM; Tareas, Proyecto; Tickets, Servicio de asistencia (Enterprise); Presupuestos, Ventas; e Información financiera, Contabilidad.</span></li>
+                        <li><strong>Tu usuario de Odoo no tiene permiso</strong>: <span>La extensión oculta una sección cuando tu usuario no puede crear ese tipo de registro: el acceso de solo lectura no basta. Pídeselo a tu administrador de Odoo.</span></li>
+                        <li><strong>La desactivaste tú</strong>: <span>Revisa Ajustes → Personalización: una sección oculta ahí sigue oculta en todos los emails.</span></li>
+                    </ol>
                     <h3>La barra lateral está vacía o no carga nada tras conectar</h3>
                     <p>Casi siempre es la sesión de inicio, no una API key. Revisa, en orden:</p>
                     <ol>

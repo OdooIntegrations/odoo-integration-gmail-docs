@@ -103,7 +103,7 @@
                 "headline": "Odoo Integration for Gmail - Complete User Guide",
                 "description": "Step-by-step guide to install, configure, and use Odoo Integration for Gmail. Learn about email logging, CRM features, tasks, tickets, and troubleshooting.",
                 "datePublished": "2025-11-22T00:00:00+00:00",
-                "dateModified": "2026-02-22T00:00:00+00:00",
+                "dateModified": "2026-08-01T00:00:00+00:00",
                 "author": { "@id": "https://integrationnode.com/gmail-odoo/#organization" },
                 "publisher": { "@id": "https://integrationnode.com/gmail-odoo/#organization" },
                 "mainEntityOfPage": {
@@ -296,6 +296,8 @@
                         <li>Voer uw nieuwe gegevens in</li>
                     </ol>
                     <p>Om uw API-sleutel later toe te voegen of bij te werken, opent u Instellingen → Account → Verbinding — zonder uit te loggen.</p>
+                    <h3>Bepalen wanneer het paneel opengaat</h3>
+                    <p>Standaard gaat het Odoo-paneel vanzelf open bij elke e-mail die u opent. Wilt u het alleen openen wanneer u het nodig hebt, schakel dan "Zijbalk automatisch openen" uit bij Instellingen → Account → Voorkeuren. Het paneel blijft dan dicht tot u op het Odoo-icoon in de rechterzijbalk van Gmail klikt. De wijziging geldt meteen, zonder Gmail opnieuw te laden.</p>
                 </section>
 
                 <!-- Features Overview Section -->
@@ -318,7 +320,7 @@
                         <li><strong>Contact/Bedrijf Tabbladen</strong>: <span>Schakel tussen contact- en bedrijfsinformatie</span></li>
                         <li><strong>Gerelateerde Contacten</strong>: <span>Vind collega's van hetzelfde bedrijf</span></li>
                         <li><strong>Financiële Inzichten</strong>: <span>Bekijk facturatie, vorderingen en schulden</span></li>
-                        <li><strong>Instellingenpaneel</strong>: <span>Pas zichtbare secties aan</span></li>
+                        <li><strong>Instellingenpaneel</strong>: <span>Kies welke secties in het paneel verschijnen: Verkoopkansen, Taken, Tickets, Prijsopgaven, Bedrijf, Gerelateerde contacten, Recente activiteiten en Financieel inzicht</span></li>
                         <li><strong>Citaatniveaus</strong>: <span>Bepaal hoeveel gespreksgeschiedenis wordt opgenomen bij het loggen</span></li>
                         <li><strong>Record Groepering</strong>: <span>Groepeer opportunities, taken en tickets op fase of status</span></li>
                         <li><strong>E-maildeelnemers</strong>: <span>Bekijk Odoo-contactinformatie van alle e-maildeelnemers</span></li>
@@ -551,6 +553,7 @@
                         <li>E-mailinhoud wordt toegevoegd als beschrijving</li>
                         <li>Het contact uit de zijbalk wordt gekoppeld</li>
                         <li>De lead opent in Odoo in een nieuw tabblad voor verdere bewerking</li>
+                        <li>Terwijl het record wordt aangemaakt toont de knop een verwerkingsstatus, en herhaald klikken maakt geen duplicaten aan</li>
                     </ul>
                     <div class="info-box warning">
                         <strong>Belangrijk:</strong> <span>De e-mail wordt NIET automatisch gelogd. Om de e-mail te koppelen aan de nieuwe lead, gaat u terug naar Gmail en klikt u op het envelopicoontje naast de kans.</span>
@@ -600,6 +603,8 @@
                     </ul>
                     <h3>Helpdesk Tickets Beheren</h3>
                     <p><strong>Vereisten:</strong> <span>Odoo Helpdesk module (alleen Enterprise)</span></p>
+                    <h3>Een taak of ticket vanuit een e-mail aanmaken</h3>
+                    <p>Klik op Aanmaken in de sectie. Het record wordt aangemaakt met het onderwerp en de tekst van de e-mail, de bijlagen worden op de achtergrond geüpload, en het opent in Odoo in een nieuw tabblad zodat u de rest kunt invullen. Tijdens het aanmaken toont de knop een verwerkingsstatus, en herhaald klikken maakt geen duplicaten aan.</p>
                 </section>
 
                 <!-- Notification Organization Section -->
@@ -743,8 +748,15 @@
                     <h3>"Contact Niet Gevonden" Bericht</h3>
                     <ul>
                         <li><strong>E-mail niet in Odoo</strong>: <span>Klik op "Contact Aanmaken" om deze toe te voegen</span></li>
-                        <li><strong>E-mail spelling komt niet overeen</strong>: <span>Werk de e-mail bij in Odoo of maak een nieuw contact aan</span></li>
+                        <li><strong>Het adres is anders geschreven</strong>: <span>Hoofdletters zijn niet het probleem: een adres dat in Odoo staat als John@Acme.com komt wel degelijk overeen met john@acme.com. Wat de match breekt is een echt ander adres — een alias, een punt te veel of een ander domein. Werk het e-mailadres in Odoo bij, of maak een nieuw contact aan.</span></li>
                     </ul>
+                    <h3>Een sectie verschijnt niet</h3>
+                    <p>Secties verschijnen alleen als Odoo ze kan leveren. Ontbreekt Verkoopkansen, Taken, Tickets, Prijsopgaven of Financieel inzicht, controleer dan in deze volgorde:</p>
+                    <ol>
+                        <li><strong>De module is niet geïnstalleerd</strong>: <span>Verkoopkansen vereist CRM, Taken vereist Project, Tickets vereist Helpdesk (Enterprise), Prijsopgaven vereist Verkoop en Financieel inzicht vereist Boekhouding.</span></li>
+                        <li><strong>Uw Odoo-gebruiker heeft geen rechten</strong>: <span>De extensie verbergt een sectie wanneer uw gebruiker dat type record niet mag aanmaken — alleen-lezen toegang is niet genoeg. Vraag uw Odoo-beheerder om het recht.</span></li>
+                        <li><strong>U hebt hem uitgezet</strong>: <span>Kijk bij Instellingen → Personalisatie: een sectie die daar verborgen is, blijft bij elke e-mail verborgen.</span></li>
+                    </ol>
                     <h3>De zijbalk is leeg of er laadt niets na het verbinden</h3>
                     <p>Dit ligt bijna altijd aan de inlogsessie, niet aan een API-sleutel. Controleer, in volgorde:</p>
                     <ol>

@@ -103,7 +103,7 @@
                 "headline": "Odoo Integration for Gmail - Complete User Guide",
                 "description": "Step-by-step guide to install, configure, and use Odoo Integration for Gmail. Learn about email logging, CRM features, tasks, tickets, and troubleshooting.",
                 "datePublished": "2025-11-22T00:00:00+00:00",
-                "dateModified": "2026-02-22T00:00:00+00:00",
+                "dateModified": "2026-08-01T00:00:00+00:00",
                 "author": { "@id": "https://integrationnode.com/gmail-odoo/#organization" },
                 "publisher": { "@id": "https://integrationnode.com/gmail-odoo/#organization" },
                 "mainEntityOfPage": {
@@ -296,6 +296,8 @@
                         <li>Geben Sie Ihre neuen Daten ein</li>
                     </ol>
                     <p>Um Ihren API-Schlüssel später hinzuzufügen oder zu aktualisieren, öffnen Sie Einstellungen → Konto → Verbindung — ohne sich abzumelden.</p>
+                    <h3>Festlegen, wann sich die Seitenleiste öffnet</h3>
+                    <p>Standardmäßig öffnet sich das Odoo-Panel bei jeder geöffneten E-Mail von selbst. Wenn Sie es nur bei Bedarf öffnen möchten, deaktivieren Sie „Seitenleiste automatisch öffnen" unter Einstellungen → Konto → Einstellungen. Das Panel bleibt dann geschlossen, bis Sie auf das Odoo-Symbol in der rechten Seitenleiste von Gmail klicken. Die Änderung gilt sofort, ohne Gmail neu zu laden.</p>
                 </section>
 
                 <!-- Features Overview Section -->
@@ -318,7 +320,7 @@
                         <li><strong>Kontakt/Firma-Tabs</strong>: <span>Zwischen Kontakt- und Firmeninformationen wechseln</span></li>
                         <li><strong>Zugehörige Kontakte</strong>: <span>Kollegen aus derselben Firma finden</span></li>
                         <li><strong>Finanzielle Einblicke</strong>: <span>Rechnungsstellung, Forderungen und Verbindlichkeiten anzeigen</span></li>
-                        <li><strong>Einstellungspanel</strong>: <span>Sichtbare Abschnitte anpassen</span></li>
+                        <li><strong>Einstellungspanel</strong>: <span>Wählen Sie, welche Bereiche in der Seitenleiste erscheinen: Verkaufschancen, Aufgaben, Tickets, Angebote, Unternehmen, Verknüpfte Kontakte, Letzte Aktivitäten und Finanzübersicht</span></li>
                         <li><strong>Zitatebenen</strong>: <span>Steuern Sie den Konversationsverlauf beim Protokollieren</span></li>
                         <li><strong>Datensatz-Gruppierung</strong>: <span>Gruppieren Sie Opportunities, Aufgaben und Tickets nach Phase oder Status</span></li>
                         <li><strong>E-Mail-Teilnehmer</strong>: <span>Odoo-Kontaktinformationen aller E-Mail-Teilnehmer anzeigen</span></li>
@@ -551,6 +553,7 @@
                         <li>Der E-Mail-Inhalt wird als Beschreibung hinzugefügt</li>
                         <li>Der Kontakt aus der Seitenleiste wird verknüpft</li>
                         <li>Der Lead öffnet sich in Odoo in einem neuen Tab zur Bearbeitung</li>
+                        <li>Während der Datensatz angelegt wird, zeigt die Schaltfläche einen Verarbeitungsstatus; wiederholte Klicks erzeugen keine Duplikate</li>
                     </ul>
                     <div class="info-box warning">
                         <strong>Wichtig:</strong> <span>Die E-Mail wird NICHT automatisch protokolliert. Um die E-Mail mit dem neuen Lead zu verknüpfen, kehren Sie zu Gmail zurück und klicken Sie auf das Briefumschlag-Symbol neben der Chance.</span>
@@ -600,6 +603,8 @@
                     </ul>
                     <h3>Helpdesk-Tickets verwalten</h3>
                     <p><strong>Voraussetzungen:</strong> <span>Odoo Helpdesk-Modul (nur Enterprise)</span></p>
+                    <h3>Eine Aufgabe oder ein Ticket aus einer E-Mail anlegen</h3>
+                    <p>Klicken Sie im Bereich auf Erstellen. Der Datensatz wird mit Betreff und Text der E-Mail angelegt, die Anhänge werden im Hintergrund hochgeladen, und er öffnet sich in Odoo in einem neuen Tab, damit Sie den Rest ergänzen können. Während des Anlegens zeigt die Schaltfläche einen Verarbeitungsstatus; wiederholte Klicks erzeugen keine Duplikate.</p>
                 </section>
 
                 <!-- Notification Organization Section -->
@@ -743,8 +748,15 @@
                     <h3>"Kontakt nicht gefunden"-Meldung</h3>
                     <ul>
                         <li><strong>E-Mail nicht in Odoo</strong>: <span>Klicken Sie auf "Kontakt erstellen", um ihn hinzuzufügen</span></li>
-                        <li><strong>E-Mail-Schreibweisen-Unterschied</strong>: <span>Aktualisieren Sie die E-Mail in Odoo oder erstellen Sie einen neuen Kontakt</span></li>
+                        <li><strong>Die Adresse ist anders geschrieben</strong>: <span>Groß- und Kleinschreibung ist nicht das Problem: Eine in Odoo als John@Acme.com gespeicherte Adresse passt sehr wohl zu john@acme.com. Die Zuordnung scheitert an einer wirklich anderen Adresse — einem Alias, einem zusätzlichen Punkt oder einer anderen Domain. Aktualisieren Sie die E-Mail in Odoo oder legen Sie einen neuen Kontakt an.</span></li>
                     </ul>
+                    <h3>Ein Bereich erscheint nicht</h3>
+                    <p>Bereiche erscheinen nur, wenn Odoo sie liefern kann. Fehlt Verkaufschancen, Aufgaben, Tickets, Angebote oder Finanzübersicht, prüfen Sie in dieser Reihenfolge:</p>
+                    <ol>
+                        <li><strong>Das Modul ist nicht installiert</strong>: <span>Verkaufschancen benötigt CRM, Aufgaben benötigt Projekt, Tickets benötigt Kundendienst (Enterprise), Angebote benötigt Verkauf und die Finanzübersicht benötigt Buchhaltung.</span></li>
+                        <li><strong>Ihrem Odoo-Benutzer fehlt die Berechtigung</strong>: <span>Die Erweiterung blendet einen Bereich aus, wenn Ihr Benutzer diese Art von Datensatz nicht anlegen darf — reiner Lesezugriff genügt nicht. Bitten Sie Ihren Odoo-Administrator um die Berechtigung.</span></li>
+                        <li><strong>Sie haben ihn ausgeschaltet</strong>: <span>Prüfen Sie Einstellungen → Personalisierung: ein dort ausgeblendeter Bereich bleibt bei jeder E-Mail ausgeblendet.</span></li>
+                    </ol>
                     <h3>Die Seitenleiste ist leer oder nach dem Verbinden lädt nichts</h3>
                     <p>Das liegt fast immer an der Anmeldesitzung, nicht an einem API-Schlüssel. Prüfen Sie der Reihe nach:</p>
                     <ol>

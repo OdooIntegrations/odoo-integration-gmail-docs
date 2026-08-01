@@ -103,7 +103,7 @@
                 "headline": "Odoo Integration for Gmail - Complete User Guide",
                 "description": "Step-by-step guide to install, configure, and use Odoo Integration for Gmail. Learn about email logging, CRM features, tasks, tickets, and troubleshooting.",
                 "datePublished": "2025-11-22T00:00:00+00:00",
-                "dateModified": "2026-02-22T00:00:00+00:00",
+                "dateModified": "2026-08-01T00:00:00+00:00",
                 "author": { "@id": "https://integrationnode.com/gmail-odoo/#organization" },
                 "publisher": { "@id": "https://integrationnode.com/gmail-odoo/#organization" },
                 "mainEntityOfPage": {
@@ -296,6 +296,8 @@
                         <li>Entrez vos nouvelles informations</li>
                     </ol>
                     <p>Pour ajouter ou mettre à jour votre clé API plus tard, ouvrez Paramètres → Compte → Connexion — sans avoir à vous déconnecter.</p>
+                    <h3>Choisir quand le panneau s'ouvre</h3>
+                    <p>Par défaut, le panneau Odoo s'ouvre tout seul à chaque email ouvert. Pour ne l'ouvrir qu'au besoin, désactivez « Ouvrir automatiquement le panneau latéral » dans Paramètres → Compte → Préférences. Le panneau reste alors fermé jusqu'à ce que vous cliquiez sur l'icône Odoo dans la barre latérale droite de Gmail. Le changement s'applique immédiatement, sans recharger Gmail.</p>
                 </section>
 
                 <!-- Features Overview Section -->
@@ -318,7 +320,7 @@
                         <li><strong>Onglets Contact/Entreprise</strong>: <span>Basculez entre les informations du contact et de l'entreprise</span></li>
                         <li><strong>Contacts associés</strong>: <span>Trouvez des collègues de la même entreprise</span></li>
                         <li><strong>Aperçus financiers</strong>: <span>Consultez la facturation, les créances et les dettes</span></li>
-                        <li><strong>Panneau de paramètres</strong>: <span>Personnalisez les sections visibles</span></li>
+                        <li><strong>Panneau de paramètres</strong>: <span>Choisissez les sections affichées dans le panneau : Opportunités, Tâches, Tickets, Devis, Société, Contacts liés, Activités récentes et Informations financières</span></li>
                         <li><strong>Niveaux de Citation</strong>: <span>Contrôlez la quantité d'historique à inclure lors de l'enregistrement</span></li>
                         <li><strong>Regroupement des Enregistrements</strong>: <span>Regroupez les opportunités, tâches et tickets par étape ou statut</span></li>
                         <li><strong>Participants de l'Email</strong>: <span>Voir les informations de contact Odoo de tous les participants de l'email</span></li>
@@ -551,6 +553,7 @@
                         <li>Le contenu de l'email est ajouté en description</li>
                         <li>Le contact de la barre latérale est lié</li>
                         <li>Le prospect s'ouvre dans Odoo dans un nouvel onglet pour modification</li>
+                        <li>Pendant la création, le bouton affiche un état de traitement, et des clics répétés ne créent pas de doublons</li>
                     </ul>
                     <div class="info-box warning">
                         <strong>Important :</strong> <span>L'email n'est PAS enregistré automatiquement. Pour associer l'email au nouveau prospect, retournez dans Gmail et cliquez sur l'icône enveloppe à côté de l'opportunité.</span>
@@ -600,6 +603,8 @@
                     </ul>
                     <h3>Gestion des tickets Helpdesk</h3>
                     <p><strong>Prérequis :</strong> <span>Module Odoo Helpdesk (Enterprise uniquement)</span></p>
+                    <h3>Créer une tâche ou un ticket depuis un email</h3>
+                    <p>Cliquez sur Créer dans la section. L'enregistrement est créé avec l'objet et le corps de l'email, ses pièces jointes sont envoyées en arrière-plan, et il s'ouvre dans Odoo dans un nouvel onglet pour compléter le reste. Pendant la création, le bouton affiche un état de traitement, et des clics répétés ne créent pas de doublons.</p>
                 </section>
 
                 <!-- Notification Organization Section -->
@@ -743,8 +748,15 @@
                     <h3>Message "Contact non trouvé"</h3>
                     <ul>
                         <li><strong>Email non présent dans Odoo</strong>: <span>Cliquez sur "Créer un contact" pour l'ajouter</span></li>
-                        <li><strong>Différence d'orthographe de l'email</strong>: <span>Mettez à jour l'email dans Odoo ou créez un nouveau contact</span></li>
+                        <li><strong>L'adresse est écrite autrement</strong>: <span>Les majuscules ne sont pas en cause : une adresse enregistrée dans Odoo sous la forme John@Acme.com correspond bien à john@acme.com. Ce qui casse la correspondance, c'est une adresse réellement différente : un alias, un point en trop ou un autre domaine. Mettez à jour l'email dans Odoo, ou créez un nouveau contact.</span></li>
                     </ul>
+                    <h3>Une section n'apparaît pas</h3>
+                    <p>Les sections ne s'affichent que si Odoo peut les fournir. Si Opportunités, Tâches, Tickets, Devis ou Informations financières manque, vérifiez dans cet ordre :</p>
+                    <ol>
+                        <li><strong>Le module n'est pas installé</strong>: <span>Opportunités requiert CRM ; Tâches, Projet ; Tickets, Assistance (Enterprise) ; Devis, Ventes ; et Informations financières, Comptabilité.</span></li>
+                        <li><strong>Votre utilisateur Odoo n'a pas les droits</strong>: <span>L'extension masque une section lorsque votre utilisateur ne peut pas créer ce type d'enregistrement : un accès en lecture seule ne suffit pas. Demandez le droit à votre administrateur Odoo.</span></li>
+                        <li><strong>Vous l'avez désactivée</strong>: <span>Vérifiez Paramètres → Personnalisation : une section masquée y reste masquée sur tous les emails.</span></li>
+                    </ol>
                     <h3>La barre latérale est vide ou rien ne se charge après la connexion</h3>
                     <p>C'est presque toujours la session de connexion, pas une clé API. Vérifiez, dans l'ordre :</p>
                     <ol>

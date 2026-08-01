@@ -169,7 +169,9 @@
       "updateStep3": "Enter your new details",
       "versionNote": "Adding an API key is optional. If you add one, the steps to create it vary between Odoo versions.",
       "versionNoteLink": "See the detailed guide for your version →",
-      "updateApiKeyNote": "To add or update your API key later, open Settings → Account → Connection — no need to log out."
+      "updateApiKeyNote": "To add or update your API key later, open Settings → Account → Connection — no need to log out.",
+      "autoOpenTitle": "Choosing When the Sidebar Opens",
+      "autoOpenDesc": "By default the Odoo panel opens on its own every time you open an email. To open it only when you need it, turn off “Open sidebar automatically” in Settings → Account → Preferences. The panel then stays closed until you click the Odoo icon in Gmail's right sidebar. The change applies immediately, with no need to reload Gmail."
     },
     "features": {
       "title": "Features Overview",
@@ -204,7 +206,7 @@
         "financial": "Financial Insights",
         "financialDesc": "View invoicing, receivables, and payables",
         "settings": "Settings Panel",
-        "settingsDesc": "Customize visible sections",
+        "settingsDesc": "Choose which sections appear in the sidebar: Opportunities, Tasks, Tickets, Quotations, Company, Related contacts, Recent activities and Financial Insights",
         "quoteLevels": "Quote Levels",
         "quoteLevelsDesc": "Control how much conversation history to include when logging",
         "grouping": "Record Grouping",
@@ -350,6 +352,7 @@
       "happens2": "Email body content is added as description",
       "happens3": "The contact from the sidebar is linked",
       "happens4": "The lead opens in Odoo in a new tab for additional editing",
+      "happens5": "While the record is being created the button shows a processing state, and repeated clicks won't create duplicates",
       "importantTitle": "Important:",
       "importantDesc": "The email is NOT logged automatically. To associate the email with the new lead, return to Gmail and click the envelope icon next to the opportunity."
     },
@@ -382,7 +385,9 @@
       "taskRecords2": "Excludes completed or canceled tasks",
       "taskRecords3": "Sorted by creation date (newest first)",
       "managingTickets": "Managing Helpdesk Tickets",
-      "ticketRequirements": "Odoo Helpdesk module (Enterprise only)"
+      "ticketRequirements": "Odoo Helpdesk module (Enterprise only)",
+      "creatingTitle": "Creating a Task or a Ticket from an Email",
+      "creatingDesc": "Click Create in the section. The record is created with the email subject and body, its attachments are uploaded in the background, and it opens in Odoo in a new tab so you can fill in the rest. While it's being created the button shows a processing state, and repeated clicks won't create duplicates."
     },
     "notifications": {
       "title": "Notification Organization",
@@ -493,8 +498,16 @@
       "contactNotFound": "\"Contact Not Found\" Message",
       "emailNotInOdoo": "Email not in Odoo",
       "emailNotInOdooDesc": "Click \"Create Contact\" to add them",
-      "emailMismatch": "Email spelling mismatch",
-      "emailMismatchDesc": "Update the email in Odoo or create a new contact",
+      "emailMismatch": "The address is written differently",
+      "emailMismatchDesc": "Capitalisation is not the problem: an address stored in Odoo as John@Acme.com does match john@acme.com. What breaks the match is a genuinely different address — an alias, an extra dot, or another domain. Update the email in Odoo, or create a new contact.",
+      "sectionMissing": "A Section Doesn't Appear",
+      "sectionMissingIntro": "Sections show up only when Odoo can serve them. If Opportunities, Tasks, Tickets, Quotations or Financial Insights is missing, check in this order:",
+      "sectionMissingModule": "The module isn't installed",
+      "sectionMissingModuleDesc": "Opportunities needs CRM, Tasks needs Project, Tickets needs Helpdesk (Enterprise), Quotations needs Sales, and Financial Insights needs Accounting.",
+      "sectionMissingPermission": "Your Odoo user lacks permission",
+      "sectionMissingPermissionDesc": "The extension hides a section when your user can't create that type of record — read-only access isn't enough. Ask your Odoo administrator to grant it.",
+      "sectionMissingHidden": "You switched it off",
+      "sectionMissingHiddenDesc": "Check Settings → Personalization: a section hidden there stays hidden on every email.",
       "sidebarEmpty": "The Sidebar Is Empty or Nothing Loads After Connecting",
       "sidebarEmptyIntro": "This is almost always the login session, not an API key. Check, in order:",
       "sidebarEmptyStep1": "Are you signed in to Odoo in the same browser?",

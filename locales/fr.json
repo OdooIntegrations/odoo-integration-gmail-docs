@@ -169,7 +169,9 @@
       "updateStep3": "Entrez vos nouvelles informations",
       "versionNote": "Ajouter une clé API est facultatif. Si vous en ajoutez une, les étapes de création varient selon les versions d'Odoo.",
       "versionNoteLink": "Consultez le guide détaillé pour votre version →",
-      "updateApiKeyNote": "Pour ajouter ou mettre à jour votre clé API plus tard, ouvrez Paramètres → Compte → Connexion — sans avoir à vous déconnecter."
+      "updateApiKeyNote": "Pour ajouter ou mettre à jour votre clé API plus tard, ouvrez Paramètres → Compte → Connexion — sans avoir à vous déconnecter.",
+      "autoOpenTitle": "Choisir quand le panneau s'ouvre",
+      "autoOpenDesc": "Par défaut, le panneau Odoo s'ouvre tout seul à chaque email ouvert. Pour ne l'ouvrir qu'au besoin, désactivez « Ouvrir automatiquement le panneau latéral » dans Paramètres → Compte → Préférences. Le panneau reste alors fermé jusqu'à ce que vous cliquiez sur l'icône Odoo dans la barre latérale droite de Gmail. Le changement s'applique immédiatement, sans recharger Gmail."
     },
     "features": {
       "title": "Aperçu des fonctionnalités",
@@ -204,7 +206,7 @@
         "financial": "Aperçus financiers",
         "financialDesc": "Consultez la facturation, les créances et les dettes",
         "settings": "Panneau de paramètres",
-        "settingsDesc": "Personnalisez les sections visibles",
+        "settingsDesc": "Choisissez les sections affichées dans le panneau : Opportunités, Tâches, Tickets, Devis, Société, Contacts liés, Activités récentes et Informations financières",
         "quoteLevels": "Niveaux de Citation",
         "quoteLevelsDesc": "Contrôlez la quantité d'historique à inclure lors de l'enregistrement",
         "grouping": "Regroupement des Enregistrements",
@@ -350,6 +352,7 @@
       "happens2": "Le contenu de l'email est ajouté en description",
       "happens3": "Le contact de la barre latérale est lié",
       "happens4": "Le prospect s'ouvre dans Odoo dans un nouvel onglet pour modification",
+      "happens5": "Pendant la création, le bouton affiche un état de traitement, et des clics répétés ne créent pas de doublons",
       "importantTitle": "Important :",
       "importantDesc": "L'email n'est PAS enregistré automatiquement. Pour associer l'email au nouveau prospect, retournez dans Gmail et cliquez sur l'icône enveloppe à côté de l'opportunité."
     },
@@ -382,7 +385,9 @@
       "taskRecords2": "Exclut les tâches terminées ou annulées",
       "taskRecords3": "Triées par date de création (plus récentes en premier)",
       "managingTickets": "Gestion des tickets Helpdesk",
-      "ticketRequirements": "Module Odoo Helpdesk (Enterprise uniquement)"
+      "ticketRequirements": "Module Odoo Helpdesk (Enterprise uniquement)",
+      "creatingTitle": "Créer une tâche ou un ticket depuis un email",
+      "creatingDesc": "Cliquez sur Créer dans la section. L'enregistrement est créé avec l'objet et le corps de l'email, ses pièces jointes sont envoyées en arrière-plan, et il s'ouvre dans Odoo dans un nouvel onglet pour compléter le reste. Pendant la création, le bouton affiche un état de traitement, et des clics répétés ne créent pas de doublons."
     },
     "notifications": {
       "title": "Organisation des Notifications",
@@ -493,8 +498,16 @@
       "contactNotFound": "Message \"Contact non trouvé\"",
       "emailNotInOdoo": "Email non présent dans Odoo",
       "emailNotInOdooDesc": "Cliquez sur \"Créer un contact\" pour l'ajouter",
-      "emailMismatch": "Différence d'orthographe de l'email",
-      "emailMismatchDesc": "Mettez à jour l'email dans Odoo ou créez un nouveau contact",
+      "emailMismatch": "L'adresse est écrite autrement",
+      "emailMismatchDesc": "Les majuscules ne sont pas en cause : une adresse enregistrée dans Odoo sous la forme John@Acme.com correspond bien à john@acme.com. Ce qui casse la correspondance, c'est une adresse réellement différente : un alias, un point en trop ou un autre domaine. Mettez à jour l'email dans Odoo, ou créez un nouveau contact.",
+      "sectionMissing": "Une section n'apparaît pas",
+      "sectionMissingIntro": "Les sections ne s'affichent que si Odoo peut les fournir. Si Opportunités, Tâches, Tickets, Devis ou Informations financières manque, vérifiez dans cet ordre :",
+      "sectionMissingModule": "Le module n'est pas installé",
+      "sectionMissingModuleDesc": "Opportunités requiert CRM ; Tâches, Projet ; Tickets, Assistance (Enterprise) ; Devis, Ventes ; et Informations financières, Comptabilité.",
+      "sectionMissingPermission": "Votre utilisateur Odoo n'a pas les droits",
+      "sectionMissingPermissionDesc": "L'extension masque une section lorsque votre utilisateur ne peut pas créer ce type d'enregistrement : un accès en lecture seule ne suffit pas. Demandez le droit à votre administrateur Odoo.",
+      "sectionMissingHidden": "Vous l'avez désactivée",
+      "sectionMissingHiddenDesc": "Vérifiez Paramètres → Personnalisation : une section masquée y reste masquée sur tous les emails.",
       "sidebarEmpty": "La barre latérale est vide ou rien ne se charge après la connexion",
       "sidebarEmptyIntro": "C'est presque toujours la session de connexion, pas une clé API. Vérifiez, dans l'ordre :",
       "sidebarEmptyStep1": "Êtes-vous connecté à Odoo dans le même navigateur ?",

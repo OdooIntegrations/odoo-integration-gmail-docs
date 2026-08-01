@@ -169,7 +169,9 @@
       "updateStep3": "Voer uw nieuwe gegevens in",
       "versionNote": "Een API-sleutel toevoegen is optioneel. Als u er een toevoegt, verschillen de aanmaakstappen per Odoo-versie.",
       "versionNoteLink": "Bekijk de gedetailleerde handleiding voor uw versie →",
-      "updateApiKeyNote": "Om uw API-sleutel later toe te voegen of bij te werken, opent u Instellingen → Account → Verbinding — zonder uit te loggen."
+      "updateApiKeyNote": "Om uw API-sleutel later toe te voegen of bij te werken, opent u Instellingen → Account → Verbinding — zonder uit te loggen.",
+      "autoOpenTitle": "Bepalen wanneer het paneel opengaat",
+      "autoOpenDesc": "Standaard gaat het Odoo-paneel vanzelf open bij elke e-mail die u opent. Wilt u het alleen openen wanneer u het nodig hebt, schakel dan \"Zijbalk automatisch openen\" uit bij Instellingen → Account → Voorkeuren. Het paneel blijft dan dicht tot u op het Odoo-icoon in de rechterzijbalk van Gmail klikt. De wijziging geldt meteen, zonder Gmail opnieuw te laden."
     },
     "features": {
       "title": "Functieoverzicht",
@@ -204,7 +206,7 @@
         "financial": "Financiële Inzichten",
         "financialDesc": "Bekijk facturatie, vorderingen en schulden",
         "settings": "Instellingenpaneel",
-        "settingsDesc": "Pas zichtbare secties aan",
+        "settingsDesc": "Kies welke secties in het paneel verschijnen: Verkoopkansen, Taken, Tickets, Prijsopgaven, Bedrijf, Gerelateerde contacten, Recente activiteiten en Financieel inzicht",
         "quoteLevels": "Citaatniveaus",
         "quoteLevelsDesc": "Bepaal hoeveel gespreksgeschiedenis wordt opgenomen bij het loggen",
         "grouping": "Record Groepering",
@@ -350,6 +352,7 @@
       "happens2": "E-mailinhoud wordt toegevoegd als beschrijving",
       "happens3": "Het contact uit de zijbalk wordt gekoppeld",
       "happens4": "De lead opent in Odoo in een nieuw tabblad voor verdere bewerking",
+      "happens5": "Terwijl het record wordt aangemaakt toont de knop een verwerkingsstatus, en herhaald klikken maakt geen duplicaten aan",
       "importantTitle": "Belangrijk:",
       "importantDesc": "De e-mail wordt NIET automatisch gelogd. Om de e-mail te koppelen aan de nieuwe lead, gaat u terug naar Gmail en klikt u op het envelopicoontje naast de kans."
     },
@@ -382,7 +385,9 @@
       "taskRecords2": "Exclusief voltooide of geannuleerde taken",
       "taskRecords3": "Gesorteerd op aanmaakdatum (nieuwste eerst)",
       "managingTickets": "Helpdesk Tickets Beheren",
-      "ticketRequirements": "Odoo Helpdesk module (alleen Enterprise)"
+      "ticketRequirements": "Odoo Helpdesk module (alleen Enterprise)",
+      "creatingTitle": "Een taak of ticket vanuit een e-mail aanmaken",
+      "creatingDesc": "Klik op Aanmaken in de sectie. Het record wordt aangemaakt met het onderwerp en de tekst van de e-mail, de bijlagen worden op de achtergrond geüpload, en het opent in Odoo in een nieuw tabblad zodat u de rest kunt invullen. Tijdens het aanmaken toont de knop een verwerkingsstatus, en herhaald klikken maakt geen duplicaten aan."
     },
     "notifications": {
       "title": "Notificatie-organisatie",
@@ -493,8 +498,16 @@
       "contactNotFound": "\"Contact Niet Gevonden\" Bericht",
       "emailNotInOdoo": "E-mail niet in Odoo",
       "emailNotInOdooDesc": "Klik op \"Contact Aanmaken\" om deze toe te voegen",
-      "emailMismatch": "E-mail spelling komt niet overeen",
-      "emailMismatchDesc": "Werk de e-mail bij in Odoo of maak een nieuw contact aan",
+      "emailMismatch": "Het adres is anders geschreven",
+      "emailMismatchDesc": "Hoofdletters zijn niet het probleem: een adres dat in Odoo staat als John@Acme.com komt wel degelijk overeen met john@acme.com. Wat de match breekt is een echt ander adres — een alias, een punt te veel of een ander domein. Werk het e-mailadres in Odoo bij, of maak een nieuw contact aan.",
+      "sectionMissing": "Een sectie verschijnt niet",
+      "sectionMissingIntro": "Secties verschijnen alleen als Odoo ze kan leveren. Ontbreekt Verkoopkansen, Taken, Tickets, Prijsopgaven of Financieel inzicht, controleer dan in deze volgorde:",
+      "sectionMissingModule": "De module is niet geïnstalleerd",
+      "sectionMissingModuleDesc": "Verkoopkansen vereist CRM, Taken vereist Project, Tickets vereist Helpdesk (Enterprise), Prijsopgaven vereist Verkoop en Financieel inzicht vereist Boekhouding.",
+      "sectionMissingPermission": "Uw Odoo-gebruiker heeft geen rechten",
+      "sectionMissingPermissionDesc": "De extensie verbergt een sectie wanneer uw gebruiker dat type record niet mag aanmaken — alleen-lezen toegang is niet genoeg. Vraag uw Odoo-beheerder om het recht.",
+      "sectionMissingHidden": "U hebt hem uitgezet",
+      "sectionMissingHiddenDesc": "Kijk bij Instellingen → Personalisatie: een sectie die daar verborgen is, blijft bij elke e-mail verborgen.",
       "sidebarEmpty": "De zijbalk is leeg of er laadt niets na het verbinden",
       "sidebarEmptyIntro": "Dit ligt bijna altijd aan de inlogsessie, niet aan een API-sleutel. Controleer, in volgorde:",
       "sidebarEmptyStep1": "Bent u in dezelfde browser ingelogd bij Odoo?",

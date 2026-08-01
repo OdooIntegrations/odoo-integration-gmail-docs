@@ -103,7 +103,7 @@
                 "headline": "Odoo Integration for Gmail - Complete User Guide",
                 "description": "Step-by-step guide to install, configure, and use Odoo Integration for Gmail. Learn about email logging, CRM features, tasks, tickets, and troubleshooting.",
                 "datePublished": "2025-11-22T00:00:00+00:00",
-                "dateModified": "2026-02-22T00:00:00+00:00",
+                "dateModified": "2026-08-01T00:00:00+00:00",
                 "author": { "@id": "https://integrationnode.com/gmail-odoo/#organization" },
                 "publisher": { "@id": "https://integrationnode.com/gmail-odoo/#organization" },
                 "mainEntityOfPage": {
@@ -296,6 +296,8 @@
                         <li>Wprowadź nowe dane</li>
                     </ol>
                     <p>Aby później dodać lub zaktualizować klucz API, otwórz Ustawienia → Konto → Połączenie — bez konieczności wylogowywania.</p>
+                    <h3>Decydowanie, kiedy otwiera się panel</h3>
+                    <p>Domyślnie panel Odoo otwiera się sam przy każdym otwartym e-mailu. Aby otwierać go tylko wtedy, gdy jest potrzebny, wyłącz opcję „Otwieraj panel boczny automatycznie" w Ustawienia → Konto → Preferencje. Panel pozostanie zamknięty, dopóki nie klikniesz ikony Odoo na prawym pasku bocznym Gmaila. Zmiana działa od razu, bez przeładowywania Gmaila.</p>
                 </section>
 
                 <!-- Features Overview Section -->
@@ -318,7 +320,7 @@
                         <li><strong>Zakładki Kontakt/Firma</strong>: <span>Przełączaj między informacjami o kontakcie i firmie</span></li>
                         <li><strong>Powiązane kontakty</strong>: <span>Znajdź współpracowników z tej samej firmy</span></li>
                         <li><strong>Informacje finansowe</strong>: <span>Przeglądaj faktury, należności i zobowiązania</span></li>
-                        <li><strong>Panel ustawień</strong>: <span>Dostosuj widoczne sekcje</span></li>
+                        <li><strong>Panel ustawień</strong>: <span>Wybierz, które sekcje pojawiają się w panelu: Szanse sprzedaży, Zadania, Zgłoszenia, Oferty, Firma, Powiązane kontakty, Ostatnie aktywności i Informacje finansowe</span></li>
                         <li><strong>Poziomy cytowania</strong>: <span>Kontroluj ile historii rozmowy zawrzeć podczas logowania</span></li>
                         <li><strong>Grupowanie Rekordów</strong>: <span>Grupuj szanse, zadania i zgłoszenia według etapu lub statusu</span></li>
                         <li><strong>Uczestnicy E-maila</strong>: <span>Zobacz informacje kontaktowe Odoo wszystkich uczestników e-maila</span></li>
@@ -551,6 +553,7 @@
                         <li>Treść e-maila jest dodawana jako opis</li>
                         <li>Kontakt z panelu bocznego jest powiązany</li>
                         <li>Lead otwiera się w Odoo w nowej karcie do dalszej edycji</li>
+                        <li>Podczas tworzenia rekordu przycisk pokazuje stan przetwarzania, a wielokrotne kliknięcia nie tworzą duplikatów</li>
                     </ul>
                     <div class="info-box warning">
                         <strong>Ważne:</strong> <span>E-mail NIE jest automatycznie logowany. Aby powiązać e-mail z nową szansą, wróć do Gmail i kliknij ikonę koperty obok szansy.</span>
@@ -600,6 +603,8 @@
                     </ul>
                     <h3>Zarządzanie zgłoszeniami Helpdesk</h3>
                     <p><strong>Wymagania:</strong> <span>Moduł Odoo Helpdesk (tylko Enterprise)</span></p>
+                    <h3>Tworzenie zadania lub zgłoszenia z e-maila</h3>
+                    <p>Kliknij Utwórz w sekcji. Rekord powstaje z tematem i treścią e-maila, załączniki wysyłane są w tle, a rekord otwiera się w Odoo w nowej karcie, żebyś mógł uzupełnić resztę. Podczas tworzenia przycisk pokazuje stan przetwarzania, a wielokrotne kliknięcia nie tworzą duplikatów.</p>
                 </section>
 
                 <!-- Notification Organization Section -->
@@ -743,8 +748,15 @@
                     <h3>Komunikat "Kontakt nie znaleziony"</h3>
                     <ul>
                         <li><strong>E-mail nie znajduje się w Odoo</strong>: <span>Kliknij "Utwórz kontakt", aby go dodać</span></li>
-                        <li><strong>Niezgodność pisowni e-maila</strong>: <span>Zaktualizuj e-mail w Odoo lub utwórz nowy kontakt</span></li>
+                        <li><strong>Adres jest zapisany inaczej</strong>: <span>Wielkość liter nie jest problemem: adres zapisany w Odoo jako John@Acme.com pasuje do john@acme.com. Dopasowanie psuje dopiero naprawdę inny adres — alias, dodatkowa kropka albo inna domena. Zaktualizuj e-mail w Odoo lub utwórz nowy kontakt.</span></li>
                     </ul>
+                    <h3>Sekcja się nie pojawia</h3>
+                    <p>Sekcje pojawiają się tylko wtedy, gdy Odoo może je udostępnić. Jeśli brakuje Szans sprzedaży, Zadań, Zgłoszeń, Ofert albo Informacji finansowych, sprawdź w tej kolejności:</p>
+                    <ol>
+                        <li><strong>Moduł nie jest zainstalowany</strong>: <span>Szanse sprzedaży wymagają CRM, Zadania — Projektu, Zgłoszenia — Helpdesku (Enterprise), Oferty — Sprzedaży, a Informacje finansowe — Księgowości.</span></li>
+                        <li><strong>Twój użytkownik Odoo nie ma uprawnień</strong>: <span>Rozszerzenie ukrywa sekcję, gdy Twój użytkownik nie może tworzyć rekordów tego typu — sam dostęp do odczytu nie wystarczy. Poproś o uprawnienie administratora Odoo.</span></li>
+                        <li><strong>Sam ją wyłączyłeś</strong>: <span>Sprawdź Ustawienia → Personalizacja: sekcja ukryta w tym miejscu pozostaje ukryta przy każdym e-mailu.</span></li>
+                    </ol>
                     <h3>Panel boczny jest pusty lub nic się nie ładuje po połączeniu</h3>
                     <p>To prawie zawsze kwestia sesji logowania, a nie klucza API. Sprawdź po kolei:</p>
                     <ol>

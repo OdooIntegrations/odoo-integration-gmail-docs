@@ -103,7 +103,7 @@
                 "headline": "Odoo Integration for Gmail - Complete User Guide",
                 "description": "Step-by-step guide to install, configure, and use Odoo Integration for Gmail. Learn about email logging, CRM features, tasks, tickets, and troubleshooting.",
                 "datePublished": "2025-11-22T00:00:00+00:00",
-                "dateModified": "2026-02-22T00:00:00+00:00",
+                "dateModified": "2026-08-01T00:00:00+00:00",
                 "author": { "@id": "https://integrationnode.com/gmail-odoo/#organization" },
                 "publisher": { "@id": "https://integrationnode.com/gmail-odoo/#organization" },
                 "mainEntityOfPage": {
@@ -296,6 +296,8 @@
                         <li>Enter your new details</li>
                     </ol>
                     <p>To add or update your API key later, open Settings → Account → Connection — no need to log out.</p>
+                    <h3>Choosing When the Sidebar Opens</h3>
+                    <p>By default the Odoo panel opens on its own every time you open an email. To open it only when you need it, turn off “Open sidebar automatically” in Settings → Account → Preferences. The panel then stays closed until you click the Odoo icon in Gmail's right sidebar. The change applies immediately, with no need to reload Gmail.</p>
                 </section>
 
                 <!-- Features Overview Section -->
@@ -318,7 +320,7 @@
                         <li><strong>Contact/Company Tabs</strong>: <span>Switch between contact and company information</span></li>
                         <li><strong>Related Contacts</strong>: <span>Find colleagues from the same company</span></li>
                         <li><strong>Financial Insights</strong>: <span>View invoicing, receivables, and payables</span></li>
-                        <li><strong>Settings Panel</strong>: <span>Customize visible sections</span></li>
+                        <li><strong>Settings Panel</strong>: <span>Choose which sections appear in the sidebar: Opportunities, Tasks, Tickets, Quotations, Company, Related contacts, Recent activities and Financial Insights</span></li>
                         <li><strong>Quote Levels</strong>: <span>Control how much conversation history to include when logging</span></li>
                         <li><strong>Record Grouping</strong>: <span>Group opportunities, tasks, and tickets by stage or status</span></li>
                         <li><strong>Email Participants</strong>: <span>View Odoo contact information for all email participants</span></li>
@@ -551,6 +553,7 @@
                         <li>Email body content is added as description</li>
                         <li>The contact from the sidebar is linked</li>
                         <li>The lead opens in Odoo in a new tab for additional editing</li>
+                        <li>While the record is being created the button shows a processing state, and repeated clicks won't create duplicates</li>
                     </ul>
                     <div class="info-box warning">
                         <strong>Important:</strong> <span>The email is NOT logged automatically. To associate the email with the new lead, return to Gmail and click the envelope icon next to the opportunity.</span>
@@ -600,6 +603,8 @@
                     </ul>
                     <h3>Managing Helpdesk Tickets</h3>
                     <p><strong>Requirements:</strong> <span>Odoo Helpdesk module (Enterprise only)</span></p>
+                    <h3>Creating a Task or a Ticket from an Email</h3>
+                    <p>Click Create in the section. The record is created with the email subject and body, its attachments are uploaded in the background, and it opens in Odoo in a new tab so you can fill in the rest. While it's being created the button shows a processing state, and repeated clicks won't create duplicates.</p>
                 </section>
 
                 <!-- Notification Organization Section -->
@@ -743,8 +748,15 @@
                     <h3>"Contact Not Found" Message</h3>
                     <ul>
                         <li><strong>Email not in Odoo</strong>: <span>Click "Create Contact" to add them</span></li>
-                        <li><strong>Email spelling mismatch</strong>: <span>Update the email in Odoo or create a new contact</span></li>
+                        <li><strong>The address is written differently</strong>: <span>Capitalisation is not the problem: an address stored in Odoo as John@Acme.com does match john@acme.com. What breaks the match is a genuinely different address — an alias, an extra dot, or another domain. Update the email in Odoo, or create a new contact.</span></li>
                     </ul>
+                    <h3>A Section Doesn't Appear</h3>
+                    <p>Sections show up only when Odoo can serve them. If Opportunities, Tasks, Tickets, Quotations or Financial Insights is missing, check in this order:</p>
+                    <ol>
+                        <li><strong>The module isn't installed</strong>: <span>Opportunities needs CRM, Tasks needs Project, Tickets needs Helpdesk (Enterprise), Quotations needs Sales, and Financial Insights needs Accounting.</span></li>
+                        <li><strong>Your Odoo user lacks permission</strong>: <span>The extension hides a section when your user can't create that type of record — read-only access isn't enough. Ask your Odoo administrator to grant it.</span></li>
+                        <li><strong>You switched it off</strong>: <span>Check Settings → Personalization: a section hidden there stays hidden on every email.</span></li>
+                    </ol>
                     <h3>The Sidebar Is Empty or Nothing Loads After Connecting</h3>
                     <p>This is almost always the login session, not an API key. Check, in order:</p>
                     <ol>

@@ -103,7 +103,7 @@
                 "headline": "Odoo Integration for Gmail - Complete User Guide",
                 "description": "Step-by-step guide to install, configure, and use Odoo Integration for Gmail. Learn about email logging, CRM features, tasks, tickets, and troubleshooting.",
                 "datePublished": "2025-11-22T00:00:00+00:00",
-                "dateModified": "2026-02-22T00:00:00+00:00",
+                "dateModified": "2026-08-01T00:00:00+00:00",
                 "author": { "@id": "https://integrationnode.com/gmail-odoo/#organization" },
                 "publisher": { "@id": "https://integrationnode.com/gmail-odoo/#organization" },
                 "mainEntityOfPage": {
@@ -296,6 +296,8 @@
                         <li>Inserisci i tuoi nuovi dati</li>
                     </ol>
                     <p>Per aggiungere o aggiornare la chiave API in seguito, apri Impostazioni → Account → Connessione — senza bisogno di uscire.</p>
+                    <h3>Decidere quando si apre il pannello</h3>
+                    <p>Per impostazione predefinita il pannello Odoo si apre da solo ogni volta che apri un'email. Per aprirlo solo quando serve, disattiva «Apri automaticamente la barra laterale» in Impostazioni → Account → Preferenze. Il pannello resta chiuso finché non fai clic sull'icona Odoo nella barra laterale destra di Gmail. La modifica ha effetto subito, senza ricaricare Gmail.</p>
                 </section>
 
                 <!-- Features Overview Section -->
@@ -318,7 +320,7 @@
                         <li><strong>Schede Contatto/Azienda</strong>: <span>Passa tra informazioni contatto e azienda</span></li>
                         <li><strong>Contatti Correlati</strong>: <span>Trova colleghi della stessa azienda</span></li>
                         <li><strong>Approfondimenti Finanziari</strong>: <span>Visualizza fatturazione, crediti e debiti</span></li>
-                        <li><strong>Pannello Impostazioni</strong>: <span>Personalizza le sezioni visibili</span></li>
+                        <li><strong>Pannello Impostazioni</strong>: <span>Scegli quali sezioni compaiono nel pannello: Opportunità, Attività, Ticket, Preventivi, Azienda, Contatti collegati, Attività recenti e Informazioni finanziarie</span></li>
                         <li><strong>Livelli di Citazione</strong>: <span>Controlla quanta cronologia della conversazione includere nel logging</span></li>
                         <li><strong>Raggruppamento dei Record</strong>: <span>Raggruppa opportunità, attività e ticket per fase o stato</span></li>
                         <li><strong>Partecipanti Email</strong>: <span>Visualizza le informazioni di contatto Odoo di tutti i partecipanti email</span></li>
@@ -551,6 +553,7 @@
                         <li>Il contenuto del corpo email viene aggiunto come descrizione</li>
                         <li>Il contatto dalla barra laterale viene collegato</li>
                         <li>Il lead si apre in Odoo in una nuova scheda per modifiche aggiuntive</li>
+                        <li>Mentre il record viene creato il pulsante mostra uno stato di elaborazione, e clic ripetuti non creano duplicati</li>
                     </ul>
                     <div class="info-box warning">
                         <strong>Importante:</strong> <span>L'email NON viene registrata automaticamente. Per associare l'email al nuovo lead, torna a Gmail e clicca l'icona della busta accanto all'opportunità.</span>
@@ -600,6 +603,8 @@
                     </ul>
                     <h3>Gestione Ticket Helpdesk</h3>
                     <p><strong>Requisiti:</strong> <span>Modulo Odoo Helpdesk (solo Enterprise)</span></p>
+                    <h3>Creare un'attività o un ticket da un'email</h3>
+                    <p>Fai clic su Crea nella sezione. Il record viene creato con oggetto e corpo dell'email, i suoi allegati vengono caricati in background e si apre in Odoo in una nuova scheda per completare il resto. Durante la creazione il pulsante mostra uno stato di elaborazione, e clic ripetuti non creano duplicati.</p>
                 </section>
 
                 <!-- Notification Organization Section -->
@@ -743,8 +748,15 @@
                     <h3>Messaggio "Contatto Non Trovato"</h3>
                     <ul>
                         <li><strong>Email non in Odoo</strong>: <span>Clicca "Crea Contatto" per aggiungerlo</span></li>
-                        <li><strong>Errore ortografico email</strong>: <span>Aggiorna l'email in Odoo o crea un nuovo contatto</span></li>
+                        <li><strong>L'indirizzo è scritto in modo diverso</strong>: <span>Le maiuscole non sono il problema: un indirizzo salvato in Odoo come John@Acme.com corrisponde eccome a john@acme.com. A rompere la corrispondenza è un indirizzo davvero diverso: un alias, un punto in più o un altro dominio. Aggiorna l'email in Odoo, oppure crea un nuovo contatto.</span></li>
                     </ul>
+                    <h3>Una sezione non compare</h3>
+                    <p>Le sezioni compaiono solo se Odoo può fornirle. Se manca Opportunità, Attività, Ticket, Preventivi o Informazioni finanziarie, controlla in questo ordine:</p>
+                    <ol>
+                        <li><strong>Il modulo non è installato</strong>: <span>Opportunità richiede CRM, Attività richiede Progetto, Ticket richiede Helpdesk (Enterprise), Preventivi richiede Vendite e Informazioni finanziarie richiede Contabilità.</span></li>
+                        <li><strong>Il tuo utente Odoo non ha i permessi</strong>: <span>L'estensione nasconde una sezione quando il tuo utente non può creare quel tipo di record: il solo accesso in lettura non basta. Chiedilo al tuo amministratore Odoo.</span></li>
+                        <li><strong>L'hai disattivata tu</strong>: <span>Controlla Impostazioni → Personalizzazione: una sezione nascosta lì resta nascosta in tutte le email.</span></li>
+                    </ol>
                     <h3>La barra laterale è vuota o non si carica nulla dopo la connessione</h3>
                     <p>È quasi sempre la sessione di accesso, non una chiave API. Controlla, in ordine:</p>
                     <ol>
