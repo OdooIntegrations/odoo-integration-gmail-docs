@@ -117,6 +117,7 @@
       "relatedContacts": "Contacts associés",
       "recentActivities": "Activités récentes",
       "opportunities": "Opportunités",
+      "quotations": "Devis",
       "tasksTickets": "Tâches et tickets",
       "notifications": "Notifications",
       "multiCompany": "Multi-sociétés",
@@ -351,6 +352,25 @@
       "happens4": "Le prospect s'ouvre dans Odoo dans un nouvel onglet pour modification",
       "importantTitle": "Important :",
       "importantDesc": "L'email n'est PAS enregistré automatiquement. Pour associer l'email au nouveau prospect, retournez dans Gmail et cliquez sur l'icône enveloppe à côté de l'opportunité."
+    },
+    "quotations": {
+      "title": "Devis en attente",
+      "intro": "La section Devis répertorie les devis du contact encore ouverts — brouillons et devis déjà envoyés — pour voir ce qui attend une décision sans quitter Gmail.",
+      "requirementsTitle": "Prérequis",
+      "requirement1": "Formule PLUS. Dans la formule gratuite, la section reste visible, verrouillée, avec un lien pour passer à PLUS.",
+      "requirement2": "Le module Ventes installé dans Odoo et le droit de créer des devis. Si votre utilisateur dispose des Ventes en lecture seule, la section n'apparaît pas.",
+      "groupsTitle": "Comment la liste est organisée",
+      "groupDraftLabel": "Non envoyé",
+      "groupDraftDesc": "devis encore en brouillon : c'est à vous de jouer.",
+      "groupSentLabel": "En attente du client",
+      "groupSentDesc": "déjà envoyés : la balle est dans le camp du client.",
+      "timing": "Chaque ligne affiche le montant et un indicateur de temps : depuis combien de temps le devis attend (« Créé il y a 5 jours ») ou quand il expire (« Expire demain », « Expiré »). Les devis expirés, ou qui expirent sous une semaine, sont mis en évidence.",
+      "actionsTitle": "Ce que vous pouvez faire",
+      "action1": "Cliquez sur une ligne pour ouvrir le devis dans Odoo.",
+      "action2": "Cliquez sur l'icône enveloppe pour enregistrer l'email courant dans le chatter de ce devis.",
+      "action3": "Cliquez sur Créer pour démarrer un nouveau devis pour le contact et le finaliser dans Odoo.",
+      "action4": "Ouvrez le menu ⋮ de la ligne pour copier un lien vers le devis, et utilisez la recherche quand la liste s'allonge.",
+      "hideNote": "Vous ne travaillez pas avec des devis ? Masquez la section depuis Paramètres → Personnalisation."
     },
     "tasksTickets": {
       "title": "Tâches et tickets",

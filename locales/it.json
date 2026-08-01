@@ -117,6 +117,7 @@
       "relatedContacts": "Contatti correlati",
       "recentActivities": "Attività recenti",
       "opportunities": "Opportunità",
+      "quotations": "Preventivi",
       "tasksTickets": "Attività e Ticket",
       "notifications": "Notifiche",
       "multiCompany": "Multi-azienda",
@@ -351,6 +352,25 @@
       "happens4": "Il lead si apre in Odoo in una nuova scheda per modifiche aggiuntive",
       "importantTitle": "Importante:",
       "importantDesc": "L'email NON viene registrata automaticamente. Per associare l'email al nuovo lead, torna a Gmail e clicca l'icona della busta accanto all'opportunità."
+    },
+    "quotations": {
+      "title": "Preventivi in sospeso",
+      "intro": "La sezione Preventivi elenca i preventivi del contatto ancora aperti — bozze e già inviati — così vedi cosa sta aspettando una decisione senza uscire da Gmail.",
+      "requirementsTitle": "Requisiti",
+      "requirement1": "Piano PLUS. Nel piano gratuito la sezione resta visibile, bloccata, con un link per passare a PLUS.",
+      "requirement2": "Il modulo Vendite installato in Odoo e il permesso di creare preventivi. Se il tuo utente ha Vendite in sola lettura, la sezione non compare.",
+      "groupsTitle": "Come è organizzata la lista",
+      "groupDraftLabel": "Non inviato",
+      "groupDraftDesc": "preventivi ancora in bozza: la prossima mossa è tua.",
+      "groupSentLabel": "In attesa del cliente",
+      "groupSentDesc": "già inviati: la prossima mossa è del cliente.",
+      "timing": "Ogni riga mostra l'importo e un segnale temporale: da quanto il preventivo è in attesa (\"Creato 5 giorni fa\") o quando scade (\"Scade domani\", \"Scaduto\"). I preventivi scaduti, o che scadono entro una settimana, sono evidenziati.",
+      "actionsTitle": "Cosa puoi fare",
+      "action1": "Fai clic su una riga per aprire il preventivo in Odoo.",
+      "action2": "Fai clic sull'icona della busta per registrare l'email corrente nel chatter di quel preventivo.",
+      "action3": "Fai clic su Crea per iniziare un nuovo preventivo per il contatto e completarlo in Odoo.",
+      "action4": "Apri il menu ⋮ della riga per copiare un link al preventivo, e usa la ricerca quando la lista si allunga.",
+      "hideNote": "Non lavori con i preventivi? Nascondi la sezione da Impostazioni → Personalizzazione."
     },
     "tasksTickets": {
       "title": "Attività e Ticket",

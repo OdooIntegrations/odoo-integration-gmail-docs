@@ -117,6 +117,7 @@
       "relatedContacts": "Gerelateerde contacten",
       "recentActivities": "Recente activiteiten",
       "opportunities": "Kansen",
+      "quotations": "Prijsopgaven",
       "tasksTickets": "Taken & Tickets",
       "notifications": "Notificaties",
       "multiCompany": "Multi-bedrijf",
@@ -351,6 +352,25 @@
       "happens4": "De lead opent in Odoo in een nieuw tabblad voor verdere bewerking",
       "importantTitle": "Belangrijk:",
       "importantDesc": "De e-mail wordt NIET automatisch gelogd. Om de e-mail te koppelen aan de nieuwe lead, gaat u terug naar Gmail en klikt u op het envelopicoontje naast de kans."
+    },
+    "quotations": {
+      "title": "Openstaande prijsopgaven",
+      "intro": "De sectie Prijsopgaven toont de prijsopgaven van het contact die nog openstaan — concepten en al verzonden — zodat u ziet waarop een beslissing wacht zonder Gmail te verlaten.",
+      "requirementsTitle": "Vereisten",
+      "requirement1": "PLUS-abonnement. In het gratis abonnement blijft de sectie zichtbaar, vergrendeld, met een link om te upgraden.",
+      "requirement2": "Odoo Verkoop geïnstalleerd en het recht om prijsopgaven aan te maken. Heeft uw gebruiker Verkoop alleen-lezen, dan verschijnt de sectie niet.",
+      "groupsTitle": "Hoe de lijst is ingedeeld",
+      "groupDraftLabel": "Niet verzonden",
+      "groupDraftDesc": "prijsopgaven nog in concept — de volgende zet is aan u.",
+      "groupSentLabel": "Wacht op klant",
+      "groupSentDesc": "al verzonden — de volgende zet is aan de klant.",
+      "timing": "Elke rij toont het bedrag en een tijdsignaal: hoe lang de prijsopgave al wacht (\"5 dagen geleden gemaakt\") of wanneer ze verloopt (\"Verloopt morgen\", \"Verlopen\"). Verlopen prijsopgaven, en die binnen een week verlopen, worden gemarkeerd.",
+      "actionsTitle": "Wat u kunt doen",
+      "action1": "Klik op een rij om de prijsopgave in Odoo te openen.",
+      "action2": "Klik op het envelop-icoon om de huidige e-mail in de chatter van die prijsopgave te loggen.",
+      "action3": "Klik op Aanmaken om een nieuwe prijsopgave voor het contact te starten en die in Odoo af te ronden.",
+      "action4": "Open het ⋮-menu van de rij om een link naar de prijsopgave te kopiëren, en gebruik het zoekveld als de lijst lang wordt.",
+      "hideNote": "Werkt u niet met prijsopgaven? Verberg de sectie via Instellingen → Personalisatie."
     },
     "tasksTickets": {
       "title": "Taken & Tickets",

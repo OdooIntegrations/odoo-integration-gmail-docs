@@ -334,6 +334,7 @@
       "relatedContacts": "Contactos relacionados",
       "recentActivities": "Actividad reciente",
       "opportunities": "Oportunidades",
+      "quotations": "Presupuestos",
       "tasksTickets": "Tareas y Tickets",
       "notifications": "Notificaciones",
       "multiCompany": "Multi-compañía",
@@ -568,6 +569,25 @@
       "happens4": "El lead se abre en Odoo en una nueva pestaña para edición adicional",
       "importantTitle": "Importante:",
       "importantDesc": "El email NO se registra automáticamente. Para asociar el email con el nuevo lead, vuelve a Gmail y haz clic en el icono del sobre junto a la oportunidad."
+    },
+    "quotations": {
+      "title": "Presupuestos pendientes",
+      "intro": "La sección Presupuestos lista los presupuestos del contacto que siguen abiertos —borradores y ya enviados— para que veas qué está esperando una decisión sin salir de Gmail.",
+      "requirementsTitle": "Requisitos",
+      "requirement1": "Plan PLUS. En el plan gratuito la sección sigue ahí, bloqueada y con un enlace para mejorar.",
+      "requirement2": "Tener Ventas instalado en Odoo y permiso para crear presupuestos. Si tu usuario tiene Ventas en solo lectura, la sección no aparece.",
+      "groupsTitle": "Cómo se organiza la lista",
+      "groupDraftLabel": "Sin enviar",
+      "groupDraftDesc": "presupuestos aún en borrador: el siguiente paso es tuyo.",
+      "groupSentLabel": "Esperando al cliente",
+      "groupSentDesc": "ya enviados: el siguiente paso es del cliente.",
+      "timing": "Cada fila muestra el importe y una señal temporal: cuánto lleva esperando el presupuesto (\"Creado hace 5 días\") o cuándo caduca (\"Caduca mañana\", \"Caducado\"). Los presupuestos caducados, o que caducan en menos de una semana, se destacan.",
+      "actionsTitle": "Qué puedes hacer",
+      "action1": "Pulsa una fila para abrir el presupuesto en Odoo.",
+      "action2": "Pulsa el icono del sobre para registrar el email actual en el chatter de ese presupuesto.",
+      "action3": "Pulsa Crear para empezar un presupuesto nuevo para el contacto y terminarlo en Odoo.",
+      "action4": "Abre el menú ⋮ de la fila para copiar un enlace al presupuesto, y usa el buscador cuando la lista se alargue.",
+      "hideNote": "¿No trabajas con presupuestos? Oculta la sección desde Ajustes → Personalización."
     },
     "tasksTickets": {
       "title": "Tareas y Tickets",

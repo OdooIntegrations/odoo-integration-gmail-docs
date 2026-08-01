@@ -117,6 +117,7 @@
       "relatedContacts": "Verknüpfte Kontakte",
       "recentActivities": "Letzte Aktivitäten",
       "opportunities": "Chancen",
+      "quotations": "Angebote",
       "tasksTickets": "Aufgaben & Tickets",
       "notifications": "Benachrichtigungen",
       "multiCompany": "Mehrere Unternehmen",
@@ -351,6 +352,25 @@
       "happens4": "Der Lead öffnet sich in Odoo in einem neuen Tab zur Bearbeitung",
       "importantTitle": "Wichtig:",
       "importantDesc": "Die E-Mail wird NICHT automatisch protokolliert. Um die E-Mail mit dem neuen Lead zu verknüpfen, kehren Sie zu Gmail zurück und klicken Sie auf das Briefumschlag-Symbol neben der Chance."
+    },
+    "quotations": {
+      "title": "Offene Angebote",
+      "intro": "Der Bereich Angebote listet die noch offenen Angebote des Kontakts auf — Entwürfe und bereits versandte —, damit Sie sehen, worauf eine Entscheidung aussteht, ohne Gmail zu verlassen.",
+      "requirementsTitle": "Voraussetzungen",
+      "requirement1": "PLUS-Tarif. Im kostenlosen Tarif bleibt der Bereich sichtbar, gesperrt und mit einem Link zum Upgrade.",
+      "requirement2": "Odoo Verkauf installiert und die Berechtigung, Angebote zu erstellen. Hat Ihr Benutzer Verkauf nur lesend, erscheint der Bereich nicht.",
+      "groupsTitle": "Wie die Liste aufgebaut ist",
+      "groupDraftLabel": "Nicht gesendet",
+      "groupDraftDesc": "Angebote noch im Entwurf — der nächste Schritt liegt bei Ihnen.",
+      "groupSentLabel": "Warten auf Kunden",
+      "groupSentDesc": "bereits versandt — der nächste Schritt liegt beim Kunden.",
+      "timing": "Jede Zeile zeigt den Betrag und ein Zeitsignal: wie lange das Angebot schon wartet („Vor 5 Tagen erstellt\") oder wann es abläuft („Läuft morgen ab\", „Abgelaufen\"). Abgelaufene Angebote und solche, die innerhalb einer Woche ablaufen, werden hervorgehoben.",
+      "actionsTitle": "Was Sie tun können",
+      "action1": "Klicken Sie auf eine Zeile, um das Angebot in Odoo zu öffnen.",
+      "action2": "Klicken Sie auf das Umschlagsymbol, um die aktuelle E-Mail im Chatter dieses Angebots zu protokollieren.",
+      "action3": "Klicken Sie auf Erstellen, um ein neues Angebot für den Kontakt zu beginnen und es in Odoo abzuschließen.",
+      "action4": "Öffnen Sie das ⋮-Menü der Zeile, um einen Link zum Angebot zu kopieren, und nutzen Sie die Suche, wenn die Liste länger wird.",
+      "hideNote": "Arbeiten Sie nicht mit Angeboten? Blenden Sie den Bereich unter Einstellungen → Personalisierung aus."
     },
     "tasksTickets": {
       "title": "Aufgaben & Tickets",

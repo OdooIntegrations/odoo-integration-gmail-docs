@@ -117,6 +117,7 @@
       "relatedContacts": "Powiązane kontakty",
       "recentActivities": "Ostatnie aktywności",
       "opportunities": "Szanse sprzedaży",
+      "quotations": "Oferty",
       "tasksTickets": "Zadania i zgłoszenia",
       "notifications": "Powiadomienia",
       "multiCompany": "Wiele firm",
@@ -351,6 +352,25 @@
       "happens4": "Lead otwiera się w Odoo w nowej karcie do dalszej edycji",
       "importantTitle": "Ważne:",
       "importantDesc": "E-mail NIE jest automatycznie logowany. Aby powiązać e-mail z nową szansą, wróć do Gmail i kliknij ikonę koperty obok szansy."
+    },
+    "quotations": {
+      "title": "Oczekujące oferty",
+      "intro": "Sekcja Oferty pokazuje oferty kontaktu, które wciąż są otwarte — wersje robocze i już wysłane — dzięki czemu widzisz, co czeka na decyzję, bez opuszczania Gmaila.",
+      "requirementsTitle": "Wymagania",
+      "requirement1": "Plan PLUS. W planie darmowym sekcja pozostaje widoczna, zablokowana, z linkiem do przejścia na PLUS.",
+      "requirement2": "Zainstalowany moduł Sprzedaż w Odoo i uprawnienie do tworzenia ofert. Jeśli Twój użytkownik ma Sprzedaż tylko do odczytu, sekcja się nie pojawi.",
+      "groupsTitle": "Jak zorganizowana jest lista",
+      "groupDraftLabel": "Niewysłane",
+      "groupDraftDesc": "oferty wciąż w wersji roboczej — następny ruch należy do Ciebie.",
+      "groupSentLabel": "Oczekuje na klienta",
+      "groupSentDesc": "już wysłane — następny ruch należy do klienta.",
+      "timing": "Każdy wiersz pokazuje kwotę i sygnał czasu: jak długo oferta czeka („Utworzono 5 dni temu\") albo kiedy wygasa („Wygasa jutro\", „Wygasła\"). Oferty wygasłe oraz te, które wygasają w ciągu tygodnia, są wyróżnione.",
+      "actionsTitle": "Co możesz zrobić",
+      "action1": "Kliknij wiersz, aby otworzyć ofertę w Odoo.",
+      "action2": "Kliknij ikonę koperty, aby zapisać bieżący e-mail w chatterze tej oferty.",
+      "action3": "Kliknij Utwórz, aby rozpocząć nową ofertę dla kontaktu i dokończyć ją w Odoo.",
+      "action4": "Otwórz menu ⋮ wiersza, aby skopiować link do oferty, a przy dłuższej liście skorzystaj z wyszukiwarki.",
+      "hideNote": "Nie pracujesz z ofertami? Ukryj sekcję w Ustawienia → Personalizacja."
     },
     "tasksTickets": {
       "title": "Zadania i zgłoszenia",

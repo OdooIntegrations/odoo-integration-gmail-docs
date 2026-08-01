@@ -117,6 +117,7 @@
       "relatedContacts": "Contactos relacionados",
       "recentActivities": "Atividades recentes",
       "opportunities": "Oportunidades",
+      "quotations": "Orçamentos",
       "tasksTickets": "Tarefas e Tickets",
       "notifications": "Notificações",
       "multiCompany": "Multiempresa",
@@ -351,6 +352,25 @@
       "happens4": "O lead abre no Odoo em uma nova aba para edições adicionais",
       "importantTitle": "Importante:",
       "importantDesc": "O e-mail NÃO é registrado automaticamente. Para associar o e-mail ao novo lead, volte ao Gmail e clique no ícone do envelope ao lado da oportunidade."
+    },
+    "quotations": {
+      "title": "Orçamentos pendentes",
+      "intro": "A secção Orçamentos lista os orçamentos do contacto que continuam em aberto — rascunhos e já enviados — para ver o que está à espera de uma decisão sem sair do Gmail.",
+      "requirementsTitle": "Requisitos",
+      "requirement1": "Plano PLUS. No plano gratuito a secção continua visível, bloqueada, com uma ligação para fazer o upgrade.",
+      "requirement2": "Ter o módulo Vendas instalado no Odoo e permissão para criar orçamentos. Se o seu utilizador tiver Vendas apenas em leitura, a secção não aparece.",
+      "groupsTitle": "Como a lista está organizada",
+      "groupDraftLabel": "Não enviado",
+      "groupDraftDesc": "orçamentos ainda em rascunho: o próximo passo é seu.",
+      "groupSentLabel": "Aguardando o cliente",
+      "groupSentDesc": "já enviados: o próximo passo é do cliente.",
+      "timing": "Cada linha mostra o valor e um sinal temporal: há quanto tempo o orçamento está à espera (\"Criado há 5 dias\") ou quando vence (\"Vence amanhã\", \"Vencido\"). Os orçamentos vencidos, ou que vencem dentro de uma semana, ficam destacados.",
+      "actionsTitle": "O que pode fazer",
+      "action1": "Clique numa linha para abrir o orçamento no Odoo.",
+      "action2": "Clique no ícone do envelope para registar o email atual no chatter desse orçamento.",
+      "action3": "Clique em Criar para começar um novo orçamento para o contacto e terminá-lo no Odoo.",
+      "action4": "Abra o menu ⋮ da linha para copiar uma ligação para o orçamento, e use a pesquisa quando a lista crescer.",
+      "hideNote": "Não trabalha com orçamentos? Oculte a secção em Definições → Personalização."
     },
     "tasksTickets": {
       "title": "Tarefas e Tickets",

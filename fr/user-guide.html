@@ -233,6 +233,7 @@
                         <li><a href="#related-contacts"><span class="material-symbols-outlined">groups</span> <span>Contacts associés</span></a></li>
                         <li><a href="#recent-activities"><span class="material-symbols-outlined">history</span> <span>Activités récentes</span></a></li>
                         <li><a href="#opportunities"><span class="material-symbols-outlined">handshake</span> <span>Opportunités</span></a></li>
+                        <li><a href="#quotations"><span class="material-symbols-outlined">request_quote</span> <span>Devis</span></a></li>
                         <li><a href="#tasks-tickets"><span class="material-symbols-outlined">task</span> <span>Tâches et tickets</span></a></li>
                         <li><a href="#notifications"><span class="material-symbols-outlined">notifications</span> <span>Notifications</span></a></li>
                         <li><a href="#multi-company"><span class="material-symbols-outlined">business</span> <span>Multi-sociétés</span></a></li>
@@ -553,6 +554,36 @@
                     </ul>
                     <div class="info-box warning">
                         <strong>Important :</strong> <span>L'email n'est PAS enregistré automatiquement. Pour associer l'email au nouveau prospect, retournez dans Gmail et cliquez sur l'icône enveloppe à côté de l'opportunité.</span>
+                    </div>
+                </section>
+
+                <!-- Pending Quotations Section -->
+                <section id="quotations" class="guide-section">
+                    <h2><span class="material-symbols-outlined">request_quote</span> <span>Devis en attente</span> <span class="feature-badge badge-plus">Plus</span></h2>
+                    <p>La section Devis répertorie les devis du contact encore ouverts — brouillons et devis déjà envoyés — pour voir ce qui attend une décision sans quitter Gmail.</p>
+
+                    <h3>Prérequis</h3>
+                    <ul>
+                        <li>Formule PLUS. Dans la formule gratuite, la section reste visible, verrouillée, avec un lien pour passer à PLUS.</li>
+                        <li>Le module Ventes installé dans Odoo et le droit de créer des devis. Si votre utilisateur dispose des Ventes en lecture seule, la section n'apparaît pas.</li>
+                    </ul>
+
+                    <h3>Comment la liste est organisée</h3>
+                    <ul>
+                        <li><strong>Non envoyé</strong>: <span>devis encore en brouillon : c'est à vous de jouer.</span></li>
+                        <li><strong>En attente du client</strong>: <span>déjà envoyés : la balle est dans le camp du client.</span></li>
+                    </ul>
+                    <p>Chaque ligne affiche le montant et un indicateur de temps : depuis combien de temps le devis attend (« Créé il y a 5 jours ») ou quand il expire (« Expire demain », « Expiré »). Les devis expirés, ou qui expirent sous une semaine, sont mis en évidence.</p>
+
+                    <h3>Ce que vous pouvez faire</h3>
+                    <ul>
+                        <li>Cliquez sur une ligne pour ouvrir le devis dans Odoo.</li>
+                        <li>Cliquez sur l'icône enveloppe pour enregistrer l'email courant dans le chatter de ce devis.</li>
+                        <li>Cliquez sur Créer pour démarrer un nouveau devis pour le contact et le finaliser dans Odoo.</li>
+                        <li>Ouvrez le menu ⋮ de la ligne pour copier un lien vers le devis, et utilisez la recherche quand la liste s'allonge.</li>
+                    </ul>
+                    <div class="info-box">
+                        <span>Vous ne travaillez pas avec des devis ? Masquez la section depuis Paramètres → Personnalisation.</span>
                     </div>
                 </section>
 

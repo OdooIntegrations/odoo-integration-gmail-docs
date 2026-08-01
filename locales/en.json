@@ -117,6 +117,7 @@
       "relatedContacts": "Related contacts",
       "recentActivities": "Recent activities",
       "opportunities": "Opportunities",
+      "quotations": "Quotations",
       "tasksTickets": "Tasks & Tickets",
       "notifications": "Notifications",
       "multiCompany": "Multi-Company",
@@ -351,6 +352,25 @@
       "happens4": "The lead opens in Odoo in a new tab for additional editing",
       "importantTitle": "Important:",
       "importantDesc": "The email is NOT logged automatically. To associate the email with the new lead, return to Gmail and click the envelope icon next to the opportunity."
+    },
+    "quotations": {
+      "title": "Pending quotations",
+      "intro": "The Quotations section lists the contact's quotations that are still open — drafts and quotations already sent — so you can see what is waiting on a decision without leaving Gmail.",
+      "requirementsTitle": "Requirements",
+      "requirement1": "PLUS plan. On the FREE plan the section is still there, locked, with a link to upgrade.",
+      "requirement2": "Odoo Sales installed, and permission to create quotations. If your user has Sales in read-only mode, the section doesn't appear.",
+      "groupsTitle": "How the list is organised",
+      "groupDraftLabel": "Not sent",
+      "groupDraftDesc": "quotations still in draft — the next move is yours.",
+      "groupSentLabel": "Awaiting customer",
+      "groupSentDesc": "already sent — the next move is the customer's.",
+      "timing": "Each row shows the amount and a time signal: how long the quotation has been waiting (\"Created 5 days ago\"), or how soon it expires (\"Expires tomorrow\", \"Expired\"). Quotations that have expired, or expire within a week, are highlighted.",
+      "actionsTitle": "What you can do",
+      "action1": "Click a row to open the quotation in Odoo.",
+      "action2": "Click the envelope icon to log the current email into that quotation's chatter.",
+      "action3": "Click Create to start a new quotation for the contact and finish it in Odoo.",
+      "action4": "Open the row's ⋮ menu to copy a link to the quotation, and use the search box when the list gets long.",
+      "hideNote": "Don't work with quotations? Hide the section from Settings → Personalization."
     },
     "tasksTickets": {
       "title": "Tasks & Tickets",
