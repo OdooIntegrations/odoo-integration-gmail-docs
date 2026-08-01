@@ -216,7 +216,9 @@
         "autolog": "Auto-logging",
         "autologDesc": "Link a Gmail thread to one or more Odoo records and have every new email logged automatically into their chatter (currently in private beta)",
         "multiCompany": "Multi-Company Support",
-        "multiCompanyDesc": "Switch between the companies you have access to in Odoo, with cross-company contact lookup when an email matches a partner that lives in a different company"
+        "multiCompanyDesc": "Switch between the companies you have access to in Odoo, with cross-company contact lookup when an email matches a partner that lives in a different company",
+        "quotations": "Openstaande offertes",
+        "quotationsDesc": "Bekijk in het paneel de concept- en verzonden offertes van het contact, met het bedrag en hoelang elke offerte al op antwoord wacht"
       }
     },
     "emailLogging": {
@@ -1133,6 +1135,14 @@
       "subtitle": "Begin met ons Gratis abonnement of upgrade naar PLUS voor geavanceerde functies.",
       "install": "Extensie Installeren",
       "viewPricing": "Prijzen Bekijken"
+    },
+    "v0800": {
+      "recordMenu": "Actiemenu bij elk record",
+      "recordMenuDesc": "Beweeg over een verkoopkans, taak of ticket om een menu te openen met de beschikbare acties voor dat record: een directe link kopiëren en automatisch loggen aan- of uitzetten, wat voorheen ruimte in de rij innam.",
+      "quotations": "Offertes die op een beslissing wachten",
+      "quotationsDesc": "Een nieuwe sectie toont de concept- en verzonden offertes van het contact, gesplitst naar wie de volgende stap zet: nog niet verzonden of wachtend op de klant. Elke rij toont het bedrag en hoelang de offerte al wacht of wanneer die verloopt, en je kunt de e-mail op een offerte loggen of een nieuwe aanmaken en die in Odoo afronden.",
+      "contactMatching": "Contacten worden gevonden ongeacht hoofdletters",
+      "contactMatchingDesc": "Een e-mail die in Odoo met hoofdletters staat, komt nu overeen met de afzender en toont zijn record."
     },
     "v0710": {
       "createFeedback": "Aanmaakacties tonen nu voortgang",

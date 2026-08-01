@@ -216,7 +216,9 @@
         "autolog": "Auto-logging",
         "autologDesc": "Link a Gmail thread to one or more Odoo records and have every new email logged automatically into their chatter (currently in private beta)",
         "multiCompany": "Multi-Company Support",
-        "multiCompanyDesc": "Switch between the companies you have access to in Odoo, with cross-company contact lookup when an email matches a partner that lives in a different company"
+        "multiCompanyDesc": "Switch between the companies you have access to in Odoo, with cross-company contact lookup when an email matches a partner that lives in a different company",
+        "quotations": "Oczekujące oferty",
+        "quotationsDesc": "Zobacz w panelu oferty kontaktu w wersji roboczej i wysłane, wraz z kwotą i czasem oczekiwania każdej z nich na odpowiedź"
       }
     },
     "emailLogging": {
@@ -1133,6 +1135,14 @@
       "subtitle": "Zacznij od planu Free lub ulepsz do PLUS dla zaawansowanych funkcji.",
       "install": "Zainstaluj rozszerzenie",
       "viewPricing": "Zobacz cennik"
+    },
+    "v0800": {
+      "recordMenu": "Menu akcji przy każdym rekordzie",
+      "recordMenuDesc": "Najedź na szansę sprzedaży, zadanie lub zgłoszenie, aby otworzyć menu z dostępnymi akcjami dla tego rekordu: skopiowanie bezpośredniego odnośnika oraz włączenie lub wyłączenie automatycznego rejestrowania, które wcześniej zajmowało miejsce w wierszu.",
+      "quotations": "Oferty oczekujące na decyzję",
+      "quotationsDesc": "Nowa sekcja wyświetla oferty kontaktu w wersji roboczej i wysłane, podzielone według tego, po czyjej stronie jest następny krok: jeszcze nie wysłane lub oczekujące na klienta. Każdy wiersz pokazuje kwotę oraz jak długo oferta czeka lub kiedy traci ważność, a e-mail można zarejestrować przy ofercie albo utworzyć nową i dokończyć ją w Odoo.",
+      "contactMatching": "Kontakty są znajdowane niezależnie od wielkości liter",
+      "contactMatchingDesc": "E-mail zapisany w Odoo wielkimi literami teraz pasuje do nadawcy i wyświetla jego rekord."
     },
     "v0710": {
       "createFeedback": "Akcje tworzenia pokazują teraz postęp",

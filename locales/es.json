@@ -433,7 +433,9 @@
         "autolog": "Registro Automático",
         "autologDesc": "Vincula un hilo de Gmail con uno o más registros de Odoo y haz que cada email nuevo se registre automáticamente en su chatter (actualmente en beta privada)",
         "multiCompany": "Soporte multi-compañía",
-        "multiCompanyDesc": "Cambia entre las compañías a las que tienes acceso en Odoo, con búsqueda cross-company de contactos cuando un email coincide con un partner que vive en otra compañía"
+        "multiCompanyDesc": "Cambia entre las compañías a las que tienes acceso en Odoo, con búsqueda cross-company de contactos cuando un email coincide con un partner que vive en otra compañía",
+        "quotations": "Presupuestos pendientes",
+        "quotationsDesc": "Consulta en el panel los presupuestos del contacto en borrador y enviados, con el importe y cuánto tiempo lleva cada uno esperando respuesta"
       }
     },
     "emailLogging": {
@@ -1133,6 +1135,14 @@
       "subtitle": "Empieza con nuestro plan Gratis o actualiza a PLUS para funciones avanzadas.",
       "install": "Instalar Extensión",
       "viewPricing": "Ver Precios"
+    },
+    "v0800": {
+      "recordMenu": "Menú de acciones en cada registro",
+      "recordMenuDesc": "Pasa el ratón sobre una oportunidad, tarea o ticket para abrir un menú con las acciones disponibles para ese registro: copiar un enlace directo y activar o desactivar el auto-registro, que antes ocupaba espacio en la fila.",
+      "quotations": "Presupuestos que esperan una decisión",
+      "quotationsDesc": "Una sección nueva lista los presupuestos del contacto en borrador y enviados, separados según de quién dependa el siguiente paso: sin enviar todavía o a la espera del cliente. Cada fila muestra el importe y cuánto tiempo lleva esperando o cuándo caduca, y puedes registrar el email en un presupuesto o crear uno nuevo y terminarlo en Odoo.",
+      "contactMatching": "Los contactos se encuentran sin importar las mayúsculas",
+      "contactMatchingDesc": "Un email guardado en Odoo con mayúsculas ahora coincide con el remitente y muestra su ficha."
     },
     "v0710": {
       "createFeedback": "Las acciones de crear ahora muestran progreso",

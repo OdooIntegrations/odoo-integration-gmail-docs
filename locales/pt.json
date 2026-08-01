@@ -216,7 +216,9 @@
         "autolog": "Auto-logging",
         "autologDesc": "Link a Gmail thread to one or more Odoo records and have every new email logged automatically into their chatter (currently in private beta)",
         "multiCompany": "Multi-Company Support",
-        "multiCompanyDesc": "Switch between the companies you have access to in Odoo, with cross-company contact lookup when an email matches a partner that lives in a different company"
+        "multiCompanyDesc": "Switch between the companies you have access to in Odoo, with cross-company contact lookup when an email matches a partner that lives in a different company",
+        "quotations": "Orçamentos pendentes",
+        "quotationsDesc": "Consulte no painel os orçamentos do contacto em rascunho e enviados, com o valor e há quanto tempo cada um espera resposta"
       }
     },
     "emailLogging": {
@@ -1133,6 +1135,14 @@
       "subtitle": "Comece com nosso plano Grátis ou atualize para PLUS para recursos avançados.",
       "install": "Instalar Extensão",
       "viewPricing": "Ver Preços"
+    },
+    "v0800": {
+      "recordMenu": "Menu de ações em cada registo",
+      "recordMenuDesc": "Passe o rato sobre uma oportunidade, tarefa ou ticket para abrir um menu com as ações disponíveis para esse registo: copiar um link direto e ativar ou desativar o registo automático, que antes ocupava espaço na linha.",
+      "quotations": "Orçamentos à espera de uma decisão",
+      "quotationsDesc": "Uma nova secção lista os orçamentos do contacto em rascunho e enviados, separados por quem dá o passo seguinte: ainda não enviados ou à espera do cliente. Cada linha mostra o valor e há quanto tempo está à espera ou quando expira, e pode registar o e-mail num orçamento ou criar um novo e concluí-lo no Odoo.",
+      "contactMatching": "Os contactos são encontrados independentemente das maiúsculas",
+      "contactMatchingDesc": "Um e-mail guardado no Odoo com letras maiúsculas passa a corresponder ao remetente e mostra o seu registo."
     },
     "v0710": {
       "createFeedback": "As ações de criação agora mostram o progresso",

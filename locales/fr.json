@@ -216,7 +216,9 @@
         "autolog": "Auto-logging",
         "autologDesc": "Link a Gmail thread to one or more Odoo records and have every new email logged automatically into their chatter (currently in private beta)",
         "multiCompany": "Multi-Company Support",
-        "multiCompanyDesc": "Switch between the companies you have access to in Odoo, with cross-company contact lookup when an email matches a partner that lives in a different company"
+        "multiCompanyDesc": "Switch between the companies you have access to in Odoo, with cross-company contact lookup when an email matches a partner that lives in a different company",
+        "quotations": "Devis en attente",
+        "quotationsDesc": "Consultez dans le panneau les devis brouillon et envoyés du contact, avec le montant et depuis combien de temps chacun attend une réponse"
       }
     },
     "emailLogging": {
@@ -1133,6 +1135,14 @@
       "subtitle": "Commencez avec notre plan Gratuit ou passez à PLUS pour les fonctionnalités avancées.",
       "install": "Installer l'extension",
       "viewPricing": "Voir les tarifs"
+    },
+    "v0800": {
+      "recordMenu": "Menu d'actions sur chaque enregistrement",
+      "recordMenuDesc": "Survolez une opportunité, une tâche ou un ticket pour ouvrir un menu avec les actions disponibles pour cet enregistrement : copier un lien direct et activer ou désactiver l'enregistrement automatique, qui occupait auparavant de la place dans la ligne.",
+      "quotations": "Les devis qui attendent une décision",
+      "quotationsDesc": "Une nouvelle section liste les devis brouillon et envoyés du contact, séparés selon qui doit agir : pas encore envoyé ou en attente du client. Chaque ligne affiche le montant et depuis combien de temps le devis attend ou dans combien de temps il expire, et vous pouvez enregistrer l'e-mail sur un devis ou en créer un nouveau et le compléter dans Odoo.",
+      "contactMatching": "Les contacts sont trouvés quelle que soit la casse",
+      "contactMatchingDesc": "Un e-mail enregistré dans Odoo avec des majuscules correspond désormais à l'expéditeur et affiche sa fiche."
     },
     "v0710": {
       "createFeedback": "Les actions de création affichent désormais leur progression",

@@ -216,7 +216,9 @@
         "autolog": "Auto-logging",
         "autologDesc": "Link a Gmail thread to one or more Odoo records and have every new email logged automatically into their chatter (currently in private beta)",
         "multiCompany": "Multi-Company Support",
-        "multiCompanyDesc": "Switch between the companies you have access to in Odoo, with cross-company contact lookup when an email matches a partner that lives in a different company"
+        "multiCompanyDesc": "Switch between the companies you have access to in Odoo, with cross-company contact lookup when an email matches a partner that lives in a different company",
+        "quotations": "Preventivi in attesa",
+        "quotationsDesc": "Consulta nel pannello i preventivi del contatto in bozza e inviati, con l'importo e da quanto tempo ciascuno attende una risposta"
       }
     },
     "emailLogging": {
@@ -1133,6 +1135,14 @@
       "subtitle": "Inizia con il nostro piano Gratis o passa a PLUS per funzionalità avanzate.",
       "install": "Installa Estensione",
       "viewPricing": "Vedi Prezzi"
+    },
+    "v0800": {
+      "recordMenu": "Menu di azioni su ogni record",
+      "recordMenuDesc": "Passa il mouse su un'opportunità, un'attività o un ticket per aprire un menu con le azioni disponibili per quel record: copiare un link diretto e attivare o disattivare la registrazione automatica, che prima occupava spazio nella riga.",
+      "quotations": "Preventivi in attesa di una decisione",
+      "quotationsDesc": "Una nuova sezione elenca i preventivi del contatto in bozza e inviati, divisi in base a chi deve agire: non ancora inviati o in attesa del cliente. Ogni riga mostra l'importo e da quanto tempo è in attesa o quando scade, e puoi registrare l'email su un preventivo o crearne uno nuovo e completarlo in Odoo.",
+      "contactMatching": "I contatti si trovano indipendentemente dalle maiuscole",
+      "contactMatchingDesc": "Un'email salvata in Odoo con le maiuscole ora corrisponde al mittente e mostra la sua scheda."
     },
     "v0710": {
       "createFeedback": "Le azioni di creazione ora mostrano l'avanzamento",

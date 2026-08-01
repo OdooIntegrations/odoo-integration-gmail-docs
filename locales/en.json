@@ -216,7 +216,9 @@
         "autolog": "Auto-logging",
         "autologDesc": "Link a Gmail thread to one or more Odoo records and have every new email logged automatically into their chatter (currently in private beta)",
         "multiCompany": "Multi-Company Support",
-        "multiCompanyDesc": "Switch between the companies you have access to in Odoo, with cross-company contact lookup when an email matches a partner that lives in a different company"
+        "multiCompanyDesc": "Switch between the companies you have access to in Odoo, with cross-company contact lookup when an email matches a partner that lives in a different company",
+        "quotations": "Pending quotations",
+        "quotationsDesc": "See the contact's draft and sent quotations in the sidebar, with the amount and how long each one has been waiting for an answer"
       }
     },
     "emailLogging": {
@@ -1133,6 +1135,14 @@
       "subtitle": "Get started with our Free plan or upgrade to PLUS for advanced features.",
       "install": "Install Extension",
       "viewPricing": "View Pricing"
+    },
+    "v0800": {
+      "recordMenu": "Actions menu on every record",
+      "recordMenuDesc": "Hover an opportunity, task or ticket to open a menu with the actions available for it: copy a direct link to the record, and switch auto-log on or off, which used to take up space in the row.",
+      "quotations": "Quotations waiting on a decision",
+      "quotationsDesc": "A new section lists the contact's draft and sent quotations, split by whose move is next: not sent yet, or waiting on the customer. Every row shows the amount and how long it has been waiting or how soon it expires, and you can log the email to a quotation or start a new one and finish it in Odoo.",
+      "contactMatching": "Contacts are found whatever the capitalisation",
+      "contactMatchingDesc": "An email stored in Odoo with capital letters now matches the sender and shows their record."
     },
     "v0710": {
       "createFeedback": "Create actions now show progress",
