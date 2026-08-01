@@ -228,6 +228,7 @@
                         <li><a href="#features"><span class="material-symbols-outlined">star</span> <span>Funktionsübersicht</span></a></li>
                         <li><a href="#subscription"><span class="material-symbols-outlined">credit_card</span> <span>Abonnement</span></a></li>
                         <li><a href="#email-logging"><span class="material-symbols-outlined">mail</span> <span>E-Mail-Protokollierung</span></a></li>
+                        <li><a href="#record-menu"><span class="material-symbols-outlined">more_vert</span> <span>Datensatz-Aktionen</span></a></li>
                         <li><a href="#autolog"><span class="material-symbols-outlined">sync</span> <span>Auto-logging</span></a></li>
                         <li><a href="#related-contacts"><span class="material-symbols-outlined">groups</span> <span>Verknüpfte Kontakte</span></a></li>
                         <li><a href="#recent-activities"><span class="material-symbols-outlined">history</span> <span>Letzte Aktivitäten</span></a></li>
@@ -404,6 +405,21 @@
                     </div>
                 </section>
 
+                <!-- Record Actions Menu Section -->
+                <section id="record-menu" class="guide-section">
+                    <h2><span class="material-symbols-outlined">more_vert</span> <span>Aktionen für einen Datensatz</span></h2>
+                    <p>Jede Zeile einer Verkaufschance, Aufgabe, eines Tickets und eines Angebots hat ein eigenes Aktionsmenü. Bewegen Sie den Zeiger über die Zeile und klicken Sie auf die Schaltfläche ⋮ am rechten Rand.</p>
+
+                    <h3>Link zum Datensatz kopieren</h3>
+                    <p>Kopiert einen direkten Link zu diesem Datensatz in Odoo, bereit zum Einfügen in eine Antwort oder einen Chat. Er verweist auf denselben Datensatz, den die Zeile beim Anklicken öffnet.</p>
+
+                    <h3><span>Auto-Protokoll ein- oder ausschalten</span> <span class="feature-badge badge-plus">Plus</span></h3>
+                    <p>Verknüpft die aktuelle Konversation mit diesem Datensatz oder hebt die Verknüpfung auf. Die Option erscheint nur, wenn das Auto-Protokoll für die Konversation verfügbar ist. Während einer Pause wird sie angezeigt, aber deaktiviert, damit Sie eine pausierte Verknüpfung von einer nie eingerichteten unterscheiden können.</p>
+
+                    <h3>Menü schließen</h3>
+                    <p>Optionen, die auf eine Zeile nicht zutreffen, werden weggelassen statt ausgegraut — das Menü zeigt also nur, was Sie tatsächlich tun können. Klicken Sie außerhalb des Menüs oder drücken Sie Esc, um es zu schließen, ohne etwas auszulösen.</p>
+                </section>
+
                 <!-- Auto-logging Section -->
                 <section id="autolog" class="guide-section">
                     <h2><span class="material-symbols-outlined">sync</span> <span>Auto-logging</span> <span class="feature-badge badge-plus">Plus</span></h2>
@@ -424,7 +440,7 @@
                     <ol class="steps-list">
                         <li>Open the email thread in Gmail and view the contact in the sidebar</li>
                         <li>Find the record you want to track (opportunity, task, ticket, or contact)</li>
-                        <li>Click the sync icon next to the record. The icon turns green when active and a confirmation toast appears</li>
+                        <li>For an opportunity, task or ticket, open the row's ⋮ menu and choose Activate auto-log. For the contact itself, use the auto-log button on the contact card. A confirmation toast appears and a green icon stays in the row while auto-log is active</li>
                         <li>From now on, every new email in this thread is logged automatically into the chatter of that record</li>
                     </ol>
                     <div class="info-box warning">

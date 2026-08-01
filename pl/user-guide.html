@@ -228,6 +228,7 @@
                         <li><a href="#features"><span class="material-symbols-outlined">star</span> <span>Przegląd funkcji</span></a></li>
                         <li><a href="#subscription"><span class="material-symbols-outlined">credit_card</span> <span>Subskrypcja</span></a></li>
                         <li><a href="#email-logging"><span class="material-symbols-outlined">mail</span> <span>Logowanie e-maili</span></a></li>
+                        <li><a href="#record-menu"><span class="material-symbols-outlined">more_vert</span> <span>Akcje na rekordzie</span></a></li>
                         <li><a href="#autolog"><span class="material-symbols-outlined">sync</span> <span>Auto-logging</span></a></li>
                         <li><a href="#related-contacts"><span class="material-symbols-outlined">groups</span> <span>Powiązane kontakty</span></a></li>
                         <li><a href="#recent-activities"><span class="material-symbols-outlined">history</span> <span>Ostatnie aktywności</span></a></li>
@@ -404,6 +405,21 @@
                     </div>
                 </section>
 
+                <!-- Record Actions Menu Section -->
+                <section id="record-menu" class="guide-section">
+                    <h2><span class="material-symbols-outlined">more_vert</span> <span>Akcje na rekordzie</span></h2>
+                    <p>Każdy wiersz szansy sprzedaży, zadania, zgłoszenia i oferty ma własne menu akcji. Najedź wskaźnikiem na wiersz i kliknij przycisk ⋮, który pojawi się przy jego prawej krawędzi.</p>
+
+                    <h3>Kopiowanie linku do rekordu</h3>
+                    <p>Kopiuje bezpośredni link do tego rekordu w Odoo, gotowy do wklejenia w odpowiedzi lub na czacie. Prowadzi do tego samego rekordu, który otwiera kliknięcie wiersza.</p>
+
+                    <h3><span>Włączanie i wyłączanie automatycznego logowania</span> <span class="feature-badge badge-plus">Plus</span></h3>
+                    <p>Łączy bieżący wątek z tym rekordem lub usuwa to powiązanie. Opcja pojawia się tylko wtedy, gdy automatyczne logowanie jest dostępne dla wątku. W trybie pauzy pozostaje widoczna, ale nieaktywna, dzięki czemu odróżnisz wstrzymane powiązanie od takiego, którego nigdy nie utworzono.</p>
+
+                    <h3>Zamykanie menu</h3>
+                    <p>Opcje, które nie dotyczą danego wiersza, są pomijane, a nie wyszarzane — menu pokazuje tylko to, co faktycznie możesz zrobić. Kliknij poza menu lub naciśnij Esc, aby je zamknąć bez uruchamiania żadnej akcji.</p>
+                </section>
+
                 <!-- Auto-logging Section -->
                 <section id="autolog" class="guide-section">
                     <h2><span class="material-symbols-outlined">sync</span> <span>Auto-logging</span> <span class="feature-badge badge-plus">Plus</span></h2>
@@ -424,7 +440,7 @@
                     <ol class="steps-list">
                         <li>Open the email thread in Gmail and view the contact in the sidebar</li>
                         <li>Find the record you want to track (opportunity, task, ticket, or contact)</li>
-                        <li>Click the sync icon next to the record. The icon turns green when active and a confirmation toast appears</li>
+                        <li>For an opportunity, task or ticket, open the row's ⋮ menu and choose Activate auto-log. For the contact itself, use the auto-log button on the contact card. A confirmation toast appears and a green icon stays in the row while auto-log is active</li>
                         <li>From now on, every new email in this thread is logged automatically into the chatter of that record</li>
                     </ol>
                     <div class="info-box warning">

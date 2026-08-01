@@ -228,6 +228,7 @@
                         <li><a href="#features"><span class="material-symbols-outlined">star</span> <span>Aperçu des fonctionnalités</span></a></li>
                         <li><a href="#subscription"><span class="material-symbols-outlined">credit_card</span> <span>Abonnement</span></a></li>
                         <li><a href="#email-logging"><span class="material-symbols-outlined">mail</span> <span>Enregistrement d'emails</span></a></li>
+                        <li><a href="#record-menu"><span class="material-symbols-outlined">more_vert</span> <span>Actions sur un enregistrement</span></a></li>
                         <li><a href="#autolog"><span class="material-symbols-outlined">sync</span> <span>Auto-logging</span></a></li>
                         <li><a href="#related-contacts"><span class="material-symbols-outlined">groups</span> <span>Contacts associés</span></a></li>
                         <li><a href="#recent-activities"><span class="material-symbols-outlined">history</span> <span>Activités récentes</span></a></li>
@@ -404,6 +405,21 @@
                     </div>
                 </section>
 
+                <!-- Record Actions Menu Section -->
+                <section id="record-menu" class="guide-section">
+                    <h2><span class="material-symbols-outlined">more_vert</span> <span>Actions sur un enregistrement</span></h2>
+                    <p>Chaque ligne d'opportunité, de tâche, de ticket et de devis dispose de son propre menu d'actions. Placez le pointeur sur la ligne et cliquez sur le bouton ⋮ qui apparaît sur son bord droit.</p>
+
+                    <h3>Copier un lien vers l'enregistrement</h3>
+                    <p>Copie un lien direct vers cet enregistrement dans Odoo, prêt à être collé dans une réponse ou une conversation. Il pointe vers l'enregistrement que la ligne ouvre lorsque vous cliquez dessus.</p>
+
+                    <h3><span>Activer ou désactiver le journal automatique</span> <span class="feature-badge badge-plus">Plus</span></h3>
+                    <p>Associe le fil de discussion actuel à cet enregistrement, ou le dissocie. L'option n'apparaît que si le journal automatique est disponible pour ce fil. En pause, elle reste visible mais désactivée, afin de distinguer une association en pause d'une association jamais créée.</p>
+
+                    <h3>Fermer le menu</h3>
+                    <p>Les options qui ne s'appliquent pas à une ligne sont omises plutôt que grisées : le menu n'affiche que ce que vous pouvez réellement faire. Cliquez en dehors du menu, ou appuyez sur Échap, pour le fermer sans rien déclencher.</p>
+                </section>
+
                 <!-- Auto-logging Section -->
                 <section id="autolog" class="guide-section">
                     <h2><span class="material-symbols-outlined">sync</span> <span>Auto-logging</span> <span class="feature-badge badge-plus">Plus</span></h2>
@@ -424,7 +440,7 @@
                     <ol class="steps-list">
                         <li>Open the email thread in Gmail and view the contact in the sidebar</li>
                         <li>Find the record you want to track (opportunity, task, ticket, or contact)</li>
-                        <li>Click the sync icon next to the record. The icon turns green when active and a confirmation toast appears</li>
+                        <li>For an opportunity, task or ticket, open the row's ⋮ menu and choose Activate auto-log. For the contact itself, use the auto-log button on the contact card. A confirmation toast appears and a green icon stays in the row while auto-log is active</li>
                         <li>From now on, every new email in this thread is logged automatically into the chatter of that record</li>
                     </ol>
                     <div class="info-box warning">

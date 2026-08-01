@@ -228,6 +228,7 @@
                         <li><a href="#features"><span class="material-symbols-outlined">star</span> <span>Resumen de Funciones</span></a></li>
                         <li><a href="#subscription"><span class="material-symbols-outlined">credit_card</span> <span>Suscripción</span></a></li>
                         <li><a href="#email-logging"><span class="material-symbols-outlined">mail</span> <span>Registro de Emails</span></a></li>
+                        <li><a href="#record-menu"><span class="material-symbols-outlined">more_vert</span> <span>Acciones de registro</span></a></li>
                         <li><a href="#autolog"><span class="material-symbols-outlined">sync</span> <span>Registro Automático</span></a></li>
                         <li><a href="#related-contacts"><span class="material-symbols-outlined">groups</span> <span>Contactos relacionados</span></a></li>
                         <li><a href="#recent-activities"><span class="material-symbols-outlined">history</span> <span>Actividad reciente</span></a></li>
@@ -404,6 +405,21 @@
                     </div>
                 </section>
 
+                <!-- Record Actions Menu Section -->
+                <section id="record-menu" class="guide-section">
+                    <h2><span class="material-symbols-outlined">more_vert</span> <span>Acciones sobre un registro</span></h2>
+                    <p>Cada fila de oportunidad, tarea, ticket y presupuesto tiene su propio menú de acciones. Sitúa el puntero sobre la fila y pulsa el botón ⋮ que aparece en su borde derecho.</p>
+
+                    <h3>Copiar un enlace al registro</h3>
+                    <p>Copia un enlace directo a ese registro en Odoo, listo para pegarlo en una respuesta o en un chat. Apunta al mismo registro que se abre al pulsar la fila.</p>
+
+                    <h3><span>Activar o desactivar el registro automático</span> <span class="feature-badge badge-plus">Plus</span></h3>
+                    <p>Vincula el hilo actual a ese registro, o lo desvincula. La opción solo aparece cuando el registro automático está disponible para el hilo. Si está en pausa, se muestra desactivada, para que distingas un vínculo en pausa de uno que nunca se creó.</p>
+
+                    <h3>Cerrar el menú</h3>
+                    <p>Las opciones que no se aplican a una fila se omiten en lugar de mostrarse en gris, así el menú solo enseña lo que de verdad puedes hacer. Pulsa fuera del menú, o la tecla Escape, para cerrarlo sin activar nada.</p>
+                </section>
+
                 <!-- Auto-logging Section -->
                 <section id="autolog" class="guide-section">
                     <h2><span class="material-symbols-outlined">sync</span> <span>Registro Automático</span> <span class="feature-badge badge-plus">Plus</span></h2>
@@ -424,7 +440,7 @@
                     <ol class="steps-list">
                         <li>Abre el hilo de email en Gmail y consulta el contacto en la barra lateral</li>
                         <li>Localiza el registro que quieres seguir (oportunidad, tarea, ticket o contacto)</li>
-                        <li>Haz clic en el icono de sincronización junto al registro. El icono se vuelve verde al activarse y aparece un toast de confirmación</li>
+                        <li>En una oportunidad, tarea o ticket, abre el menú ⋮ de la fila y elige Activar registro automático. Para el propio contacto, usa el botón de registro automático de la tarjeta. Aparece un aviso de confirmación y un icono verde permanece en la fila mientras el registro automático está activo</li>
                         <li>A partir de ese momento, cada email nuevo del hilo se registra automáticamente en el chatter de ese registro</li>
                     </ol>
                     <div class="info-box warning">

@@ -228,6 +228,7 @@
                         <li><a href="#features"><span class="material-symbols-outlined">star</span> <span>Features Overview</span></a></li>
                         <li><a href="#subscription"><span class="material-symbols-outlined">credit_card</span> <span>Subscription</span></a></li>
                         <li><a href="#email-logging"><span class="material-symbols-outlined">mail</span> <span>Email Logging</span></a></li>
+                        <li><a href="#record-menu"><span class="material-symbols-outlined">more_vert</span> <span>Record actions</span></a></li>
                         <li><a href="#autolog"><span class="material-symbols-outlined">sync</span> <span>Auto-logging</span></a></li>
                         <li><a href="#related-contacts"><span class="material-symbols-outlined">groups</span> <span>Related contacts</span></a></li>
                         <li><a href="#recent-activities"><span class="material-symbols-outlined">history</span> <span>Recent activities</span></a></li>
@@ -404,6 +405,21 @@
                     </div>
                 </section>
 
+                <!-- Record Actions Menu Section -->
+                <section id="record-menu" class="guide-section">
+                    <h2><span class="material-symbols-outlined">more_vert</span> <span>Actions on a record</span></h2>
+                    <p>Every opportunity, task, ticket and quotation row has its own actions menu. Move the pointer over the row and click the ⋮ button that appears on its right edge.</p>
+
+                    <h3>Copy a link to the record</h3>
+                    <p>Copies a direct link to that record in Odoo, ready to paste into a reply or a chat. It points to the same record the row opens when you click it.</p>
+
+                    <h3><span>Turn auto-log on or off</span> <span class="feature-badge badge-plus">Plus</span></h3>
+                    <p>Links the current thread to that record, or unlinks it. The option only appears when auto-logging is available for the thread. While auto-logging is paused it is shown but disabled, so you can tell a paused mapping from one that was never set up.</p>
+
+                    <h3>Closing the menu</h3>
+                    <p>Options that don't apply to a row are left out rather than greyed out, so the menu only ever shows what you can actually do. Click anywhere outside it, or press Escape, to close it without triggering anything.</p>
+                </section>
+
                 <!-- Auto-logging Section -->
                 <section id="autolog" class="guide-section">
                     <h2><span class="material-symbols-outlined">sync</span> <span>Auto-logging</span> <span class="feature-badge badge-plus">Plus</span></h2>
@@ -424,7 +440,7 @@
                     <ol class="steps-list">
                         <li>Open the email thread in Gmail and view the contact in the sidebar</li>
                         <li>Find the record you want to track (opportunity, task, ticket, or contact)</li>
-                        <li>Click the sync icon next to the record. The icon turns green when active and a confirmation toast appears</li>
+                        <li>For an opportunity, task or ticket, open the row's ⋮ menu and choose Activate auto-log. For the contact itself, use the auto-log button on the contact card. A confirmation toast appears and a green icon stays in the row while auto-log is active</li>
                         <li>From now on, every new email in this thread is logged automatically into the chatter of that record</li>
                     </ol>
                     <div class="info-box warning">

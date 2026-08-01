@@ -329,6 +329,7 @@
       "configuration": "Configuración",
       "features": "Resumen de Funciones",
       "emailLogging": "Registro de Emails",
+      "recordMenu": "Acciones de registro",
       "autolog": "Registro Automático",
       "relatedContacts": "Contactos relacionados",
       "recentActivities": "Actividad reciente",
@@ -464,6 +465,16 @@
       "importantTitle": "Importante:",
       "importantDesc": "Incluso sin el indicador visual, no puedes crear duplicados accidentalmente. El servidor de Odoo valida cada solicitud de registro y rechaza duplicados."
     },
+    "recordMenu": {
+      "title": "Acciones sobre un registro",
+      "intro": "Cada fila de oportunidad, tarea, ticket y presupuesto tiene su propio menú de acciones. Sitúa el puntero sobre la fila y pulsa el botón ⋮ que aparece en su borde derecho.",
+      "copyLinkTitle": "Copiar un enlace al registro",
+      "copyLinkDesc": "Copia un enlace directo a ese registro en Odoo, listo para pegarlo en una respuesta o en un chat. Apunta al mismo registro que se abre al pulsar la fila.",
+      "autoLogTitle": "Activar o desactivar el registro automático",
+      "autoLogDesc": "Vincula el hilo actual a ese registro, o lo desvincula. La opción solo aparece cuando el registro automático está disponible para el hilo. Si está en pausa, se muestra desactivada, para que distingas un vínculo en pausa de uno que nunca se creó.",
+      "closingTitle": "Cerrar el menú",
+      "closingDesc": "Las opciones que no se aplican a una fila se omiten en lugar de mostrarse en gris, así el menú solo enseña lo que de verdad puedes hacer. Pulsa fuera del menú, o la tecla Escape, para cerrarlo sin activar nada."
+    },
     "autolog": {
       "title": "Registro Automático",
       "intro": "El registro automático vincula un hilo de Gmail con uno o más registros de Odoo para que cada email nuevo del hilo se registre automáticamente en el chatter del registro, sin tener que pulsar el icono del sobre en cada respuesta.",
@@ -476,7 +487,7 @@
       "activateTitle": "Cómo Activar el Registro Automático en un Hilo",
       "activateStep1": "Abre el hilo de email en Gmail y consulta el contacto en la barra lateral",
       "activateStep2": "Localiza el registro que quieres seguir (oportunidad, tarea, ticket o contacto)",
-      "activateStep3": "Haz clic en el icono de sincronización junto al registro. El icono se vuelve verde al activarse y aparece un toast de confirmación",
+      "activateStep3": "En una oportunidad, tarea o ticket, abre el menú ⋮ de la fila y elige Activar registro automático. Para el propio contacto, usa el botón de registro automático de la tarjeta. Aparece un aviso de confirmación y un icono verde permanece en la fila mientras el registro automático está activo",
       "activateStep4": "A partir de ese momento, cada email nuevo del hilo se registra automáticamente en el chatter de ese registro",
       "forwardOnlyTitle": "Solo emails futuros:",
       "forwardOnlyDesc": "El registro automático funciona únicamente hacia adelante. Los emails que ya existían en el hilo antes de la activación NO se registran de forma retroactiva. Para registrar emails anteriores, usa el botón del sobre como siempre.",

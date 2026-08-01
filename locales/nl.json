@@ -112,6 +112,7 @@
       "configuration": "Configuratie",
       "features": "Functieoverzicht",
       "emailLogging": "E-mail Loggen",
+      "recordMenu": "Recordacties",
       "autolog": "Auto-logging",
       "relatedContacts": "Gerelateerde contacten",
       "recentActivities": "Recente activiteiten",
@@ -247,6 +248,16 @@
       "importantTitle": "Belangrijk:",
       "importantDesc": "Zelfs zonder de visuele indicator kunt u niet per ongeluk duplicaten maken. De server van Odoo valideert elk logverzoek en weigert duplicaten."
     },
+    "recordMenu": {
+      "title": "Acties op een record",
+      "intro": "Elke rij van een verkoopkans, taak, ticket of prijsopgave heeft een eigen actiemenu. Beweeg de muis over de rij en klik op de knop ⋮ die aan de rechterkant verschijnt.",
+      "copyLinkTitle": "Een link naar het record kopiëren",
+      "copyLinkDesc": "Kopieert een directe link naar dat record in Odoo, klaar om in een antwoord of chat te plakken. De link wijst naar hetzelfde record dat de rij opent wanneer u erop klikt.",
+      "autoLogTitle": "Automatisch loggen in- of uitschakelen",
+      "autoLogDesc": "Koppelt het huidige gesprek aan dat record, of ontkoppelt het. De optie verschijnt alleen wanneer automatisch loggen beschikbaar is voor het gesprek. Tijdens een pauze blijft ze zichtbaar maar uitgeschakeld, zodat u een gepauzeerde koppeling kunt onderscheiden van een koppeling die nooit is gemaakt.",
+      "closingTitle": "Het menu sluiten",
+      "closingDesc": "Opties die niet op een rij van toepassing zijn, worden weggelaten in plaats van grijs weergegeven — het menu toont dus alleen wat u echt kunt doen. Klik buiten het menu of druk op Esc om het te sluiten zonder iets te activeren."
+    },
     "autolog": {
       "title": "Auto-logging",
       "intro": "Auto-logging links a Gmail thread to one or more Odoo records so that every new email in that thread is logged into the record's chatter automatically — no need to click the envelope icon for each reply.",
@@ -259,7 +270,7 @@
       "activateTitle": "How to Activate Auto-logging on a Thread",
       "activateStep1": "Open the email thread in Gmail and view the contact in the sidebar",
       "activateStep2": "Find the record you want to track (opportunity, task, ticket, or contact)",
-      "activateStep3": "Click the sync icon next to the record. The icon turns green when active and a confirmation toast appears",
+      "activateStep3": "For an opportunity, task or ticket, open the row's ⋮ menu and choose Activate auto-log. For the contact itself, use the auto-log button on the contact card. A confirmation toast appears and a green icon stays in the row while auto-log is active",
       "activateStep4": "From now on, every new email in this thread is logged automatically into the chatter of that record",
       "forwardOnlyTitle": "Only future emails:",
       "forwardOnlyDesc": "Auto-logging is purely forward-looking. Emails that already existed in the thread before activation are NOT logged retroactively. To log older emails, use the manual envelope button as usual.",
