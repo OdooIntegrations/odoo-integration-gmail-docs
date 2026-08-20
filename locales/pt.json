@@ -1479,6 +1479,8 @@
   "testimonials": {
     "title": "O que dizem os utilizadores",
     "subtitle": "Opiniões reais de equipas que usam o Odoo Integration for Gmail todos os dias.",
+    "readMore": "Ler mais",
+    "readLess": "Ler menos",
     "items": {
       "perryCaplan": {
         "quote": "Resolve imenso no nosso fluxo de trabalho cheio de e-mails.",
@@ -1493,7 +1495,7 @@
         "date": "30 jun 2026"
       },
       "yolandaJareno": {
-        "quote": "Por enquanto estou a usá-la na versão gratuita e a verdade é que acrescenta valor e não me deu problemas.",
+        "quote": "Decidi atualizar a avaliação porque, embora no início estivesse a usar a versão gratuita — que já acrescentava valor e não dava problemas —, a verdade é que estou encantada com a versão paga. Ajuda muitíssimo a não perder o rasto de muitas mensagens que era difícil colocar no lugar certo no Odoo sem perder o fio. É infinitamente melhor do que a que o próprio Odoo desenvolveu. Além disso, qualquer dúvida que surgiu foi resolvida quase de imediato e as minhas sugestões foram tidas em conta e vão sendo incluídas em cada atualização. Recomendo a 100%",
         "author": "Yolanda Jareño",
         "source": "Avaliação na Chrome Web Store",
         "date": "13 jul 2026"

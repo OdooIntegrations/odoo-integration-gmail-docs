@@ -1301,6 +1301,8 @@
   "testimonials": {
     "title": "Das sagen unsere Nutzer",
     "subtitle": "Echtes Feedback von Teams, die Odoo Integration for Gmail täglich einsetzen.",
+    "readMore": "Mehr lesen",
+    "readLess": "Weniger lesen",
     "items": {
       "perryCaplan": {
         "quote": "Löst so vieles in unserem E-Mail-intensiven Arbeitsablauf.",
@@ -1315,7 +1317,7 @@
         "date": "30. Juni 2026"
       },
       "yolandaJareno": {
-        "quote": "Bisher nutze ich die kostenlose Version, und sie bringt wirklich einen Mehrwert – Probleme hatte ich keine.",
+        "quote": "Ich habe beschlossen, meine Bewertung zu aktualisieren: Auch wenn ich zunächst die kostenlose Version genutzt habe, die bereits einen Mehrwert brachte und problemlos lief, bin ich von der Bezahlversion wirklich begeistert. Sie hilft enorm dabei, die Nachverfolgbarkeit vieler Nachrichten nicht zu verlieren, die sich nur schwer an der richtigen Stelle in Odoo ablegen ließen, ohne den Faden zu verlieren. Sie ist unendlich viel besser als die von Odoo selbst entwickelte. Außerdem wurde jede Frage, die ich hatte, fast sofort beantwortet, und meine Vorschläge wurden berücksichtigt und werden mit jedem Update eingebaut. Ich empfehle sie 100%",
         "author": "Yolanda Jareño",
         "source": "Bewertung im Chrome Web Store",
         "date": "13. Juli 2026"

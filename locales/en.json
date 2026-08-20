@@ -1479,6 +1479,8 @@
   "testimonials": {
     "title": "What users are saying",
     "subtitle": "Real feedback from teams using Odoo Integration for Gmail every day.",
+    "readMore": "Read more",
+    "readLess": "Read less",
     "items": {
       "perryCaplan": {
         "quote": "Solves so much in our email-heavy workflow.",
@@ -1493,7 +1495,7 @@
         "date": "Jun 30, 2026"
       },
       "yolandaJareno": {
-        "quote": "So far I'm using the free version and the truth is that it adds value and hasn't given me any problems.",
+        "quote": "I decided to update my review because, although at first I was using the free version — which already added value and gave me no trouble — the truth is that I'm delighted with the paid version. It helps enormously not to lose track of the many messages that were hard to file in the right place in Odoo without losing the thread. It's infinitely better than the one Odoo itself has developed. On top of that, every question I've had has been answered almost immediately, and my suggestions have been taken into account and get included in each update. I recommend it 100%",
         "author": "Yolanda Jareño",
         "source": "Chrome Web Store review",
         "date": "Jul 13, 2026"

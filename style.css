@@ -689,6 +689,9 @@ a:hover {
     display: grid;
     grid-auto-flow: column;
     grid-auto-columns: minmax(240px, 1fr);
+    /* Each card keeps its natural height: expanding a long quote must not
+       stretch its neighbours and leave them full of empty space. */
+    align-items: start;
     gap: var(--spacing-sm);
     margin-top: var(--spacing-md);
     overflow-x: auto;
@@ -753,6 +756,48 @@ a:hover {
     line-height: 1.55;
     color: var(--color-text);
     margin: 0;
+}
+
+/* Long reviews are clamped and expanded on demand (see testimonials-clamp.js).
+   The clamp class is added by JS, so with JS disabled the full quote shows. */
+.testimonial-quote p.is-clamped {
+    display: -webkit-box;
+    -webkit-line-clamp: 8;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.testimonial-readmore {
+    align-self: flex-start;
+    margin: -0.25rem 0 0;
+    padding: 0;
+    border: none;
+    background: none;
+    font: inherit;
+    font-size: 0.9375rem;
+    font-weight: 600;
+    color: var(--color-primary);
+    cursor: pointer;
+}
+
+.testimonial-readmore:hover {
+    text-decoration: underline;
+}
+
+.testimonial-readmore:focus-visible {
+    outline: 2px solid var(--color-primary);
+    outline-offset: 2px;
+    border-radius: var(--radius-sm, 4px);
+}
+
+/* One label per state, swapped by CSS so both stay translatable via data-t */
+.testimonial-readmore .readmore-less,
+.testimonial-readmore[aria-expanded="true"] .readmore-more {
+    display: none;
+}
+
+.testimonial-readmore[aria-expanded="true"] .readmore-less {
+    display: inline;
 }
 
 .testimonial-quote p {
