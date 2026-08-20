@@ -680,6 +680,9 @@
     }
   },
   "pricing": {
+    "savePercent": "{pct}% sparen",
+    "previousPrice": "Vorheriger Preis",
+    "taxNote": "Zzgl. Steuern",
     "title": "Wählen Sie Ihren Plan",
     "subtitle": "Starten Sie kostenlos, upgraden Sie, wenn Sie erweiterte Funktionen benötigen",
     "perMonth": "/Monat",
@@ -717,6 +720,9 @@
     "contactUs": "kontaktieren Sie uns"
   },
   "pricingPage": {
+    "savePercent": "{pct}% sparen",
+    "previousPrice": "Vorheriger Preis",
+    "taxNote": "Zzgl. Steuern",
     "hero": {
       "title": "Einfache, transparente Preise",
       "subtitle": "Starten Sie kostenlos, upgraden Sie für leistungsstarke Funktionen. Keine Kreditkarte erforderlich."

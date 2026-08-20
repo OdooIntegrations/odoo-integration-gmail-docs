@@ -680,6 +680,9 @@
     }
   },
   "pricing": {
+    "savePercent": "Économisez {pct}%",
+    "previousPrice": "Prix précédent",
+    "taxNote": "Hors taxes",
     "title": "Choisissez votre plan",
     "subtitle": "Commencez gratuitement, passez à la version supérieure quand vous avez besoin de fonctionnalités avancées",
     "perMonth": "/mois",
@@ -717,6 +720,9 @@
     "contactUs": "contactez-nous"
   },
   "pricingPage": {
+    "savePercent": "Économisez {pct}%",
+    "previousPrice": "Prix précédent",
+    "taxNote": "Hors taxes",
     "hero": {
       "title": "Tarification simple et transparente",
       "subtitle": "Commencez gratuitement, passez à la version supérieure pour des fonctionnalités puissantes. Pas de carte bancaire requise."

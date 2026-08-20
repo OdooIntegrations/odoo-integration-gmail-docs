@@ -193,6 +193,9 @@
     }
   },
   "pricing": {
+    "savePercent": "Ahorra {pct}%",
+    "previousPrice": "Precio anterior",
+    "taxNote": "Impuestos no incluidos",
     "title": "Elige tu Plan",
     "subtitle": "Empieza gratis, actualiza cuando necesites funciones avanzadas",
     "perMonth": "/mes",
@@ -230,6 +233,9 @@
     "contactUs": "contáctanos"
   },
   "pricingPage": {
+    "savePercent": "Ahorra {pct}%",
+    "previousPrice": "Precio anterior",
+    "taxNote": "Impuestos no incluidos",
     "hero": {
       "title": "Precios Simples y Transparentes",
       "subtitle": "Empieza gratis, actualiza cuando necesites funciones avanzadas. Sin tarjeta de crédito."

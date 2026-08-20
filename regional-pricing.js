@@ -100,6 +100,46 @@
         };
     }
 
+    /**
+     * List prices — what the visitor would pay with no discount at all.
+     *
+     * The annual anchor is 12 months at the monthly list price, NOT the annual
+     * price: that one already has the 20% annual discount baked in, so using it
+     * would make the annual plan look like it discounts less than the monthly one.
+     *
+     * @returns {Object} Anchor prices keyed by data-anchor attribute values
+     */
+    function calculateListPrices() {
+        return {
+            plus: {
+                monthly: splitPrice(PLANS.plus.monthlyPrice),
+                annualList: splitPrice(PLANS.plus.monthlyPrice * 12)
+            },
+            team: {
+                perUser: splitPrice(PLANS.team.pricePerUser)
+            }
+        };
+    }
+
+    /**
+     * Savings percentages for the badges.
+     *
+     * Monthly is the regional discount as-is. Annual compounds it with the annual
+     * discount, measured against 12 months at the list price:
+     *   1 - (1 - regional) * annualDiscount
+     * With no regional discount that is the plain 20%; with 40% regional it is 52%.
+     *
+     * @param {number} discountPercent - Regional discount percentage
+     * @returns {{ monthly: number, annual: number }} Rounded percentages
+     */
+    function calculateSavings(discountPercent) {
+        const regional = discountPercent / 100;
+        return {
+            monthly: Math.round(discountPercent),
+            annual: Math.round((1 - (1 - regional) * PLANS.plus.annualDiscount) * 100)
+        };
+    }
+
     // ===========================================
     // PRICE FORMATTING
     // ===========================================
@@ -162,6 +202,57 @@
     }
 
     // ===========================================
+    // PRICE ANCHORS & SAVE BADGES
+    // ===========================================
+
+    /**
+     * Reveal the struck-through list price next to each effective price.
+     *
+     * Elements must have data-plan + data-anchor, and start out `hidden`.
+     * The monthly / per-user anchor only makes sense when there is a regional
+     * discount; the annual one always does (there is always the annual discount).
+     *
+     * @param {string} planId - Plan identifier matching data-plan attribute
+     * @param {Object} anchors - Object keyed by data-anchor values, each { integer, cents }
+     * @param {boolean} showRegional - Whether a regional discount applies
+     */
+    function updateAnchors(planId, anchors, showRegional) {
+        document.querySelectorAll('[data-plan="' + planId + '"][data-anchor]').forEach(function(el) {
+            var key = el.getAttribute('data-anchor');
+            var priceData = anchors[key];
+            if (!priceData) return;
+            if (key !== 'annualList' && !showRegional) return;
+
+            el.textContent = formatPriceText(priceData.integer, priceData.cents);
+            el.removeAttribute('hidden');
+        });
+    }
+
+    /**
+     * Fill in the `{pct}` placeholder left by static-i18n and reveal the badge.
+     *
+     * Each dynamic badge replaces a static one (`[data-save-fallback]`) that says
+     * "Save 20%", so the card still reads correctly if this script never runs.
+     *
+     * @param {{ monthly: number, annual: number }} savings - Percentages to display
+     * @param {boolean} showRegional - Whether a regional discount applies
+     */
+    function updateSaveBadges(savings, showRegional) {
+        document.querySelectorAll('[data-save]').forEach(function(el) {
+            var key = el.getAttribute('data-save');
+            var pct = key === 'annual' ? savings.annual : savings.monthly;
+            if (key !== 'annual' && !showRegional) return;
+            if (typeof pct !== 'number' || isNaN(pct)) return;
+
+            el.textContent = el.textContent.replace('{pct}', pct);
+            el.removeAttribute('hidden');
+
+            var fallback = el.parentNode && el.parentNode.querySelector('[data-save-fallback]');
+            if (fallback) fallback.setAttribute('hidden', '');
+        });
+    }
+
+    // ===========================================
     // SCHEMA.ORG UPDATE
     // ===========================================
 
@@ -197,17 +288,17 @@
                     // Match PLUS offers
                     if (allPrices.plus) {
                         if (offer.name === 'PLUS Monthly') {
-                            offer.price = allPrices.plus.monthly.integer.toString();
+                            offer.price = formatPriceText(allPrices.plus.monthly.integer, allPrices.plus.monthly.cents);
                             modified = true;
                         } else if (offer.name === 'PLUS Yearly') {
-                            offer.price = allPrices.plus.annual.integer.toString();
+                            offer.price = formatPriceText(allPrices.plus.annual.integer, allPrices.plus.annual.cents);
                             modified = true;
                         }
                     }
 
                     // Match Team offers
                     if (allPrices.team && offer.name === 'Team Monthly') {
-                        offer.price = allPrices.team.perUser.integer.toString();
+                        offer.price = formatPriceText(allPrices.team.perUser.integer, allPrices.team.perUser.cents);
                         modified = true;
                     }
                 });
@@ -218,6 +309,32 @@
             } catch (e) {
                 // Ignore JSON parse errors
             }
+        });
+    }
+
+    // ===========================================
+    // ANALYTICS
+    // ===========================================
+
+    /**
+     * Report the resolved pricing context to GA4.
+     *
+     * The anchor only shows up where there is a regional discount, so without the
+     * country breakdown there is no way to tell whether it moves the needle.
+     * Fired on every path, including when ParityDeals could not be reached.
+     *
+     * @param {Object|null} data - ParityDeals response, or null if unavailable
+     * @param {number} discountPercent - Discount actually applied
+     */
+    function trackPricingView(data, discountPercent) {
+        if (typeof gtag !== 'function') return;
+
+        gtag('event', 'pricing_viewed', {
+            country: (data && data.country) || 'unknown',
+            country_code: (data && data.countryCode) || 'unknown',
+            discount_percentage: discountPercent,
+            is_vpn: !!(data && (data.isVpn || data.isProxy || data.isTor)),
+            pd_resolved: !!data
         });
     }
 
@@ -263,7 +380,7 @@
     // PRICE VISIBILITY CONTROL
     // ===========================================
 
-    const PRICE_SELECTORS = '[data-plan][data-price]';
+    const PRICE_SELECTORS = '[data-plan][data-price], [data-plan][data-anchor]';
 
     /**
      * Hide price elements initially to prevent flash
@@ -313,6 +430,7 @@
 
         if (!data) {
             console.log('[RegionalPricing] No discount data available, using default prices');
+            trackPricingView(null, 0);
             showPrices();
             return;
         }
@@ -335,6 +453,14 @@
             console.log('[RegionalPricing] VPN/Proxy detected, using default prices');
         } else {
             discountPercent = parseFloat(data.discountPercentage || 0);
+
+            // A non-numeric or out-of-range value would propagate NaN all the way
+            // into the card ($NaNNaN/month), so fall back to list prices instead.
+            if (!isFinite(discountPercent) || discountPercent < 0 || discountPercent >= 100) {
+                console.warn('[RegionalPricing] Invalid discount, using default prices:', data.discountPercentage);
+                discountPercent = 0;
+            }
+
             if (discountPercent === 0) {
                 console.log('[RegionalPricing] No discount for', data.country || 'this region');
             } else {
@@ -342,21 +468,36 @@
             }
         }
 
-        // Calculate and update all plan prices
-        var allPrices = {};
+        trackPricingView(data, discountPercent);
 
-        var plusPrices = calculatePlusPrices(discountPercent);
-        allPrices.plus = plusPrices;
-        updatePlanPrices('plus', plusPrices);
+        // Prices start at opacity 0 and only showPrices() reveals them, so any
+        // failure below must not leave the card blank — hence the finally.
+        try {
+            // Calculate and update all plan prices
+            var allPrices = {};
 
-        var teamPrices = calculateTeamPrices(discountPercent);
-        allPrices.team = teamPrices;
-        updatePlanPrices('team', teamPrices);
+            var plusPrices = calculatePlusPrices(discountPercent);
+            allPrices.plus = plusPrices;
+            updatePlanPrices('plus', plusPrices);
 
-        // Update Schema.org structured data
-        updateSchemaOrg(allPrices);
+            var teamPrices = calculateTeamPrices(discountPercent);
+            allPrices.team = teamPrices;
+            updatePlanPrices('team', teamPrices);
 
-        showPrices();
+            // Reveal the list price alongside it, and the matching save badges
+            var listPrices = calculateListPrices();
+            var savings = calculateSavings(discountPercent);
+            var showRegional = discountPercent > 0;
+
+            updateAnchors('plus', listPrices.plus, showRegional);
+            updateAnchors('team', listPrices.team, showRegional);
+            updateSaveBadges(savings, showRegional);
+
+            // Update Schema.org structured data
+            updateSchemaOrg(allPrices);
+        } finally {
+            showPrices();
+        }
     }
 
     // Run when DOM is ready

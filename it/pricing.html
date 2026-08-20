@@ -51,7 +51,7 @@
     <link rel="stylesheet" href="../fonts/outlined.css">
     <link rel="stylesheet" href="../style.css">
     <!-- Hide prices until regional pricing JS processes them -->
-    <style id="regional-pricing-hide">[data-plan][data-price] { opacity: 0; }</style>
+    <style id="regional-pricing-hide">[data-plan][data-price], [data-plan][data-anchor] { opacity: 0; }</style>
 
     <!-- Schema.org JSON-LD -->
     <script type="application/ld+json">
@@ -91,7 +91,7 @@
                     {
                         "@type": "Offer",
                         "name": "PLUS Yearly",
-                        "price": "182",
+                        "price": "182.40",
                         "priceCurrency": "USD",
                         "availability": "https://schema.org/InStock",
                         "priceValidUntil": "2026-12-31",
@@ -255,12 +255,15 @@
                     <div class="plan-header">
                         <h3>PLUS</h3>
                         <div class="price-large">
+                            <s class="price-anchor" data-plan="plus" data-anchor="monthly" hidden aria-label="Prezzo precedente">19</s>
                             <span class="currency">$</span>
                             <span class="amount" data-plan="plus" data-price="monthly" data-price-format="large">19</span>
                             <span class="period">/mese</span>
                         </div>
+                        <span class="save-badge regional-badge" data-plan="plus" data-save="monthly" hidden>Risparmia {pct}%</span>
+                        <p class="tax-note">Tasse escluse</p>
                         <div class="price-annual-option">
-                            <span>o</span> <strong>$<span data-plan="plus" data-price="annual" data-price-format="text">182</span><span>/anno</span></strong> <span class="save-badge-small">Risparmia 20%</span>
+                            <span>o</span> <strong>$<s class="price-anchor" data-plan="plus" data-anchor="annualList" hidden aria-label="Prezzo precedente">228</s><span data-plan="plus" data-price="annual" data-price-format="text">182.40</span><span>/anno</span></strong> <span class="save-badge-small" data-save-fallback>Risparmia 20%</span> <span class="save-badge-small" data-plan="plus" data-save="annual" hidden>Risparmia {pct}%</span>
                         </div>
                         <p class="plan-description">Per utenti esperti che necessitano di ricerca e funzionalità avanzate</p>
                     </div>
@@ -287,10 +290,13 @@
                     <div class="plan-header">
                         <h3>Team</h3>
                         <div class="price-large">
+                            <s class="price-anchor" data-plan="team" data-anchor="perUser" hidden aria-label="Prezzo precedente">19</s>
                             <span class="currency">$</span>
                             <span class="amount" data-plan="team" data-price="perUser" data-price-format="large">19</span>
                             <span class="period">/utente/mese</span>
                         </div>
+                        <span class="save-badge regional-badge" data-plan="team" data-save="monthly" hidden>Risparmia {pct}%</span>
+                        <p class="tax-note">Tasse escluse</p>
                         <div class="price-annual-option">
                             <span>Fatturazione annuale disponibile</span> <span class="save-badge-small">Risparmia 20%</span>
                         </div>

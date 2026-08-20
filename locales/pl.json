@@ -680,6 +680,9 @@
     }
   },
   "pricing": {
+    "savePercent": "Oszczędź {pct}%",
+    "previousPrice": "Poprzednia cena",
+    "taxNote": "Bez podatku",
     "title": "Wybierz swój plan",
     "subtitle": "Zacznij za darmo, ulepsz gdy potrzebujesz zaawansowanych funkcji",
     "perMonth": "/miesiąc",
@@ -717,6 +720,9 @@
     "contactUs": "skontaktuj się z nami"
   },
   "pricingPage": {
+    "savePercent": "Oszczędź {pct}%",
+    "previousPrice": "Poprzednia cena",
+    "taxNote": "Bez podatku",
     "hero": {
       "title": "Prosty, przejrzysty cennik",
       "subtitle": "Zacznij za darmo, ulepsz gdy potrzebujesz potężnych funkcji. Karta kredytowa nie jest wymagana."

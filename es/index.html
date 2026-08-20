@@ -56,7 +56,7 @@
     <link rel="stylesheet" href="../fonts/outlined.css">
     <link rel="stylesheet" href="../style.css">
     <!-- Hide prices until regional pricing JS processes them -->
-    <style id="regional-pricing-hide">[data-plan][data-price] { opacity: 0; }</style>
+    <style id="regional-pricing-hide">[data-plan][data-price], [data-plan][data-anchor] { opacity: 0; }</style>
 
     <!-- Schema.org JSON-LD -->
     <script type="application/ld+json">
@@ -727,8 +727,10 @@
                 <div class="pricing-card featured">
                     <div class="badge">Más Popular</div>
                     <h3>PLUS</h3>
-                    <div class="price">$<span class="amount" data-plan="plus" data-price="monthly" data-price-format="large">19</span><span>/mes</span></div>
-                    <div class="price-annual"><span>o</span> $<span data-plan="plus" data-price="annual" data-price-format="text">182</span><span>/año</span> <span class="save-badge">Ahorra 20%</span></div>
+                    <div class="price"><s class="price-anchor" data-plan="plus" data-anchor="monthly" hidden aria-label="Precio anterior">19</s>$<span class="amount" data-plan="plus" data-price="monthly" data-price-format="large">19</span><span>/mes</span></div>
+                    <span class="save-badge regional-badge" data-plan="plus" data-save="monthly" hidden>Ahorra {pct}%</span>
+                    <p class="tax-note">Impuestos no incluidos</p>
+                    <div class="price-annual"><span>o</span> $<s class="price-anchor" data-plan="plus" data-anchor="annualList" hidden aria-label="Precio anterior">228</s><span data-plan="plus" data-price="annual" data-price-format="text">182.40</span><span>/año</span> <span class="save-badge" data-save-fallback>Ahorra 20%</span> <span class="save-badge" data-plan="plus" data-save="annual" hidden>Ahorra {pct}%</span></div>
                     <ul class="features-list">
                         <li>Todo lo del plan Gratis</li>
                         <li>Búsqueda en tiempo real en oportunidades, tareas y tickets</li>

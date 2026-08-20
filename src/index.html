@@ -56,7 +56,7 @@
     <link rel="stylesheet" href="fonts/outlined.css">
     <link rel="stylesheet" href="style.css">
     <!-- Hide prices until regional pricing JS processes them -->
-    <style id="regional-pricing-hide">[data-plan][data-price] { opacity: 0; }</style>
+    <style id="regional-pricing-hide">[data-plan][data-price], [data-plan][data-anchor] { opacity: 0; }</style>
 
     <!-- Schema.org JSON-LD -->
     <script type="application/ld+json">
@@ -769,8 +769,10 @@
                 <div class="pricing-card featured">
                     <div class="badge" data-t="pricing.plus.badge"></div>
                     <h3 data-t="pricing.plus.name"></h3>
-                    <div class="price">$<span class="amount" data-plan="plus" data-price="monthly" data-price-format="large">19</span><span data-t="pricing.perMonth"></span></div>
-                    <div class="price-annual"><span data-t="pricing.plus.or"></span> $<span data-plan="plus" data-price="annual" data-price-format="text">182</span><span data-t="pricing.plus.perYear"></span> <span class="save-badge" data-t="pricing.plus.save"></span></div>
+                    <div class="price"><s class="price-anchor" data-plan="plus" data-anchor="monthly" data-attr-t="aria-label" aria-label-t="pricing.previousPrice" hidden>19</s>$<span class="amount" data-plan="plus" data-price="monthly" data-price-format="large">19</span><span data-t="pricing.perMonth"></span></div>
+                    <span class="save-badge regional-badge" data-plan="plus" data-save="monthly" data-t="pricing.savePercent" hidden></span>
+                    <p class="tax-note" data-t="pricing.taxNote"></p>
+                    <div class="price-annual"><span data-t="pricing.plus.or"></span> $<s class="price-anchor" data-plan="plus" data-anchor="annualList" data-attr-t="aria-label" aria-label-t="pricing.previousPrice" hidden>228</s><span data-plan="plus" data-price="annual" data-price-format="text">182.40</span><span data-t="pricing.plus.perYear"></span> <span class="save-badge" data-save-fallback data-t="pricing.plus.save"></span> <span class="save-badge" data-plan="plus" data-save="annual" data-t="pricing.savePercent" hidden></span></div>
                     <ul class="features-list">
                         <li data-t="pricing.plus.feature1"></li>
                         <li data-t="pricing.plus.feature2"></li>

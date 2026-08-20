@@ -680,6 +680,9 @@
     }
   },
   "pricing": {
+    "savePercent": "Bespaar {pct}%",
+    "previousPrice": "Vorige prijs",
+    "taxNote": "Excl. belasting",
     "title": "Kies Uw Abonnement",
     "subtitle": "Begin gratis, upgrade wanneer u geavanceerde functies nodig heeft",
     "perMonth": "/maand",
@@ -717,6 +720,9 @@
     "contactUs": "neem contact op"
   },
   "pricingPage": {
+    "savePercent": "Bespaar {pct}%",
+    "previousPrice": "Vorige prijs",
+    "taxNote": "Excl. belasting",
     "hero": {
       "title": "Eenvoudige, Transparante Prijzen",
       "subtitle": "Begin gratis, upgrade wanneer u krachtige functies nodig heeft. Geen creditcard vereist."

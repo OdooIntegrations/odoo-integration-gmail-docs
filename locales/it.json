@@ -680,6 +680,9 @@
     }
   },
   "pricing": {
+    "savePercent": "Risparmia {pct}%",
+    "previousPrice": "Prezzo precedente",
+    "taxNote": "Tasse escluse",
     "title": "Scegli il Tuo Piano",
     "subtitle": "Inizia gratis, aggiorna quando hai bisogno di funzionalità avanzate",
     "perMonth": "/mese",
@@ -717,6 +720,9 @@
     "contactUs": "contattaci"
   },
   "pricingPage": {
+    "savePercent": "Risparmia {pct}%",
+    "previousPrice": "Prezzo precedente",
+    "taxNote": "Tasse escluse",
     "hero": {
       "title": "Prezzi Semplici e Trasparenti",
       "subtitle": "Inizia gratis, aggiorna quando hai bisogno di funzionalità potenti. Nessuna carta di credito richiesta."

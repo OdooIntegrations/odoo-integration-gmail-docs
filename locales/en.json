@@ -680,6 +680,9 @@
     }
   },
   "pricing": {
+    "savePercent": "Save {pct}%",
+    "previousPrice": "Previous price",
+    "taxNote": "Taxes not included",
     "title": "Choose Your Plan",
     "subtitle": "Start free, upgrade when you need advanced features",
     "perMonth": "/month",
@@ -717,6 +720,9 @@
     "contactUs": "contact us"
   },
   "pricingPage": {
+    "savePercent": "Save {pct}%",
+    "previousPrice": "Previous price",
+    "taxNote": "Taxes not included",
     "hero": {
       "title": "Simple, Transparent Pricing",
       "subtitle": "Start free, upgrade when you need powerful features. No credit card required."

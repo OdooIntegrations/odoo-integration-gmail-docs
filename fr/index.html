@@ -56,7 +56,7 @@
     <link rel="stylesheet" href="../fonts/outlined.css">
     <link rel="stylesheet" href="../style.css">
     <!-- Hide prices until regional pricing JS processes them -->
-    <style id="regional-pricing-hide">[data-plan][data-price] { opacity: 0; }</style>
+    <style id="regional-pricing-hide">[data-plan][data-price], [data-plan][data-anchor] { opacity: 0; }</style>
 
     <!-- Schema.org JSON-LD -->
     <script type="application/ld+json">
@@ -733,8 +733,10 @@
                 <div class="pricing-card featured">
                     <div class="badge">Le plus populaire</div>
                     <h3>PLUS</h3>
-                    <div class="price">$<span class="amount" data-plan="plus" data-price="monthly" data-price-format="large">19</span><span>/mois</span></div>
-                    <div class="price-annual"><span>ou</span> $<span data-plan="plus" data-price="annual" data-price-format="text">182</span><span>/an</span> <span class="save-badge">Économisez 20%</span></div>
+                    <div class="price"><s class="price-anchor" data-plan="plus" data-anchor="monthly" hidden aria-label="Prix précédent">19</s>$<span class="amount" data-plan="plus" data-price="monthly" data-price-format="large">19</span><span>/mois</span></div>
+                    <span class="save-badge regional-badge" data-plan="plus" data-save="monthly" hidden>Économisez {pct}%</span>
+                    <p class="tax-note">Hors taxes</p>
+                    <div class="price-annual"><span>ou</span> $<s class="price-anchor" data-plan="plus" data-anchor="annualList" hidden aria-label="Prix précédent">228</s><span data-plan="plus" data-price="annual" data-price-format="text">182.40</span><span>/an</span> <span class="save-badge" data-save-fallback>Économisez 20%</span> <span class="save-badge" data-plan="plus" data-save="annual" hidden>Économisez {pct}%</span></div>
                     <ul class="features-list">
                         <li>Tout le plan Gratuit</li>
                         <li>Recherche en temps réel dans les opportunités, tâches et tickets</li>

@@ -1148,6 +1148,64 @@ a:hover {
     text-transform: uppercase;
 }
 
+/* Price anchor (list price struck through) + regional save badge */
+
+/* .save-badge* declara display:inline-block y vence a la regla [hidden] del user-agent,
+   asi que el atributo por si solo no oculta los badges. Especificidad 0,2,0 -> gana sin
+   !important y sin depender del orden de la cascada. */
+.save-badge[hidden],
+.save-badge-small[hidden] {
+    display: none;
+}
+
+.price-anchor {
+    text-decoration: line-through;
+    color: var(--color-text-light);
+    font-size: 0.5em;
+    font-weight: 600;
+    margin-right: 0.25rem;
+}
+
+/* .price-large no declara font-size (los 4rem viven en .amount), asi que un em
+   heredado del contenedor dejaria el ancla en 0.5rem: parece un subindice del $ */
+.price-large .price-anchor {
+    font-size: 2rem;
+    margin-right: 0.5rem;
+}
+
+/* En la home el $ mide 3rem (vive en .price), asi que el ancla necesita un
+   tamano parecido para no leerse como un subindice del simbolo de moneda */
+.price .price-anchor {
+    font-size: 0.65em;
+    margin-right: 0.4rem;
+}
+
+/* El ancla del precio grande lleva su propio $ para no compartir el del precio
+   efectivo (se leia como "$19" subindice). Va en ::before porque el JS escribe
+   el importe con textContent y borraria un simbolo puesto en el HTML.
+   La linea anual no lo necesita: alli el $ del HTML ya precede al ancla. */
+.price .price-anchor::before,
+.price-large .price-anchor::before {
+    content: "$";
+}
+
+/* La linea anual ya usa un tamano pequeno: el ancla no debe reducirse mas */
+.price-annual-option .price-anchor,
+.price-annual .price-anchor {
+    font-size: 1em;
+}
+
+.regional-badge {
+    display: inline-block;
+    margin-top: 0.375rem;
+}
+
+.tax-note {
+    font-size: 0.75rem;
+    color: var(--color-text-light);
+    margin-top: 0.25rem;
+}
+
 .pricing-footer {
     text-align: center;
     margin-top: var(--spacing-lg);
