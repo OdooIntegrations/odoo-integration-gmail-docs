@@ -1154,16 +1154,39 @@ a:hover {
    asi que el atributo por si solo no oculta los badges. Especificidad 0,2,0 -> gana sin
    !important y sin depender del orden de la cascada. */
 .save-badge[hidden],
-.save-badge-small[hidden] {
+.save-badge-small[hidden],
+.price-anchor[hidden] {
     display: none;
 }
 
 .price-anchor {
-    text-decoration: line-through;
+    /* Tachado en diagonal ascendente (esquina inferior izquierda -> superior
+       derecha), que line-through no sabe dibujar. Un gradiente de esquina a
+       esquina queda demasiado tendido en una caja ancha y baja, asi que la
+       raya es un pseudo-elemento rotado: mismo angulo y grosor a cualquier
+       tamano. Ojo: al declarar display hay que restaurar el efecto de [hidden]. */
+    text-decoration: none;
+    position: relative;
+    display: inline-block;
+    line-height: 1;
     color: var(--color-text-light);
     font-size: 0.5em;
     font-weight: 600;
     margin-right: 0.25rem;
+}
+
+.price-anchor::after {
+    content: "";
+    position: absolute;
+    left: -0.08em;
+    right: -0.08em;
+    top: 50%;
+    height: 0.08em;
+    min-height: 1.5px;
+    border-radius: 1px;
+    background-color: var(--color-danger);
+    /* negativo = antihorario: sube hacia la derecha */
+    transform: translateY(-50%) rotate(-12deg);
 }
 
 /* .price-large no declara font-size (los 4rem viven en .amount), asi que un em
