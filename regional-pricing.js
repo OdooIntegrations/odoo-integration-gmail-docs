@@ -224,7 +224,9 @@
             if (key !== 'annualList' && !showRegional) return;
 
             el.textContent = formatPriceText(priceData.integer, priceData.cents);
-            el.removeAttribute('hidden');
+            // el importe vive en un hijo del <s>, que es quien lleva el hidden
+            // (el <s> tambien contiene la etiqueta para lectores de pantalla)
+            (el.closest('.price-anchor') || el).removeAttribute('hidden');
         });
     }
 

@@ -1203,13 +1203,47 @@ a:hover {
     margin-right: 0.4rem;
 }
 
-/* El ancla del precio grande lleva su propio $ para no compartir el del precio
-   efectivo (se leia como "$19" subindice). Va en ::before porque el JS escribe
-   el importe con textContent y borraria un simbolo puesto en el HTML.
-   La linea anual no lo necesita: alli el $ del HTML ya precede al ancla. */
-.price .price-anchor::before,
-.price-large .price-anchor::before {
-    content: "$";
+/* Cada precio lleva su propio simbolo (el tachado y el vigente son dos precios,
+   no un rango con un $ compartido). El del ancla es un span aparte para poder
+   dimensionarlo: el JS escribe el importe en un hijo, no en el <s>. */
+/* `.price span` (L911) fija 1.125rem/peso 400 para el sufijo "/month", y captura
+   tambien los span que van dentro del ancla. Deben heredar del <s>, no del
+   contenedor del precio. Va despues de esa regla para ganar el empate 0,1,1. */
+.price-anchor span {
+    font-size: inherit;
+    font-weight: inherit;
+    color: inherit;
+}
+
+/* Mismo tratamiento del simbolo en las dos paginas: pequeno junto al numero
+   grande, el patron de pricing.html (1.5rem sobre 4rem = 0,375). En la home el
+   numero mide 3rem, asi que su $ va a 1.125rem para conservar la proporcion. */
+.price .currency {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: var(--color-text);
+}
+
+/* El $ del ancla usa esa misma proporcion sobre el importe tachado, en ambas
+   paginas. La linea anual queda fuera: alli todo va al mismo tamano. */
+.price-large .anchor-currency,
+.price .price-anchor .anchor-currency {
+    font-size: 0.375em;
+    margin-right: 0.1em;
+}
+
+/* Texto solo para lectores de pantalla: el tachado de <s> no se anuncia, asi que
+   sin esto se oyen los dos importes sin saber cual se paga. */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
 }
 
 /* La linea anual ya usa un tamano pequeno: el ancla no debe reducirse mas */
