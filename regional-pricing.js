@@ -129,14 +129,24 @@
      *   1 - (1 - regional) * annualDiscount
      * With no regional discount that is the plain 20%; with 40% regional it is 52%.
      *
+     * The annual figure is per plan: both plans discount 20% today, but reading it
+     * from each plan keeps the badge honest if that ever stops being true.
+     *
      * @param {number} discountPercent - Regional discount percentage
-     * @returns {{ monthly: number, annual: number }} Rounded percentages
+     * @returns {{ monthly: number, annual: Object }} Rounded percentages
      */
     function calculateSavings(discountPercent) {
         const regional = discountPercent / 100;
+        const compound = function(annualDiscount) {
+            return Math.round((1 - (1 - regional) * annualDiscount) * 100);
+        };
+
         return {
             monthly: Math.round(discountPercent),
-            annual: Math.round((1 - (1 - regional) * PLANS.plus.annualDiscount) * 100)
+            annual: {
+                plus: compound(PLANS.plus.annualDiscount),
+                team: compound(PLANS.team.annualDiscount)
+            }
         };
     }
 
@@ -242,7 +252,9 @@
     function updateSaveBadges(savings, showRegional) {
         document.querySelectorAll('[data-save]').forEach(function(el) {
             var key = el.getAttribute('data-save');
-            var pct = key === 'annual' ? savings.annual : savings.monthly;
+            var pct = key === 'annual'
+                ? savings.annual[el.getAttribute('data-plan')]
+                : savings.monthly;
             if (key !== 'annual' && !showRegional) return;
             if (typeof pct !== 'number' || isNaN(pct)) return;
 
