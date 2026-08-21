@@ -1186,6 +1186,20 @@
       "install": "Extensie Installeren",
       "viewPricing": "Prijzen Bekijken"
     },
+    "v0810": {
+      "financial": "Financieel gedeelte in Odoo 19",
+      "financialDesc": "Het laadt weer wanneer je verbinding maakt met een API-sleutel. Verbindingen via sessie waren niet getroffen.",
+      "overdue": "Vervallen bedrag",
+      "overdueDesc": "Wordt weer berekend in de online revisies van Odoo 19 (saas-19.1 en later). Odoo 19.0 was niet getroffen.",
+      "attachments": "Bijlagen",
+      "attachmentsDesc": "Ze worden weer met hun inhoud geüpload in de online revisies saas-19.3 en later. Eerdere revisies waren niet getroffen.",
+      "errors": "Foutmeldingen van Odoo",
+      "errorsDesc": "Ze verschijnen vertaald, en een geweigerde inloggegeven wordt automatisch opnieuw geprobeerd.",
+      "closedTasks": "Afgesloten taken",
+      "closedTasksDesc": "Ze verschijnen niet meer in de takenlijst in Odoo 14-16.",
+      "debtAmounts": "Openstaande bedragen in Odoo 14",
+      "debtAmountsDesc": "Openstaande en vervallen bedragen verschijnen nu in Odoo 14 Enterprise."
+    },
     "v0800": {
       "recordMenu": "Actiemenu bij elk record",
       "recordMenuDesc": "Beweeg over een verkoopkans, taak of ticket om een menu te openen met de beschikbare acties voor dat record: een directe link kopiëren en automatisch loggen aan- of uitzetten, wat voorheen ruimte in de rij innam.",

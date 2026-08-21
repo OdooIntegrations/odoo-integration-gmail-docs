@@ -1186,6 +1186,20 @@
       "install": "Instalar Extensión",
       "viewPricing": "Ver Precios"
     },
+    "v0810": {
+      "financial": "Sección financiera en Odoo 19",
+      "financialDesc": "Vuelve a cargar cuando conectas con clave API. La conexión por sesión no estaba afectada.",
+      "overdue": "Importe vencido",
+      "overdueDesc": "Se vuelve a calcular en las revisiones online de Odoo 19 (saas-19.1 y posteriores). Odoo 19.0 no estaba afectada.",
+      "attachments": "Adjuntos",
+      "attachmentsDesc": "Vuelven a subirse con su contenido en las revisiones online saas-19.3 y posteriores. Las anteriores no estaban afectadas.",
+      "errors": "Mensajes de error de Odoo",
+      "errorsDesc": "Se muestran traducidos, y una credencial rechazada reintenta sola.",
+      "closedTasks": "Tareas cerradas",
+      "closedTasksDesc": "Dejan de aparecer en la lista de tareas en Odoo 14-16.",
+      "debtAmounts": "Importes de deuda en Odoo 14",
+      "debtAmountsDesc": "Los importes de deuda y vencido ya aparecen en Odoo 14 Enterprise."
+    },
     "v0800": {
       "recordMenu": "Menú de acciones en cada registro",
       "recordMenuDesc": "Pasa el ratón sobre una oportunidad, tarea o ticket para abrir un menú con las acciones disponibles para ese registro: copiar un enlace directo y activar o desactivar el auto-registro, que antes ocupaba espacio en la fila.",

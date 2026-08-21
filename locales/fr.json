@@ -1186,6 +1186,20 @@
       "install": "Installer l'extension",
       "viewPricing": "Voir les tarifs"
     },
+    "v0810": {
+      "financial": "Section financière sur Odoo 19",
+      "financialDesc": "Elle se charge à nouveau lorsque vous vous connectez avec une clé API. Les connexions par session n’étaient pas concernées.",
+      "overdue": "Montant échu",
+      "overdueDesc": "De nouveau calculé sur les révisions en ligne d’Odoo 19 (saas-19.1 et ultérieures). Odoo 19.0 n’était pas concernée.",
+      "attachments": "Pièces jointes",
+      "attachmentsDesc": "Elles sont à nouveau envoyées avec leur contenu sur les révisions en ligne saas-19.3 et ultérieures. Les précédentes n’étaient pas concernées.",
+      "errors": "Messages d’erreur d’Odoo",
+      "errorsDesc": "Ils s’affichent traduits, et un identifiant refusé est retenté automatiquement.",
+      "closedTasks": "Tâches clôturées",
+      "closedTasksDesc": "Elles n’apparaissent plus dans la liste des tâches sur Odoo 14-16.",
+      "debtAmounts": "Montants dus sur Odoo 14",
+      "debtAmountsDesc": "Les montants dus et échus s’affichent désormais sur Odoo 14 Enterprise."
+    },
     "v0800": {
       "recordMenu": "Menu d'actions sur chaque enregistrement",
       "recordMenuDesc": "Survolez une opportunité, une tâche ou un ticket pour ouvrir un menu avec les actions disponibles pour cet enregistrement : copier un lien direct et activer ou désactiver l'enregistrement automatique, qui occupait auparavant de la place dans la ligne.",

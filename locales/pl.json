@@ -1186,6 +1186,20 @@
       "install": "Zainstaluj rozszerzenie",
       "viewPricing": "Zobacz cennik"
     },
+    "v0810": {
+      "financial": "Sekcja finansowa w Odoo 19",
+      "financialDesc": "Ponownie się ładuje przy połączeniu kluczem API. Połączenia sesyjne nie były dotknięte.",
+      "overdue": "Kwota przeterminowana",
+      "overdueDesc": "Znów jest obliczana w rewizjach online Odoo 19 (saas-19.1 i nowsze). Odoo 19.0 nie było dotknięte.",
+      "attachments": "Załączniki",
+      "attachmentsDesc": "Znów są wysyłane wraz z treścią w rewizjach online saas-19.3 i nowszych. Wcześniejsze nie były dotknięte.",
+      "errors": "Komunikaty błędów Odoo",
+      "errorsDesc": "Wyświetlają się przetłumaczone, a odrzucone dane logowania są ponawiane automatycznie.",
+      "closedTasks": "Zamknięte zadania",
+      "closedTasksDesc": "Nie pojawiają się już na liście zadań w Odoo 14-16.",
+      "debtAmounts": "Kwoty należności w Odoo 14",
+      "debtAmountsDesc": "Kwoty należne i przeterminowane pojawiają się teraz w Odoo 14 Enterprise."
+    },
     "v0800": {
       "recordMenu": "Menu akcji przy każdym rekordzie",
       "recordMenuDesc": "Najedź na szansę sprzedaży, zadanie lub zgłoszenie, aby otworzyć menu z dostępnymi akcjami dla tego rekordu: skopiowanie bezpośredniego odnośnika oraz włączenie lub wyłączenie automatycznego rejestrowania, które wcześniej zajmowało miejsce w wierszu.",

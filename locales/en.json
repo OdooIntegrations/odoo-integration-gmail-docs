@@ -1186,6 +1186,20 @@
       "install": "Install Extension",
       "viewPricing": "View Pricing"
     },
+    "v0810": {
+      "financial": "Financial section on Odoo 19",
+      "financialDesc": "It loads again when you connect with an API key. Session-based connections were not affected.",
+      "overdue": "Overdue amount",
+      "overdueDesc": "Calculated again on Odoo 19 online revisions (saas-19.1 and later). Odoo 19.0 was not affected.",
+      "attachments": "Attachments",
+      "attachmentsDesc": "They upload with their content again on online revisions saas-19.3 and later. Earlier revisions were not affected.",
+      "errors": "Odoo error messages",
+      "errorsDesc": "They appear translated, and a rejected credential retries on its own.",
+      "closedTasks": "Closed tasks",
+      "closedTasksDesc": "They no longer show up in the task list on Odoo 14–16.",
+      "debtAmounts": "Due amounts on Odoo 14",
+      "debtAmountsDesc": "Due and overdue amounts now appear on Odoo 14 Enterprise."
+    },
     "v0800": {
       "recordMenu": "Actions menu on every record",
       "recordMenuDesc": "Hover an opportunity, task or ticket to open a menu with the actions available for it: copy a direct link to the record, and switch auto-log on or off, which used to take up space in the row.",

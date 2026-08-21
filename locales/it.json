@@ -1186,6 +1186,20 @@
       "install": "Installa Estensione",
       "viewPricing": "Vedi Prezzi"
     },
+    "v0810": {
+      "financial": "Sezione finanziaria su Odoo 19",
+      "financialDesc": "Torna a caricarsi quando ti colleghi con una chiave API. Le connessioni tramite sessione non erano interessate.",
+      "overdue": "Importo scaduto",
+      "overdueDesc": "Viene di nuovo calcolato nelle revisioni online di Odoo 19 (saas-19.1 e successive). Odoo 19.0 non era interessata.",
+      "attachments": "Allegati",
+      "attachmentsDesc": "Vengono di nuovo caricati con il loro contenuto nelle revisioni online saas-19.3 e successive. Le precedenti non erano interessate.",
+      "errors": "Messaggi di errore di Odoo",
+      "errorsDesc": "Appaiono tradotti e una credenziale rifiutata viene ritentata automaticamente.",
+      "closedTasks": "Attività chiuse",
+      "closedTasksDesc": "Non compaiono più nell’elenco delle attività su Odoo 14-16.",
+      "debtAmounts": "Importi dovuti su Odoo 14",
+      "debtAmountsDesc": "Gli importi dovuti e scaduti ora compaiono su Odoo 14 Enterprise."
+    },
     "v0800": {
       "recordMenu": "Menu di azioni su ogni record",
       "recordMenuDesc": "Passa il mouse su un'opportunità, un'attività o un ticket per aprire un menu con le azioni disponibili per quel record: copiare un link diretto e attivare o disattivare la registrazione automatica, che prima occupava spazio nella riga.",

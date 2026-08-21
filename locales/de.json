@@ -1186,6 +1186,20 @@
       "install": "Erweiterung installieren",
       "viewPricing": "Preise anzeigen"
     },
+    "v0810": {
+      "financial": "Finanzbereich in Odoo 19",
+      "financialDesc": "Er lädt wieder, wenn Sie sich mit einem API-Schlüssel verbinden. Sitzungsbasierte Verbindungen waren nicht betroffen.",
+      "overdue": "Überfälliger Betrag",
+      "overdueDesc": "Wird in den Online-Revisionen von Odoo 19 (saas-19.1 und neuer) wieder berechnet. Odoo 19.0 war nicht betroffen.",
+      "attachments": "Anhänge",
+      "attachmentsDesc": "Sie werden in den Online-Revisionen saas-19.3 und neuer wieder mit ihrem Inhalt hochgeladen. Frühere Revisionen waren nicht betroffen.",
+      "errors": "Odoo-Fehlermeldungen",
+      "errorsDesc": "Sie erscheinen übersetzt, und abgelehnte Zugangsdaten werden automatisch erneut versucht.",
+      "closedTasks": "Abgeschlossene Aufgaben",
+      "closedTasksDesc": "Sie erscheinen in Odoo 14-16 nicht mehr in der Aufgabenliste.",
+      "debtAmounts": "Fällige Beträge in Odoo 14",
+      "debtAmountsDesc": "Fällige und überfällige Beträge erscheinen jetzt in Odoo 14 Enterprise."
+    },
     "v0800": {
       "recordMenu": "Aktionsmenü bei jedem Datensatz",
       "recordMenuDesc": "Fahren Sie über eine Verkaufschance, Aufgabe oder ein Ticket, um ein Menü mit den verfügbaren Aktionen zu öffnen: einen direkten Link zum Datensatz kopieren und die automatische Protokollierung ein- oder ausschalten, die vorher Platz in der Zeile beanspruchte.",

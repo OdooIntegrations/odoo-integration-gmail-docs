@@ -1186,6 +1186,20 @@
       "install": "Instalar Extensão",
       "viewPricing": "Ver Preços"
     },
+    "v0810": {
+      "financial": "Secção financeira no Odoo 19",
+      "financialDesc": "Volta a carregar quando liga com chave de API. As ligações por sessão não eram afetadas.",
+      "overdue": "Valor vencido",
+      "overdueDesc": "Volta a ser calculado nas revisões online do Odoo 19 (saas-19.1 e posteriores). O Odoo 19.0 não era afetado.",
+      "attachments": "Anexos",
+      "attachmentsDesc": "Voltam a ser enviados com o seu conteúdo nas revisões online saas-19.3 e posteriores. As anteriores não eram afetadas.",
+      "errors": "Mensagens de erro do Odoo",
+      "errorsDesc": "Aparecem traduzidas, e uma credencial recusada é repetida automaticamente.",
+      "closedTasks": "Tarefas fechadas",
+      "closedTasksDesc": "Deixam de aparecer na lista de tarefas no Odoo 14-16.",
+      "debtAmounts": "Valores em dívida no Odoo 14",
+      "debtAmountsDesc": "Os valores a vencer e vencidos já aparecem no Odoo 14 Enterprise."
+    },
     "v0800": {
       "recordMenu": "Menu de ações em cada registo",
       "recordMenuDesc": "Passe o rato sobre uma oportunidade, tarefa ou ticket para abrir um menu com as ações disponíveis para esse registo: copiar um link direto e ativar ou desativar o registo automático, que antes ocupava espaço na linha.",
