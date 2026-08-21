@@ -27,8 +27,12 @@
     };
 
     const CACHE_DURATION_MS = 60 * 60 * 1000; // 1 hour
-    const PD_IDENTIFIER = 'ac2b5915-53b6-4f30-a157-847f446ae825';
-    const PARITY_DEALS_API = 'https://api.paritydeals.com/api/v1/deals/discount/?pd_identifier=' + PD_IDENTIFIER;
+    // Mismo deal que consume la extension (PARITY_DEALS_CONFIG.PRODUCT_ID en
+    // gmail-extension/src/shared/constants/polar-config.ts). Tiene que ser el
+    // mismo: el cupon que la extension manda al checkout de Polar sale de aqui,
+    // asi que un deal distinto anunciaria un precio que no es el que se cobra.
+    const PD_PRODUCT_ID = 'promo_969631955eba49849c1b005f0e4b675f';
+    const PARITY_DEALS_API = 'https://api.paritydeals.com/api/v1/deals/discount/?product_id=' + PD_PRODUCT_ID;
 
     // ===========================================
     // PARITY DEALS API
