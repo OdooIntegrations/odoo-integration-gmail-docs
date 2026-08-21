@@ -50,8 +50,8 @@
                 "ratingValue": "5",
                 "bestRating": "5",
                 "worstRating": "1",
-                "ratingCount": "4",
-                "reviewCount": "4"
+                "ratingCount": "5",
+                "reviewCount": "5"
             },
             "review": [
                 {
@@ -125,6 +125,25 @@
                     },
                     "datePublished": "2026-07-24",
                     "reviewBody": "Jusqu'à présent, ça fonctionne parfaitement. Installée depuis une semaine.",
+                    "publisher": {
+                        "@type": "Organization",
+                        "name": "Chrome Web Store"
+                    }
+                },
+                {
+                    "@type": "Review",
+                    "reviewRating": {
+                        "@type": "Rating",
+                        "ratingValue": "5",
+                        "bestRating": "5",
+                        "worstRating": "1"
+                    },
+                    "author": {
+                        "@type": "Person",
+                        "name": "Bharathi V.M"
+                    },
+                    "datePublished": "2026-08-20",
+                    "reviewBody": "Extension fantastique. Fonctionne à merveille !",
                     "publisher": {
                         "@type": "Organization",
                         "name": "Chrome Web Store"
