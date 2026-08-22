@@ -222,7 +222,9 @@
         "multiCompany": "Multi-Company Support",
         "multiCompanyDesc": "Switch between the companies you have access to in Odoo, with cross-company contact lookup when an email matches a partner that lives in a different company",
         "quotations": "Pending quotations",
-        "quotationsDesc": "See the contact's draft and sent quotations in the sidebar, with the amount and how long each one has been waiting for an answer"
+        "quotationsDesc": "See the contact's draft and sent quotations in the sidebar, with the amount and how long each one has been waiting for an answer",
+        "salesOrders": "Confirmed orders",
+        "salesOrdersDesc": "See the sales orders already confirmed for the contact, with the reference, total and date, and log emails about delivery or invoicing to the right order"
       }
     },
     "emailLogging": {
@@ -1185,6 +1187,10 @@
       "subtitle": "Get started with our Free plan or upgrade to PLUS for advanced features.",
       "install": "Install Extension",
       "viewPricing": "View Pricing"
+    },
+    "v0820": {
+      "salesOrders": "Confirmed orders for the contact",
+      "salesOrdersDesc": "A new section lists the sales orders already confirmed for the contact. Until now an order left the Quotations section the moment it was confirmed and appeared nowhere else, so emails about delivery, invoicing or issues could only be logged against the contact. Every row shows the order reference, its total and when it was placed, and you can log the email to the order."
     },
     "v0810": {
       "financial": "Financial section on Odoo 19",

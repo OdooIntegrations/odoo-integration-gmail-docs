@@ -222,7 +222,9 @@
         "multiCompany": "Multi-Company Support",
         "multiCompanyDesc": "Switch between the companies you have access to in Odoo, with cross-company contact lookup when an email matches a partner that lives in a different company",
         "quotations": "Openstaande offertes",
-        "quotationsDesc": "Bekijk in het paneel de concept- en verzonden offertes van het contact, met het bedrag en hoelang elke offerte al op antwoord wacht"
+        "quotationsDesc": "Bekijk in het paneel de concept- en verzonden offertes van het contact, met het bedrag en hoelang elke offerte al op antwoord wacht",
+        "salesOrders": "Bevestigde orders",
+        "salesOrdersDesc": "Bekijk de al bevestigde verkooporders van het contact, met referentie, bedrag en datum, en log e-mails over levering of facturatie op de juiste order"
       }
     },
     "emailLogging": {
@@ -1185,6 +1187,10 @@
       "subtitle": "Begin met ons Gratis abonnement of upgrade naar PLUS voor geavanceerde functies.",
       "install": "Extensie Installeren",
       "viewPricing": "Prijzen Bekijken"
+    },
+    "v0820": {
+      "salesOrders": "Bevestigde orders van het contact",
+      "salesOrdersDesc": "Een nieuwe sectie toont de al bevestigde verkooporders van het contact. Tot nu toe verdween een order bij de bevestiging uit de sectie Offertes en kwam die nergens anders terug, waardoor e-mails over levering, facturatie of klachten alleen op het contact konden worden gelogd. Elke regel toont de orderreferentie, het totaalbedrag en de datum, en je kunt de e-mail op de order loggen."
     },
     "v0810": {
       "financial": "Financieel gedeelte in Odoo 19",

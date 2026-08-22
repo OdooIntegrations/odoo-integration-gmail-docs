@@ -222,7 +222,9 @@
         "multiCompany": "Multi-Company Support",
         "multiCompanyDesc": "Switch between the companies you have access to in Odoo, with cross-company contact lookup when an email matches a partner that lives in a different company",
         "quotations": "Offene Angebote",
-        "quotationsDesc": "Sehen Sie im Seitenbereich die Angebote des Kontakts im Entwurf und versandt, mit dem Betrag und wie lange jedes schon auf eine Antwort wartet"
+        "quotationsDesc": "Sehen Sie im Seitenbereich die Angebote des Kontakts im Entwurf und versandt, mit dem Betrag und wie lange jedes schon auf eine Antwort wartet",
+        "salesOrders": "Bestätigte Aufträge",
+        "salesOrdersDesc": "Sehen Sie die bereits bestätigten Verkaufsaufträge des Kontakts mit Referenz, Betrag und Datum, und protokollieren Sie E-Mails zu Lieferung oder Rechnung am richtigen Auftrag"
       }
     },
     "emailLogging": {
@@ -1185,6 +1187,10 @@
       "subtitle": "Starten Sie mit unserem kostenlosen Plan oder upgraden Sie auf PLUS für erweiterte Funktionen.",
       "install": "Erweiterung installieren",
       "viewPricing": "Preise anzeigen"
+    },
+    "v0820": {
+      "salesOrders": "Bestätigte Aufträge des Kontakts",
+      "salesOrdersDesc": "Ein neuer Bereich listet die bereits bestätigten Verkaufsaufträge des Kontakts auf. Bisher verschwand ein Auftrag mit der Bestätigung aus dem Bereich Angebote und tauchte nirgends sonst auf, sodass E-Mails zu Lieferung, Rechnung oder Reklamation nur am Kontakt protokolliert werden konnten. Jede Zeile zeigt die Auftragsreferenz, den Gesamtbetrag und das Datum, und Sie können die E-Mail am Auftrag protokollieren."
     },
     "v0810": {
       "financial": "Finanzbereich in Odoo 19",

@@ -222,7 +222,9 @@
         "multiCompany": "Multi-Company Support",
         "multiCompanyDesc": "Switch between the companies you have access to in Odoo, with cross-company contact lookup when an email matches a partner that lives in a different company",
         "quotations": "Oczekujące oferty",
-        "quotationsDesc": "Zobacz w panelu oferty kontaktu w wersji roboczej i wysłane, wraz z kwotą i czasem oczekiwania każdej z nich na odpowiedź"
+        "quotationsDesc": "Zobacz w panelu oferty kontaktu w wersji roboczej i wysłane, wraz z kwotą i czasem oczekiwania każdej z nich na odpowiedź",
+        "salesOrders": "Potwierdzone zamówienia",
+        "salesOrdersDesc": "Przeglądaj zamówienia sprzedaży już potwierdzone dla kontaktu — z numerem, kwotą i datą — i zapisuj wiadomości o dostawie lub fakturowaniu przy właściwym zamówieniu"
       }
     },
     "emailLogging": {
@@ -1185,6 +1187,10 @@
       "subtitle": "Zacznij od planu Free lub ulepsz do PLUS dla zaawansowanych funkcji.",
       "install": "Zainstaluj rozszerzenie",
       "viewPricing": "Zobacz cennik"
+    },
+    "v0820": {
+      "salesOrders": "Potwierdzone zamówienia kontaktu",
+      "salesOrdersDesc": "Nowa sekcja pokazuje zamówienia sprzedaży już potwierdzone dla kontaktu. Do tej pory zamówienie znikało z sekcji Oferty w chwili potwierdzenia i nie pojawiało się w żadnej innej, więc wiadomości o dostawie, fakturowaniu czy problemach można było zapisać tylko przy kontakcie. Każdy wiersz pokazuje numer zamówienia, jego łączną kwotę i datę, a wiadomość można zapisać przy zamówieniu."
     },
     "v0810": {
       "financial": "Sekcja finansowa w Odoo 19",

@@ -445,7 +445,9 @@
         "multiCompany": "Soporte multi-compañía",
         "multiCompanyDesc": "Cambia entre las compañías a las que tienes acceso en Odoo, con búsqueda cross-company de contactos cuando un email coincide con un partner que vive en otra compañía",
         "quotations": "Presupuestos pendientes",
-        "quotationsDesc": "Consulta en el panel los presupuestos del contacto en borrador y enviados, con el importe y cuánto tiempo lleva cada uno esperando respuesta"
+        "quotationsDesc": "Consulta en el panel los presupuestos del contacto en borrador y enviados, con el importe y cuánto tiempo lleva cada uno esperando respuesta",
+        "salesOrders": "Pedidos confirmados",
+        "salesOrdersDesc": "Consulta los pedidos de venta ya confirmados del contacto, con la referencia, el importe y la fecha, y registra en el pedido correcto los correos de entrega o facturación"
       }
     },
     "emailLogging": {
@@ -1185,6 +1187,10 @@
       "subtitle": "Empieza con nuestro plan Gratis o actualiza a PLUS para funciones avanzadas.",
       "install": "Instalar Extensión",
       "viewPricing": "Ver Precios"
+    },
+    "v0820": {
+      "salesOrders": "Pedidos confirmados del contacto",
+      "salesOrdersDesc": "Una sección nueva lista los pedidos de venta ya confirmados del contacto. Hasta ahora un pedido salía de la sección de Presupuestos en el momento de confirmarse y no aparecía en ninguna otra, así que los correos de entrega, facturación o incidencias solo podían registrarse contra el contacto. Cada fila muestra la referencia del pedido, su importe total y cuándo se realizó, y puedes registrar el correo en el pedido."
     },
     "v0810": {
       "financial": "Sección financiera en Odoo 19",

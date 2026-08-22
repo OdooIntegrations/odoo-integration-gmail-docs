@@ -222,7 +222,9 @@
         "multiCompany": "Multi-Company Support",
         "multiCompanyDesc": "Switch between the companies you have access to in Odoo, with cross-company contact lookup when an email matches a partner that lives in a different company",
         "quotations": "Orçamentos pendentes",
-        "quotationsDesc": "Consulte no painel os orçamentos do contacto em rascunho e enviados, com o valor e há quanto tempo cada um espera resposta"
+        "quotationsDesc": "Consulte no painel os orçamentos do contacto em rascunho e enviados, com o valor e há quanto tempo cada um espera resposta",
+        "salesOrders": "Pedidos confirmados",
+        "salesOrdersDesc": "Consulte os pedidos de venda já confirmados do contacto, com a referência, o valor e a data, e registe no pedido certo os e-mails de entrega ou faturação"
       }
     },
     "emailLogging": {
@@ -1185,6 +1187,10 @@
       "subtitle": "Comece com nosso plano Grátis ou atualize para PLUS para recursos avançados.",
       "install": "Instalar Extensão",
       "viewPricing": "Ver Preços"
+    },
+    "v0820": {
+      "salesOrders": "Pedidos confirmados do contacto",
+      "salesOrdersDesc": "Uma nova secção lista os pedidos de venda já confirmados do contacto. Até agora, um pedido saía da secção Orçamentos no momento em que era confirmado e não aparecia em nenhuma outra, pelo que os e-mails de entrega, faturação ou ocorrências só podiam ser registados no contacto. Cada linha mostra a referência do pedido, o valor total e a data, e pode registar o e-mail no pedido."
     },
     "v0810": {
       "financial": "Secção financeira no Odoo 19",

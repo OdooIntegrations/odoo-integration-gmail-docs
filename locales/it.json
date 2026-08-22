@@ -222,7 +222,9 @@
         "multiCompany": "Multi-Company Support",
         "multiCompanyDesc": "Switch between the companies you have access to in Odoo, with cross-company contact lookup when an email matches a partner that lives in a different company",
         "quotations": "Preventivi in attesa",
-        "quotationsDesc": "Consulta nel pannello i preventivi del contatto in bozza e inviati, con l'importo e da quanto tempo ciascuno attende una risposta"
+        "quotationsDesc": "Consulta nel pannello i preventivi del contatto in bozza e inviati, con l'importo e da quanto tempo ciascuno attende una risposta",
+        "salesOrders": "Ordini confermati",
+        "salesOrdersDesc": "Consulta gli ordini di vendita già confermati del contatto, con riferimento, importo e data, e registra sull'ordine giusto le email su consegna o fatturazione"
       }
     },
     "emailLogging": {
@@ -1185,6 +1187,10 @@
       "subtitle": "Inizia con il nostro piano Gratis o passa a PLUS per funzionalità avanzate.",
       "install": "Installa Estensione",
       "viewPricing": "Vedi Prezzi"
+    },
+    "v0820": {
+      "salesOrders": "Gli ordini confermati del contatto",
+      "salesOrdersDesc": "Una nuova sezione elenca gli ordini di vendita già confermati del contatto. Finora un ordine usciva dalla sezione Preventivi nel momento della conferma e non compariva in nessun'altra, così le email su consegna, fatturazione o problemi potevano essere registrate solo sul contatto. Ogni riga mostra il riferimento dell'ordine, l'importo totale e la data, e puoi registrare l'email sull'ordine."
     },
     "v0810": {
       "financial": "Sezione finanziaria su Odoo 19",

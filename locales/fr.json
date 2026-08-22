@@ -222,7 +222,9 @@
         "multiCompany": "Multi-Company Support",
         "multiCompanyDesc": "Switch between the companies you have access to in Odoo, with cross-company contact lookup when an email matches a partner that lives in a different company",
         "quotations": "Devis en attente",
-        "quotationsDesc": "Consultez dans le panneau les devis brouillon et envoyés du contact, avec le montant et depuis combien de temps chacun attend une réponse"
+        "quotationsDesc": "Consultez dans le panneau les devis brouillon et envoyés du contact, avec le montant et depuis combien de temps chacun attend une réponse",
+        "salesOrders": "Commandes confirmées",
+        "salesOrdersDesc": "Consultez les commandes déjà confirmées du contact, avec la référence, le montant et la date, et enregistrez sur la bonne commande les e-mails de livraison ou de facturation"
       }
     },
     "emailLogging": {
@@ -1185,6 +1187,10 @@
       "subtitle": "Commencez avec notre plan Gratuit ou passez à PLUS pour les fonctionnalités avancées.",
       "install": "Installer l'extension",
       "viewPricing": "Voir les tarifs"
+    },
+    "v0820": {
+      "salesOrders": "Les commandes confirmées du contact",
+      "salesOrdersDesc": "Une nouvelle section liste les commandes déjà confirmées du contact. Jusqu'ici, une commande quittait la section des devis dès sa confirmation et n'apparaissait nulle part ailleurs : les e-mails de livraison, de facturation ou d'incident ne pouvaient être enregistrés que sur le contact. Chaque ligne affiche la référence de la commande, son montant total et sa date, et vous pouvez enregistrer l'e-mail sur la commande."
     },
     "v0810": {
       "financial": "Section financière sur Odoo 19",
