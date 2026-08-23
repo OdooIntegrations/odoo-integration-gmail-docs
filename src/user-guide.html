@@ -103,7 +103,7 @@
                 "headline": "Odoo Integration for Gmail - Complete User Guide",
                 "description": "Step-by-step guide to install, configure, and use Odoo Integration for Gmail. Learn about email logging, CRM features, tasks, tickets, and troubleshooting.",
                 "datePublished": "2025-11-22T00:00:00+00:00",
-                "dateModified": "2026-08-01T00:00:00+00:00",
+                "dateModified": "2026-08-23T00:00:00+00:00",
                 "author": { "@id": "https://integrationnode.com/gmail-odoo/#organization" },
                 "publisher": { "@id": "https://integrationnode.com/gmail-odoo/#organization" },
                 "mainEntityOfPage": {
@@ -234,7 +234,9 @@
                         <li><a href="#recent-activities"><span class="material-symbols-outlined">history</span> <span data-t="userGuide.nav.recentActivities"></span></a></li>
                         <li><a href="#opportunities"><span class="material-symbols-outlined">handshake</span> <span data-t="userGuide.nav.opportunities"></span></a></li>
                         <li><a href="#quotations"><span class="material-symbols-outlined">request_quote</span> <span data-t="userGuide.nav.quotations"></span></a></li>
+                        <li><a href="#sales-orders"><span class="material-symbols-outlined">receipt_long</span> <span data-t="userGuide.nav.salesOrders"></span></a></li>
                         <li><a href="#tasks-tickets"><span class="material-symbols-outlined">task</span> <span data-t="userGuide.nav.tasksTickets"></span></a></li>
+                        <li><a href="#financial"><span class="material-symbols-outlined">account_balance</span> <span data-t="userGuide.nav.financial"></span></a></li>
                         <li><a href="#notifications"><span class="material-symbols-outlined">notifications</span> <span data-t="userGuide.nav.notifications"></span></a></li>
                         <li><a href="#multi-company"><span class="material-symbols-outlined">business</span> <span data-t="userGuide.nav.multiCompany"></span></a></li>
                         <li><a href="#troubleshooting"><span class="material-symbols-outlined">help</span> <span data-t="userGuide.nav.troubleshooting"></span></a></li>
@@ -586,8 +588,44 @@
                         <li data-t="userGuide.quotations.action3"></li>
                         <li data-t="userGuide.quotations.action4"></li>
                     </ul>
+                    <p data-t="userGuide.quotations.continuityNote"></p>
+
                     <div class="info-box">
                         <span data-t="userGuide.quotations.hideNote"></span>
+                    </div>
+                </section>
+
+                <!-- Confirmed Sales Orders Section -->
+                <section id="sales-orders" class="guide-section">
+                    <h2><span class="material-symbols-outlined">receipt_long</span> <span data-t="userGuide.salesOrders.title"></span> <span class="feature-badge badge-plus" data-t="userGuide.features.plusBadge"></span></h2>
+                    <p data-t="userGuide.salesOrders.intro"></p>
+                    <p data-t="userGuide.salesOrders.continuity"></p>
+
+                    <h3 data-t="userGuide.salesOrders.requirementsTitle"></h3>
+                    <ul>
+                        <li data-t="userGuide.salesOrders.requirement1"></li>
+                        <li data-t="userGuide.salesOrders.requirement2"></li>
+                    </ul>
+
+                    <h3 data-t="userGuide.salesOrders.listTitle"></h3>
+                    <ul>
+                        <li data-t="userGuide.salesOrders.list1"></li>
+                        <li data-t="userGuide.salesOrders.list2"></li>
+                        <li data-t="userGuide.salesOrders.list3"></li>
+                        <li data-t="userGuide.salesOrders.list4"></li>
+                    </ul>
+
+                    <h3 data-t="userGuide.salesOrders.actionsTitle"></h3>
+                    <ul>
+                        <li data-t="userGuide.salesOrders.action1"></li>
+                        <li data-t="userGuide.salesOrders.action2"></li>
+                        <li data-t="userGuide.salesOrders.action3"></li>
+                        <li data-t="userGuide.salesOrders.action4"></li>
+                    </ul>
+                    <p data-t="userGuide.salesOrders.noCreateNote"></p>
+
+                    <div class="info-box">
+                        <span data-t="userGuide.salesOrders.hideNote"></span>
                     </div>
                 </section>
 
@@ -606,6 +644,35 @@
                     <p><strong data-t="userGuide.tasksTickets.requirementsLabel"></strong> <span data-t="userGuide.tasksTickets.ticketRequirements"></span></p>
                     <h3 data-t="userGuide.tasksTickets.creatingTitle"></h3>
                     <p data-t="userGuide.tasksTickets.creatingDesc"></p>
+                </section>
+
+                <!-- Financial Insights Section -->
+                <section id="financial" class="guide-section">
+                    <h2><span class="material-symbols-outlined">account_balance</span> <span data-t="userGuide.financial.title"></span> <span class="feature-badge badge-plus" data-t="userGuide.features.plusBadge"></span></h2>
+                    <p data-t="userGuide.financial.intro"></p>
+                    <p data-t="userGuide.financial.companyNote"></p>
+
+                    <h3 data-t="userGuide.financial.requirementsTitle"></h3>
+                    <ul>
+                        <li data-t="userGuide.financial.requirement1"></li>
+                        <li data-t="userGuide.financial.requirement2"></li>
+                    </ul>
+
+                    <h3 data-t="userGuide.financial.metricsTitle"></h3>
+                    <ul>
+                        <li><strong data-t="userGuide.financial.overdueLabel"></strong>: <span data-t="userGuide.financial.overdueDesc"></span></li>
+                        <li><strong data-t="userGuide.financial.receivablesLabel"></strong>: <span data-t="userGuide.financial.receivablesDesc"></span></li>
+                        <li><strong data-t="userGuide.financial.payablesLabel"></strong>: <span data-t="userGuide.financial.payablesDesc"></span></li>
+                        <li><strong data-t="userGuide.financial.limitLabel"></strong>: <span data-t="userGuide.financial.limitDesc"></span></li>
+                        <li><strong data-t="userGuide.financial.toInvoiceLabel"></strong>: <span data-t="userGuide.financial.toInvoiceDesc"></span></li>
+                        <li><strong data-t="userGuide.financial.invoicedLabel"></strong>: <span data-t="userGuide.financial.invoicedDesc"></span></li>
+                        <li><strong data-t="userGuide.financial.dsoLabel"></strong>: <span data-t="userGuide.financial.dsoDesc"></span></li>
+                    </ul>
+                    <p data-t="userGuide.financial.emptyNote"></p>
+
+                    <div class="info-box">
+                        <span data-t="userGuide.financial.hideNote"></span>
+                    </div>
                 </section>
 
                 <!-- Notification Organization Section -->
@@ -663,6 +730,11 @@
                     <div class="info-box">
                         <strong data-t="userGuide.notifications.shortcutNoteTitle"></strong> <span data-t="userGuide.notifications.shortcutNoteDesc"></span>
                     </div>
+
+                    <h3 data-t="userGuide.notifications.categoriesTitle"></h3>
+                    <p data-t="userGuide.notifications.categoriesDesc"></p>
+                    <p data-t="userGuide.notifications.categoriesOther"></p>
+                    <p data-t="userGuide.notifications.categoriesNote"></p>
 
                     <h3 data-t="userGuide.notifications.customizationTitle"></h3>
                     <p data-t="userGuide.notifications.customizationDesc"></p>

@@ -103,7 +103,7 @@
                 "headline": "Odoo Integration for Gmail - Complete User Guide",
                 "description": "Step-by-step guide to install, configure, and use Odoo Integration for Gmail. Learn about email logging, CRM features, tasks, tickets, and troubleshooting.",
                 "datePublished": "2025-11-22T00:00:00+00:00",
-                "dateModified": "2026-08-01T00:00:00+00:00",
+                "dateModified": "2026-08-23T00:00:00+00:00",
                 "author": { "@id": "https://integrationnode.com/gmail-odoo/#organization" },
                 "publisher": { "@id": "https://integrationnode.com/gmail-odoo/#organization" },
                 "mainEntityOfPage": {
@@ -234,7 +234,9 @@
                         <li><a href="#recent-activities"><span class="material-symbols-outlined">history</span> <span>Letzte Aktivitäten</span></a></li>
                         <li><a href="#opportunities"><span class="material-symbols-outlined">handshake</span> <span>Chancen</span></a></li>
                         <li><a href="#quotations"><span class="material-symbols-outlined">request_quote</span> <span>Angebote</span></a></li>
+                        <li><a href="#sales-orders"><span class="material-symbols-outlined">receipt_long</span> <span>Verkaufsaufträge</span></a></li>
                         <li><a href="#tasks-tickets"><span class="material-symbols-outlined">task</span> <span>Aufgaben & Tickets</span></a></li>
+                        <li><a href="#financial"><span class="material-symbols-outlined">account_balance</span> <span>Finanzinformationen</span></a></li>
                         <li><a href="#notifications"><span class="material-symbols-outlined">notifications</span> <span>Benachrichtigungen</span></a></li>
                         <li><a href="#multi-company"><span class="material-symbols-outlined">business</span> <span>Mehrere Unternehmen</span></a></li>
                         <li><a href="#troubleshooting"><span class="material-symbols-outlined">help</span> <span>Fehlerbehebung</span></a></li>
@@ -320,7 +322,7 @@
                         <li><strong>Kontakt/Firma-Tabs</strong>: <span>Zwischen Kontakt- und Firmeninformationen wechseln</span></li>
                         <li><strong>Zugehörige Kontakte</strong>: <span>Kollegen aus derselben Firma finden</span></li>
                         <li><strong>Finanzielle Einblicke</strong>: <span>Rechnungsstellung, Forderungen und Verbindlichkeiten anzeigen</span></li>
-                        <li><strong>Einstellungspanel</strong>: <span>Wählen Sie, welche Bereiche in der Seitenleiste erscheinen: Verkaufschancen, Aufgaben, Tickets, Angebote, Unternehmen, Verknüpfte Kontakte, Letzte Aktivitäten und Finanzübersicht</span></li>
+                        <li><strong>Einstellungspanel</strong>: <span>Wählen Sie, welche Bereiche in der Seitenleiste erscheinen: Verkaufschancen, Aufgaben, Tickets, Angebote, Verkaufsaufträge, Unternehmen, Verknüpfte Kontakte, Letzte Aktivitäten und Finanzübersicht</span></li>
                         <li><strong>Zitatebenen</strong>: <span>Steuern Sie den Konversationsverlauf beim Protokollieren</span></li>
                         <li><strong>Datensatz-Gruppierung</strong>: <span>Gruppieren Sie Opportunities, Aufgaben und Tickets nach Phase oder Status</span></li>
                         <li><strong>E-Mail-Teilnehmer</strong>: <span>Odoo-Kontaktinformationen aller E-Mail-Teilnehmer anzeigen</span></li>
@@ -586,8 +588,44 @@
                         <li>Klicken Sie auf Erstellen, um ein neues Angebot für den Kontakt zu beginnen und es in Odoo abzuschließen.</li>
                         <li>Öffnen Sie das ⋮-Menü der Zeile, um einen Link zum Angebot zu kopieren, und nutzen Sie die Suche, wenn die Liste länger wird.</li>
                     </ul>
+                    <p>Wenn Sie ein Angebot bestätigen, verlässt es diese Liste und wechselt zu Bestätigte Verkaufsaufträge, wo Sie den weiteren Schriftwechsel weiter protokollieren können.</p>
+
                     <div class="info-box">
                         <span>Arbeiten Sie nicht mit Angeboten? Blenden Sie den Bereich unter Einstellungen → Personalisierung aus.</span>
+                    </div>
+                </section>
+
+                <!-- Confirmed Sales Orders Section -->
+                <section id="sales-orders" class="guide-section">
+                    <h2><span class="material-symbols-outlined">receipt_long</span> <span>Bestätigte Verkaufsaufträge</span> <span class="feature-badge badge-plus">Plus</span></h2>
+                    <p>Der Bereich Verkaufsaufträge zeigt die bereits bestätigten Aufträge des Kontakts, damit die Kommunikation nach dem Verkauf — Lieferungen, geänderte Mengen, Rechnungen, Störungen — am Auftrag selbst protokolliert wird.</p>
+                    <p>Damit schließt sich eine echte Lücke: Sobald ein Angebot bestätigt wird, verlässt es den Bereich Angebote, und bislang nahm es kein anderer Bereich auf. Ab diesem Punkt ließ sich eine E-Mail nur noch am Kontakt protokollieren — genau dann, wenn der Schriftwechsel am dichtesten ist.</p>
+
+                    <h3>Voraussetzungen</h3>
+                    <ul>
+                        <li>PLUS-Tarif. Im kostenlosen Tarif bleibt der Bereich sichtbar, mit Namen und einem Link zum Upgrade — und er stellt keine Anfrage an Odoo.</li>
+                        <li>Odoo Verkauf installiert und Leseberechtigung für Verkaufsaufträge. Lesezugriff genügt: anders als bei Angeboten erstellt dieser Bereich nie Datensätze, er passt also auch zu Rollen, die Aufträge nur verfolgen, ohne sie zu bearbeiten.</li>
+                    </ul>
+
+                    <h3>Was die Liste zeigt</h3>
+                    <ul>
+                        <li>Nur laufende Aufträge: bestätigt und in Bearbeitung, gesperrte eingeschlossen. Storniert oder noch nicht bestätigt (Angebote) bleibt außen vor.</li>
+                        <li>Jede Zeile zeigt die Auftragsreferenz, den Gesamtbetrag mit Währung und das Auftragsdatum. Die neuesten zuerst.</li>
+                        <li>Es gibt keinen Altersfilter: ein Auftrag zählt, solange er läuft, unabhängig vom Datum. Passen nicht alle in die Liste, nennt die Kopfzeile, wie viele von insgesamt wie vielen angezeigt werden.</li>
+                        <li>In der Unternehmensansicht enthält die Liste zusätzlich die Aufträge der Kontakte, die zu diesem Unternehmen gehören.</li>
+                    </ul>
+
+                    <h3>Was Sie tun können</h3>
+                    <ul>
+                        <li>Klicken Sie eine Zeile an, um den Auftrag in Odoo zu öffnen.</li>
+                        <li>Klicken Sie auf das Briefsymbol, um die geöffnete E-Mail in der Kommunikation dieses Auftrags zu protokollieren. Ein Auftrag, in dem die E-Mail schon steht, ist markiert und nimmt keinen zweiten Eintrag an.</li>
+                        <li>Öffnen Sie das Menü ⋮ der Zeile, um einen Link zum Auftrag zu kopieren oder das automatische Protokollieren zu aktivieren, damit weitere E-Mails des Verlaufs ohne Ihr Zutun am Auftrag landen.</li>
+                        <li>Suchen Sie über das Suchfeld nach der Auftragsreferenz. So erreichen Sie einen älteren Auftrag, der nicht unter den neuesten steht.</li>
+                    </ul>
+                    <p>Der Bereich erstellt keine Aufträge: ein Auftrag entsteht durch das Bestätigen eines Angebots in Odoo, nicht durch das Lesen einer E-Mail.</p>
+
+                    <div class="info-box">
+                        <span>Verfolgen Sie Aufträge nicht aus dem Postfach? Blenden Sie den Bereich unter Einstellungen → Personalisierung aus.</span>
                     </div>
                 </section>
 
@@ -606,6 +644,35 @@
                     <p><strong>Voraussetzungen:</strong> <span>Odoo Helpdesk-Modul (nur Enterprise)</span></p>
                     <h3>Eine Aufgabe oder ein Ticket aus einer E-Mail anlegen</h3>
                     <p>Klicken Sie im Bereich auf Erstellen. Der Datensatz wird mit Betreff und Text der E-Mail angelegt, die Anhänge werden im Hintergrund hochgeladen, und er öffnet sich in Odoo in einem neuen Tab, damit Sie den Rest ergänzen können. Während des Anlegens zeigt die Schaltfläche einen Verarbeitungsstatus; wiederholte Klicks erzeugen keine Duplikate.</p>
+                </section>
+
+                <!-- Financial Insights Section -->
+                <section id="financial" class="guide-section">
+                    <h2><span class="material-symbols-outlined">account_balance</span> <span>Finanzinformationen</span> <span class="feature-badge badge-plus">Plus</span></h2>
+                    <p>Der Finanzbereich fasst zusammen, wie das Konto mit dem Kontakt steht — was er Ihnen schuldet, was Sie ihm schulden, was noch zu fakturieren ist — ohne die Buchhaltung in Odoo zu öffnen.</p>
+                    <p>Die Zahlen gehören dem Unternehmen, nicht der Person: hat der Kontakt in Odoo ein übergeordnetes Unternehmen, zeigt der Bereich die Summen dieses Unternehmens.</p>
+
+                    <h3>Voraussetzungen</h3>
+                    <ul>
+                        <li>PLUS-Tarif. Im kostenlosen Tarif erscheint der Bereich nicht.</li>
+                        <li>Odoo Rechnungsstellung oder Buchhaltung installiert und Leseberechtigung für Rechnungen. Ohne diese Berechtigung bleibt der Bereich verborgen, statt einen Fehler zu zeigen.</li>
+                    </ul>
+
+                    <h3>Was er zeigt</h3>
+                    <ul>
+                        <li><strong>Überfällig</strong>: <span>der überfällige Betrag und aus wie vielen Rechnungen er besteht. Auf Enterprise mit aktivierter Mahnung erscheinen zusätzlich das Datum der nächsten Erinnerung und die Mahnstufe. Der Block informiert: eine Aktion ist nicht daran gebunden.</span></li>
+                        <li><strong>Ausstehende Forderungen</strong>: <span>was der Kontakt Ihnen schuldet.</span></li>
+                        <li><strong>Ausstehende Verbindlichkeiten</strong>: <span>was Sie dem Kontakt schulden.</span></li>
+                        <li><strong>Kreditlimit</strong>: <span>das in Odoo gesetzte Limit, sofern eines existiert.</span></li>
+                        <li><strong>Zu fakturieren</strong>: <span>bereits geliefert, noch nicht fakturiert.</span></li>
+                        <li><strong>Gesamt fakturiert</strong>: <span>die historische Gesamtsumme dieses Unternehmens.</span></li>
+                        <li><strong>DSO (Tage)</strong>: <span>wie viele Tage Rechnungen im Schnitt bis zur Zahlung brauchen.</span></li>
+                    </ul>
+                    <p>Ein Wert von null wird weggelassen statt als Null angezeigt: der Bereich listet nur, was tatsächlich einen Wert hat. Hat nichts einen Wert und ist nichts überfällig, erscheint der Bereich gar nicht — der normale Fall bei einem Kontakt ohne Rechnungshistorie.</p>
+
+                    <div class="info-box">
+                        <span>Brauchen Sie die Zahlen im Postfach nicht? Blenden Sie den Bereich unter Einstellungen → Personalisierung aus.</span>
+                    </div>
                 </section>
 
                 <!-- Notification Organization Section -->
@@ -663,6 +730,11 @@
                     <div class="info-box">
                         <strong>Hinweis:</strong> <span>Die Verknüpfung erscheint erst nach Konfiguration einer Benachrichtigungs-E-Mail in Einstellungen > Benachrichtigungen.</span>
                     </div>
+
+                    <h3>Nach Modul navigieren</h3>
+                    <p>Die Verknüpfung „Odoo-Benachrichtigungen“ klappt in Untereinträge auf — Verkaufschancen, Aufgaben, Tickets, Rechnungen und weitere —, jeder mit eigenem Zähler für Ungelesene, damit Sie direkt zu den Benachrichtigungen eines Moduls springen.</p>
+                    <p>Benachrichtigungen aus Modellen außerhalb dieses Katalogs werden unter einem allgemeinen Eintrag „Odoo“ gebündelt, statt wegzufallen.</p>
+                    <p>Es erscheinen nur die Kategorien der Module, von denen Sie tatsächlich Benachrichtigungen erhalten.</p>
 
                     <h3>Anpassung</h3>
                     <p>Jede Benachrichtigungsfunktion kann unabhängig in Einstellungen > Benachrichtigungen aktiviert/deaktiviert werden:</p>

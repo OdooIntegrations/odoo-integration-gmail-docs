@@ -103,7 +103,7 @@
                 "headline": "Odoo Integration for Gmail - Complete User Guide",
                 "description": "Step-by-step guide to install, configure, and use Odoo Integration for Gmail. Learn about email logging, CRM features, tasks, tickets, and troubleshooting.",
                 "datePublished": "2025-11-22T00:00:00+00:00",
-                "dateModified": "2026-08-01T00:00:00+00:00",
+                "dateModified": "2026-08-23T00:00:00+00:00",
                 "author": { "@id": "https://integrationnode.com/gmail-odoo/#organization" },
                 "publisher": { "@id": "https://integrationnode.com/gmail-odoo/#organization" },
                 "mainEntityOfPage": {
@@ -234,7 +234,9 @@
                         <li><a href="#recent-activities"><span class="material-symbols-outlined">history</span> <span>Actividad reciente</span></a></li>
                         <li><a href="#opportunities"><span class="material-symbols-outlined">handshake</span> <span>Oportunidades</span></a></li>
                         <li><a href="#quotations"><span class="material-symbols-outlined">request_quote</span> <span>Presupuestos</span></a></li>
+                        <li><a href="#sales-orders"><span class="material-symbols-outlined">receipt_long</span> <span>Pedidos de venta</span></a></li>
                         <li><a href="#tasks-tickets"><span class="material-symbols-outlined">task</span> <span>Tareas y Tickets</span></a></li>
+                        <li><a href="#financial"><span class="material-symbols-outlined">account_balance</span> <span>Información financiera</span></a></li>
                         <li><a href="#notifications"><span class="material-symbols-outlined">notifications</span> <span>Notificaciones</span></a></li>
                         <li><a href="#multi-company"><span class="material-symbols-outlined">business</span> <span>Multi-compañía</span></a></li>
                         <li><a href="#troubleshooting"><span class="material-symbols-outlined">help</span> <span>Solución de Problemas</span></a></li>
@@ -320,7 +322,7 @@
                         <li><strong>Pestañas Contacto/Empresa</strong>: <span>Cambia entre información del contacto y la empresa</span></li>
                         <li><strong>Contactos Relacionados</strong>: <span>Encuentra colegas de la misma empresa</span></li>
                         <li><strong>Información Financiera</strong>: <span>Ve facturación, cuentas por cobrar y por pagar</span></li>
-                        <li><strong>Panel de Configuración</strong>: <span>Elige qué secciones aparecen en el panel: Oportunidades, Tareas, Tickets, Presupuestos, Empresa, Contactos relacionados, Actividad reciente e Información financiera</span></li>
+                        <li><strong>Panel de Configuración</strong>: <span>Elige qué secciones aparecen en el panel: Oportunidades, Tareas, Tickets, Presupuestos, Pedidos de venta, Empresa, Contactos relacionados, Actividad reciente e Información financiera</span></li>
                         <li><strong>Niveles de Citas</strong>: <span>Controla cuánto historial incluir al registrar emails</span></li>
                         <li><strong>Agrupación de Registros</strong>: <span>Agrupa oportunidades, tareas y tickets por etapa o estado</span></li>
                         <li><strong>Participantes del Email</strong>: <span>Ver información de contacto en Odoo de todos los participantes del email</span></li>
@@ -586,8 +588,44 @@
                         <li>Pulsa Crear para empezar un presupuesto nuevo para el contacto y terminarlo en Odoo.</li>
                         <li>Abre el menú ⋮ de la fila para copiar un enlace al presupuesto, y usa el buscador cuando la lista se alargue.</li>
                     </ul>
+                    <p>Cuando confirmas un presupuesto, sale de esta lista y pasa a Pedidos de venta confirmados, donde puedes seguir registrando la correspondencia posterior.</p>
+
                     <div class="info-box">
                         <span>¿No trabajas con presupuestos? Oculta la sección desde Ajustes → Personalización.</span>
+                    </div>
+                </section>
+
+                <!-- Confirmed Sales Orders Section -->
+                <section id="sales-orders" class="guide-section">
+                    <h2><span class="material-symbols-outlined">receipt_long</span> <span>Pedidos de venta confirmados</span> <span class="feature-badge badge-plus">Plus</span></h2>
+                    <p>La sección Pedidos de venta muestra los pedidos ya confirmados del contacto, para que la conversación posterior a la venta —entregas, cambios de cantidades, facturación, incidencias— quede registrada en el pedido y no en otro sitio.</p>
+                    <p>Cierra un hueco real: cuando un presupuesto se confirma, deja la sección de Presupuestos y hasta ahora ninguna otra lo recogía. A partir de ese momento el correo solo podía registrarse contra el contacto, justo cuando empieza la fase con más correspondencia.</p>
+
+                    <h3>Requisitos</h3>
+                    <ul>
+                        <li>Plan PLUS. Con el plan gratuito la sección sigue ahí, con su nombre y un enlace para mejorar el plan, y no hace ninguna consulta a Odoo.</li>
+                        <li>Tener Ventas instalado en Odoo y permiso de lectura sobre los pedidos de venta. Basta con solo lectura: a diferencia de Presupuestos, esta sección no crea registros, así que también sirve a los perfiles que hacen seguimiento de pedidos sin editarlos.</li>
+                    </ul>
+
+                    <h3>Qué muestra la lista</h3>
+                    <ul>
+                        <li>Solo pedidos vigentes: confirmados y en curso, incluidos los bloqueados. Quedan fuera los cancelados y los presupuestos que aún no se han confirmado.</li>
+                        <li>Cada fila muestra la referencia del pedido, su importe total con divisa y cuándo se hizo. Los más recientes primero.</li>
+                        <li>No hay filtro de antigüedad: un pedido cuenta mientras esté vigente, sea de cuando sea. Cuando hay más pedidos de los que caben, la cabecera indica cuántos se muestran del total.</li>
+                        <li>En la vista de empresa, la lista incluye además los pedidos de los contactos que pertenecen a esa empresa.</li>
+                    </ul>
+
+                    <h3>Qué puedes hacer</h3>
+                    <ul>
+                        <li>Pulsa una fila para abrir el pedido en Odoo.</li>
+                        <li>Pulsa el icono del sobre para registrar el correo abierto en la conversación de ese pedido. Un pedido donde el correo ya está registrado aparece señalado y no admite registrarlo dos veces.</li>
+                        <li>Abre el menú ⋮ de la fila para copiar un enlace al pedido o para activar el registro automático, de modo que los correos siguientes del hilo queden en el pedido sin que tengas que hacer nada.</li>
+                        <li>Usa el buscador para localizar un pedido por su referencia. Es la vía para alcanzar un pedido antiguo que no esté entre los más recientes.</li>
+                    </ul>
+                    <p>La sección no crea pedidos: un pedido nace de confirmar un presupuesto en Odoo, no de leer un correo.</p>
+
+                    <div class="info-box">
+                        <span>¿No haces seguimiento de pedidos desde el correo? Oculta la sección desde Ajustes → Personalización.</span>
                     </div>
                 </section>
 
@@ -606,6 +644,35 @@
                     <p><strong>Requisitos:</strong> <span>Módulo Helpdesk de Odoo (solo Enterprise)</span></p>
                     <h3>Crear una tarea o un ticket desde un email</h3>
                     <p>Pulsa Crear en la sección. El registro se crea con el asunto y el cuerpo del email, sus adjuntos se suben en segundo plano y se abre en Odoo en una pestaña nueva para que completes el resto. Mientras se crea, el botón muestra un estado de proceso, y pulsarlo varias veces seguidas no crea duplicados.</p>
+                </section>
+
+                <!-- Financial Insights Section -->
+                <section id="financial" class="guide-section">
+                    <h2><span class="material-symbols-outlined">account_balance</span> <span>Información financiera</span> <span class="feature-badge badge-plus">Plus</span></h2>
+                    <p>La sección financiera resume cómo está la cuenta con el contacto —lo que te debe, lo que le debes, lo que queda por facturar— sin abrir la contabilidad en Odoo.</p>
+                    <p>Las cifras son de la empresa, no de la persona: cuando el contacto tiene una empresa madre en Odoo, la sección muestra los totales de esa empresa.</p>
+
+                    <h3>Requisitos</h3>
+                    <ul>
+                        <li>Plan PLUS. Con el plan gratuito la sección no aparece.</li>
+                        <li>Tener Facturación o Contabilidad instalado en Odoo y permiso de lectura sobre las facturas. Sin ese permiso la sección se oculta en lugar de mostrar un error.</li>
+                    </ul>
+
+                    <h3>Qué muestra</h3>
+                    <ul>
+                        <li><strong>Vencido</strong>: <span>el importe vencido y cuántas facturas lo componen. En Enterprise con el seguimiento de pagos activado, muestra además la fecha del próximo recordatorio y el nivel de seguimiento. El bloque informa: no lleva ninguna acción asociada.</span></li>
+                        <li><strong>Pendiente de cobro</strong>: <span>lo que el contacto te debe.</span></li>
+                        <li><strong>Pendiente de pago</strong>: <span>lo que tú le debes al contacto.</span></li>
+                        <li><strong>Límite de crédito</strong>: <span>el límite fijado en Odoo, cuando hay uno.</span></li>
+                        <li><strong>Por facturar</strong>: <span>ya entregado y aún sin facturar.</span></li>
+                        <li><strong>Total facturado</strong>: <span>el total histórico de esa empresa.</span></li>
+                        <li><strong>DSO (días)</strong>: <span>cuántos días tardan de media en pagarse las facturas.</span></li>
+                    </ul>
+                    <p>Una cifra a cero se omite en lugar de mostrarse como cero, así que la sección solo enumera lo que de verdad tiene valor. Cuando nada tiene valor y no hay nada vencido, la sección entera no se pinta en el panel: es el caso normal de un contacto sin histórico de facturación.</p>
+
+                    <div class="info-box">
+                        <span>¿No necesitas las cifras en el correo? Oculta la sección desde Ajustes → Personalización.</span>
+                    </div>
                 </section>
 
                 <!-- Notification Organization Section -->
@@ -663,6 +730,11 @@
                     <div class="info-box">
                         <strong>Nota:</strong> <span>El acceso directo solo aparece después de configurar un email de notificación en Ajustes > Notificaciones.</span>
                     </div>
+
+                    <h3>Navegar por módulo</h3>
+                    <p>El acceso «Notificaciones de Odoo» se despliega en subentradas —Oportunidades, Tareas, Tickets, Facturas y demás—, cada una con su propio contador de no leídas, para ir directo a las notificaciones de un módulo.</p>
+                    <p>Las notificaciones que vienen de modelos fuera de ese catálogo se agrupan en una entrada genérica «Odoo» en lugar de quedarse fuera.</p>
+                    <p>Solo aparecen las categorías de los módulos de los que realmente recibes notificaciones.</p>
 
                     <h3>Personalización</h3>
                     <p>Cada función de notificación se puede activar/desactivar independientemente en Ajustes > Notificaciones:</p>

@@ -103,7 +103,7 @@
                 "headline": "Odoo Integration for Gmail - Complete User Guide",
                 "description": "Step-by-step guide to install, configure, and use Odoo Integration for Gmail. Learn about email logging, CRM features, tasks, tickets, and troubleshooting.",
                 "datePublished": "2025-11-22T00:00:00+00:00",
-                "dateModified": "2026-08-01T00:00:00+00:00",
+                "dateModified": "2026-08-23T00:00:00+00:00",
                 "author": { "@id": "https://integrationnode.com/gmail-odoo/#organization" },
                 "publisher": { "@id": "https://integrationnode.com/gmail-odoo/#organization" },
                 "mainEntityOfPage": {
@@ -234,7 +234,9 @@
                         <li><a href="#recent-activities"><span class="material-symbols-outlined">history</span> <span>Recent activities</span></a></li>
                         <li><a href="#opportunities"><span class="material-symbols-outlined">handshake</span> <span>Opportunities</span></a></li>
                         <li><a href="#quotations"><span class="material-symbols-outlined">request_quote</span> <span>Quotations</span></a></li>
+                        <li><a href="#sales-orders"><span class="material-symbols-outlined">receipt_long</span> <span>Sales orders</span></a></li>
                         <li><a href="#tasks-tickets"><span class="material-symbols-outlined">task</span> <span>Tasks & Tickets</span></a></li>
+                        <li><a href="#financial"><span class="material-symbols-outlined">account_balance</span> <span>Financial insights</span></a></li>
                         <li><a href="#notifications"><span class="material-symbols-outlined">notifications</span> <span>Notifications</span></a></li>
                         <li><a href="#multi-company"><span class="material-symbols-outlined">business</span> <span>Multi-Company</span></a></li>
                         <li><a href="#troubleshooting"><span class="material-symbols-outlined">help</span> <span>Troubleshooting</span></a></li>
@@ -320,7 +322,7 @@
                         <li><strong>Contact/Company Tabs</strong>: <span>Switch between contact and company information</span></li>
                         <li><strong>Related Contacts</strong>: <span>Find colleagues from the same company</span></li>
                         <li><strong>Financial Insights</strong>: <span>View invoicing, receivables, and payables</span></li>
-                        <li><strong>Settings Panel</strong>: <span>Choose which sections appear in the sidebar: Opportunities, Tasks, Tickets, Quotations, Company, Related contacts, Recent activities and Financial Insights</span></li>
+                        <li><strong>Settings Panel</strong>: <span>Choose which sections appear in the sidebar: Opportunities, Tasks, Tickets, Quotations, Sales orders, Company, Related contacts, Recent activities and Financial Insights</span></li>
                         <li><strong>Quote Levels</strong>: <span>Control how much conversation history to include when logging</span></li>
                         <li><strong>Record Grouping</strong>: <span>Group opportunities, tasks, and tickets by stage or status</span></li>
                         <li><strong>Email Participants</strong>: <span>View Odoo contact information for all email participants</span></li>
@@ -586,8 +588,44 @@
                         <li>Click Create to start a new quotation for the contact and finish it in Odoo.</li>
                         <li>Open the row's ⋮ menu to copy a link to the quotation, and use the search box when the list gets long.</li>
                     </ul>
+                    <p>When you confirm a quotation it leaves this list and moves to Confirmed sales orders, where you can keep logging the correspondence that follows.</p>
+
                     <div class="info-box">
                         <span>Don't work with quotations? Hide the section from Settings → Personalization.</span>
+                    </div>
+                </section>
+
+                <!-- Confirmed Sales Orders Section -->
+                <section id="sales-orders" class="guide-section">
+                    <h2><span class="material-symbols-outlined">receipt_long</span> <span>Confirmed sales orders</span> <span class="feature-badge badge-plus">Plus</span></h2>
+                    <p>The Sales Orders section lists the orders already confirmed for the contact, so the conversation that follows a sale — deliveries, changes in quantities, invoicing, issues — can be filed on the order itself.</p>
+                    <p>It closes a real gap: once a quotation is confirmed it leaves the Quotations section, and until now no other section picked it up. From that point on an email could only be logged against the contact, right when correspondence is at its busiest.</p>
+
+                    <h3>Requirements</h3>
+                    <ul>
+                        <li>PLUS plan. On the FREE plan the section is still there, named, with a link to upgrade — and it makes no request to Odoo.</li>
+                        <li>Odoo Sales installed, and permission to read sales orders. Read access is enough: unlike Quotations, this section never creates records, so it also works for the profiles that follow orders without editing them.</li>
+                    </ul>
+
+                    <h3>What the list shows</h3>
+                    <ul>
+                        <li>Live orders only: confirmed and in progress, locked ones included. Cancelled orders, and quotations not yet confirmed, stay out.</li>
+                        <li>Each row shows the order reference, its total with currency, and when it was placed. Most recent first.</li>
+                        <li>There is no age filter — an order counts as long as it is live, whatever its date. When there are more orders than fit, the header says how many are shown out of the total.</li>
+                        <li>On the company view the list also includes the orders of the contacts belonging to that company.</li>
+                    </ul>
+
+                    <h3>What you can do</h3>
+                    <ul>
+                        <li>Click a row to open the order in Odoo.</li>
+                        <li>Click the envelope icon to log the current email into that order's conversation. An order the email is already logged into is marked as such, and can't be logged twice.</li>
+                        <li>Open the row's ⋮ menu to copy a link to the order, or to activate auto-log so later emails in the thread are filed on the order without you doing anything.</li>
+                        <li>Use the search box to find an order by reference. It is the way to reach an older order that isn't among the most recent ones.</li>
+                    </ul>
+                    <p>The section doesn't create orders: an order comes from confirming a quotation in Odoo, not from reading an email.</p>
+
+                    <div class="info-box">
+                        <span>Don't follow up on orders from your inbox? Hide the section from Settings → Personalization.</span>
                     </div>
                 </section>
 
@@ -606,6 +644,35 @@
                     <p><strong>Requirements:</strong> <span>Odoo Helpdesk module (Enterprise only)</span></p>
                     <h3>Creating a Task or a Ticket from an Email</h3>
                     <p>Click Create in the section. The record is created with the email subject and body, its attachments are uploaded in the background, and it opens in Odoo in a new tab so you can fill in the rest. While it's being created the button shows a processing state, and repeated clicks won't create duplicates.</p>
+                </section>
+
+                <!-- Financial Insights Section -->
+                <section id="financial" class="guide-section">
+                    <h2><span class="material-symbols-outlined">account_balance</span> <span>Financial insights</span> <span class="feature-badge badge-plus">Plus</span></h2>
+                    <p>The Financial section sums up where the contact stands with you — what they owe, what you owe them, what is still to be invoiced — without opening Accounting in Odoo.</p>
+                    <p>The figures belong to the company, not to the person: when the contact has a parent company in Odoo, the section shows that company's totals.</p>
+
+                    <h3>Requirements</h3>
+                    <ul>
+                        <li>PLUS plan. On the FREE plan the section doesn't appear at all.</li>
+                        <li>Odoo Invoicing or Accounting installed, and permission to read invoices. Without that permission the section stays hidden instead of showing an error.</li>
+                    </ul>
+
+                    <h3>What it shows</h3>
+                    <ul>
+                        <li><strong>Overdue</strong>: <span>the amount past due and how many invoices make it up. On Enterprise with Account Follow-up enabled, it also shows the next reminder date and the follow-up level. The block is there to inform: no action is attached to it.</span></li>
+                        <li><strong>Outstanding receivables</strong>: <span>what the contact owes you.</span></li>
+                        <li><strong>Outstanding payables</strong>: <span>what you owe the contact.</span></li>
+                        <li><strong>Credit limit</strong>: <span>the limit set in Odoo, when there is one.</span></li>
+                        <li><strong>To invoice</strong>: <span>already delivered, not yet invoiced.</span></li>
+                        <li><strong>Total invoiced</strong>: <span>the historical total for that company.</span></li>
+                        <li><strong>DSO (days)</strong>: <span>how many days invoices take to be paid, on average.</span></li>
+                    </ul>
+                    <p>A figure worth zero is left out instead of being shown as zero, so the section only lists what actually has a value. When nothing has a value and there is nothing overdue, the section stays out of the sidebar altogether — which is the normal case for a contact with no invoicing history.</p>
+
+                    <div class="info-box">
+                        <span>Don't need the numbers in your inbox? Hide the section from Settings → Personalization.</span>
+                    </div>
                 </section>
 
                 <!-- Notification Organization Section -->
@@ -663,6 +730,11 @@
                     <div class="info-box">
                         <strong>Note:</strong> <span>The shortcut only appears after you configure a notification email in Settings > Notifications.</span>
                     </div>
+
+                    <h3>Browse by module</h3>
+                    <p>The "Odoo Notifications" shortcut expands into sub-entries — Opportunities, Tasks, Tickets, Invoices and so on — each with its own unread count, so you can jump straight to the notifications of one module.</p>
+                    <p>Notifications coming from models outside that catalogue are grouped under a generic Odoo entry instead of being left out.</p>
+                    <p>Categories only appear for the modules you actually receive notifications from.</p>
 
                     <h3>Customization</h3>
                     <p>Each notification feature can be toggled independently in Settings > Notifications:</p>

@@ -103,7 +103,7 @@
                 "headline": "Odoo Integration for Gmail - Complete User Guide",
                 "description": "Step-by-step guide to install, configure, and use Odoo Integration for Gmail. Learn about email logging, CRM features, tasks, tickets, and troubleshooting.",
                 "datePublished": "2025-11-22T00:00:00+00:00",
-                "dateModified": "2026-08-01T00:00:00+00:00",
+                "dateModified": "2026-08-23T00:00:00+00:00",
                 "author": { "@id": "https://integrationnode.com/gmail-odoo/#organization" },
                 "publisher": { "@id": "https://integrationnode.com/gmail-odoo/#organization" },
                 "mainEntityOfPage": {
@@ -234,7 +234,9 @@
                         <li><a href="#recent-activities"><span class="material-symbols-outlined">history</span> <span>Recente activiteiten</span></a></li>
                         <li><a href="#opportunities"><span class="material-symbols-outlined">handshake</span> <span>Kansen</span></a></li>
                         <li><a href="#quotations"><span class="material-symbols-outlined">request_quote</span> <span>Prijsopgaven</span></a></li>
+                        <li><a href="#sales-orders"><span class="material-symbols-outlined">receipt_long</span> <span>Verkooporders</span></a></li>
                         <li><a href="#tasks-tickets"><span class="material-symbols-outlined">task</span> <span>Taken & Tickets</span></a></li>
+                        <li><a href="#financial"><span class="material-symbols-outlined">account_balance</span> <span>Financiële inzichten</span></a></li>
                         <li><a href="#notifications"><span class="material-symbols-outlined">notifications</span> <span>Notificaties</span></a></li>
                         <li><a href="#multi-company"><span class="material-symbols-outlined">business</span> <span>Multi-bedrijf</span></a></li>
                         <li><a href="#troubleshooting"><span class="material-symbols-outlined">help</span> <span>Probleemoplossing</span></a></li>
@@ -320,7 +322,7 @@
                         <li><strong>Contact/Bedrijf Tabbladen</strong>: <span>Schakel tussen contact- en bedrijfsinformatie</span></li>
                         <li><strong>Gerelateerde Contacten</strong>: <span>Vind collega's van hetzelfde bedrijf</span></li>
                         <li><strong>Financiële Inzichten</strong>: <span>Bekijk facturatie, vorderingen en schulden</span></li>
-                        <li><strong>Instellingenpaneel</strong>: <span>Kies welke secties in het paneel verschijnen: Verkoopkansen, Taken, Tickets, Prijsopgaven, Bedrijf, Gerelateerde contacten, Recente activiteiten en Financieel inzicht</span></li>
+                        <li><strong>Instellingenpaneel</strong>: <span>Kies welke secties in het paneel verschijnen: Verkoopkansen, Taken, Tickets, Prijsopgaven, Verkooporders, Bedrijf, Gerelateerde contacten, Recente activiteiten en Financieel inzicht</span></li>
                         <li><strong>Citaatniveaus</strong>: <span>Bepaal hoeveel gespreksgeschiedenis wordt opgenomen bij het loggen</span></li>
                         <li><strong>Record Groepering</strong>: <span>Groepeer opportunities, taken en tickets op fase of status</span></li>
                         <li><strong>E-maildeelnemers</strong>: <span>Bekijk Odoo-contactinformatie van alle e-maildeelnemers</span></li>
@@ -586,8 +588,44 @@
                         <li>Klik op Aanmaken om een nieuwe prijsopgave voor het contact te starten en die in Odoo af te ronden.</li>
                         <li>Open het ⋮-menu van de rij om een link naar de prijsopgave te kopiëren, en gebruik het zoekveld als de lijst lang wordt.</li>
                     </ul>
+                    <p>Wanneer u een prijsopgave bevestigt, verlaat die deze lijst en verhuist naar Bevestigde verkooporders, waar u de verdere correspondentie kunt blijven loggen.</p>
+
                     <div class="info-box">
                         <span>Werkt u niet met prijsopgaven? Verberg de sectie via Instellingen → Personalisatie.</span>
+                    </div>
+                </section>
+
+                <!-- Confirmed Sales Orders Section -->
+                <section id="sales-orders" class="guide-section">
+                    <h2><span class="material-symbols-outlined">receipt_long</span> <span>Bevestigde verkooporders</span> <span class="feature-badge badge-plus">Plus</span></h2>
+                    <p>De sectie Verkooporders toont de al bevestigde orders van het contact, zodat het gesprek ná de verkoop — leveringen, gewijzigde aantallen, facturatie, incidenten — op de order zelf wordt vastgelegd.</p>
+                    <p>Dat dicht een echt gat: zodra een prijsopgave wordt bevestigd, verdwijnt die uit de sectie Prijsopgaven, en tot nu ving geen andere sectie hem op. Vanaf dat moment kon een e-mail alleen nog op het contact worden gelogd — precies wanneer de correspondentie het drukst is.</p>
+
+                    <h3>Vereisten</h3>
+                    <ul>
+                        <li>PLUS-plan. In het gratis plan blijft de sectie staan, met naam en een link om te upgraden — en ze doet geen enkele aanvraag aan Odoo.</li>
+                        <li>Odoo Verkoop geïnstalleerd en leesrecht op verkooporders. Alleen-lezen is genoeg: anders dan bij Prijsopgaven maakt deze sectie nooit records aan, dus ze werkt ook voor rollen die orders opvolgen zonder ze te bewerken.</li>
+                    </ul>
+
+                    <h3>Wat de lijst toont</h3>
+                    <ul>
+                        <li>Alleen lopende orders: bevestigd en in behandeling, vergrendelde inbegrepen. Geannuleerde orders en nog niet bevestigde prijsopgaven vallen erbuiten.</li>
+                        <li>Elke regel toont de orderreferentie, het totaalbedrag met valuta en de orderdatum. De meest recente eerst.</li>
+                        <li>Er is geen ouderdomsfilter: een order telt zolang hij loopt, ongeacht de datum. Passen er meer orders dan de lijst toont, dan meldt de kop hoeveel er van het totaal te zien zijn.</li>
+                        <li>In de bedrijfsweergave bevat de lijst ook de orders van de contacten die bij dat bedrijf horen.</li>
+                    </ul>
+
+                    <h3>Wat u kunt doen</h3>
+                    <ul>
+                        <li>Klik op een regel om de order in Odoo te openen.</li>
+                        <li>Klik op het envelopicoon om de geopende e-mail in het gesprek van die order te loggen. Een order waarin de e-mail al staat, is gemarkeerd en laat geen tweede keer loggen toe.</li>
+                        <li>Open het ⋮-menu van de regel om een link naar de order te kopiëren of om automatisch loggen te activeren, zodat latere e-mails in het gesprek zonder uw tussenkomst op de order belanden.</li>
+                        <li>Gebruik het zoekveld om een order op referentie te vinden. Zo bereikt u een oudere order die niet bij de meest recente staat.</li>
+                    </ul>
+                    <p>De sectie maakt geen orders aan: een order ontstaat door een prijsopgave in Odoo te bevestigen, niet door een e-mail te lezen.</p>
+
+                    <div class="info-box">
+                        <span>Volgt u orders niet op vanuit uw mailbox? Verberg de sectie via Instellingen → Personalisatie.</span>
                     </div>
                 </section>
 
@@ -606,6 +644,35 @@
                     <p><strong>Vereisten:</strong> <span>Odoo Helpdesk module (alleen Enterprise)</span></p>
                     <h3>Een taak of ticket vanuit een e-mail aanmaken</h3>
                     <p>Klik op Aanmaken in de sectie. Het record wordt aangemaakt met het onderwerp en de tekst van de e-mail, de bijlagen worden op de achtergrond geüpload, en het opent in Odoo in een nieuw tabblad zodat u de rest kunt invullen. Tijdens het aanmaken toont de knop een verwerkingsstatus, en herhaald klikken maakt geen duplicaten aan.</p>
+                </section>
+
+                <!-- Financial Insights Section -->
+                <section id="financial" class="guide-section">
+                    <h2><span class="material-symbols-outlined">account_balance</span> <span>Financiële inzichten</span> <span class="feature-badge badge-plus">Plus</span></h2>
+                    <p>De financiële sectie vat samen hoe u er met het contact voor staat — wat zij u schuldig zijn, wat u hen schuldig bent, wat er nog te factureren valt — zonder de boekhouding in Odoo te openen.</p>
+                    <p>De bedragen horen bij het bedrijf, niet bij de persoon: heeft het contact in Odoo een moederbedrijf, dan toont de sectie de totalen van dat bedrijf.</p>
+
+                    <h3>Vereisten</h3>
+                    <ul>
+                        <li>PLUS-plan. In het gratis plan verschijnt de sectie niet.</li>
+                        <li>Odoo Facturatie of Boekhouding geïnstalleerd en leesrecht op facturen. Zonder dat recht blijft de sectie verborgen in plaats van een foutmelding te tonen.</li>
+                    </ul>
+
+                    <h3>Wat het toont</h3>
+                    <ul>
+                        <li><strong>Achterstallig</strong>: <span>het achterstallige bedrag en uit hoeveel facturen het bestaat. Op Enterprise met aanmaningen actief verschijnen ook de datum van de volgende herinnering en het aanmaningsniveau. Het blok informeert: er hangt geen actie aan vast.</span></li>
+                        <li><strong>Openstaande vorderingen</strong>: <span>wat het contact u schuldig is.</span></li>
+                        <li><strong>Openstaande schulden</strong>: <span>wat u het contact schuldig bent.</span></li>
+                        <li><strong>Kredietlimiet</strong>: <span>de limiet die in Odoo is ingesteld, als die bestaat.</span></li>
+                        <li><strong>Te factureren</strong>: <span>al geleverd, nog niet gefactureerd.</span></li>
+                        <li><strong>Totaal gefactureerd</strong>: <span>het historische totaal van dat bedrijf.</span></li>
+                        <li><strong>DSO (dagen)</strong>: <span>hoeveel dagen facturen gemiddeld nodig hebben om betaald te worden.</span></li>
+                    </ul>
+                    <p>Een bedrag van nul wordt weggelaten in plaats van als nul getoond: de sectie noemt alleen wat echt een waarde heeft. Heeft niets een waarde en staat er niets open, dan verschijnt de sectie helemaal niet — het normale geval bij een contact zonder factuurhistorie.</p>
+
+                    <div class="info-box">
+                        <span>Hebt u de cijfers niet nodig in uw mailbox? Verberg de sectie via Instellingen → Personalisatie.</span>
+                    </div>
                 </section>
 
                 <!-- Notification Organization Section -->
@@ -663,6 +730,11 @@
                     <div class="info-box">
                         <strong>Opmerking:</strong> <span>De snelkoppeling verschijnt pas na het configureren van een notificatie-e-mail in Instellingen > Notificaties.</span>
                     </div>
+
+                    <h3>Navigeren per module</h3>
+                    <p>De snelkoppeling "Odoo-meldingen" klapt open in subitems — Verkoopkansen, Taken, Tickets, Facturen en meer —, elk met een eigen teller voor ongelezen items, zodat u direct naar de meldingen van één module springt.</p>
+                    <p>Meldingen uit modellen buiten die catalogus worden gebundeld onder een algemeen item "Odoo" in plaats van weg te vallen.</p>
+                    <p>Er verschijnen alleen categorieën van de modules waarvan u daadwerkelijk meldingen ontvangt.</p>
 
                     <h3>Aanpassing</h3>
                     <p>Elke notificatiefunctie kan onafhankelijk worden in-/uitgeschakeld in Instellingen > Notificaties:</p>

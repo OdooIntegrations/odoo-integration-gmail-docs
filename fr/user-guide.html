@@ -103,7 +103,7 @@
                 "headline": "Odoo Integration for Gmail - Complete User Guide",
                 "description": "Step-by-step guide to install, configure, and use Odoo Integration for Gmail. Learn about email logging, CRM features, tasks, tickets, and troubleshooting.",
                 "datePublished": "2025-11-22T00:00:00+00:00",
-                "dateModified": "2026-08-01T00:00:00+00:00",
+                "dateModified": "2026-08-23T00:00:00+00:00",
                 "author": { "@id": "https://integrationnode.com/gmail-odoo/#organization" },
                 "publisher": { "@id": "https://integrationnode.com/gmail-odoo/#organization" },
                 "mainEntityOfPage": {
@@ -234,7 +234,9 @@
                         <li><a href="#recent-activities"><span class="material-symbols-outlined">history</span> <span>Activités récentes</span></a></li>
                         <li><a href="#opportunities"><span class="material-symbols-outlined">handshake</span> <span>Opportunités</span></a></li>
                         <li><a href="#quotations"><span class="material-symbols-outlined">request_quote</span> <span>Devis</span></a></li>
+                        <li><a href="#sales-orders"><span class="material-symbols-outlined">receipt_long</span> <span>Commandes</span></a></li>
                         <li><a href="#tasks-tickets"><span class="material-symbols-outlined">task</span> <span>Tâches et tickets</span></a></li>
+                        <li><a href="#financial"><span class="material-symbols-outlined">account_balance</span> <span>Informations financières</span></a></li>
                         <li><a href="#notifications"><span class="material-symbols-outlined">notifications</span> <span>Notifications</span></a></li>
                         <li><a href="#multi-company"><span class="material-symbols-outlined">business</span> <span>Multi-sociétés</span></a></li>
                         <li><a href="#troubleshooting"><span class="material-symbols-outlined">help</span> <span>Dépannage</span></a></li>
@@ -320,7 +322,7 @@
                         <li><strong>Onglets Contact/Entreprise</strong>: <span>Basculez entre les informations du contact et de l'entreprise</span></li>
                         <li><strong>Contacts associés</strong>: <span>Trouvez des collègues de la même entreprise</span></li>
                         <li><strong>Aperçus financiers</strong>: <span>Consultez la facturation, les créances et les dettes</span></li>
-                        <li><strong>Panneau de paramètres</strong>: <span>Choisissez les sections affichées dans le panneau : Opportunités, Tâches, Tickets, Devis, Société, Contacts liés, Activités récentes et Informations financières</span></li>
+                        <li><strong>Panneau de paramètres</strong>: <span>Choisissez les sections affichées dans le panneau : Opportunités, Tâches, Tickets, Devis, Commandes, Société, Contacts liés, Activités récentes et Informations financières</span></li>
                         <li><strong>Niveaux de Citation</strong>: <span>Contrôlez la quantité d'historique à inclure lors de l'enregistrement</span></li>
                         <li><strong>Regroupement des Enregistrements</strong>: <span>Regroupez les opportunités, tâches et tickets par étape ou statut</span></li>
                         <li><strong>Participants de l'Email</strong>: <span>Voir les informations de contact Odoo de tous les participants de l'email</span></li>
@@ -586,8 +588,44 @@
                         <li>Cliquez sur Créer pour démarrer un nouveau devis pour le contact et le finaliser dans Odoo.</li>
                         <li>Ouvrez le menu ⋮ de la ligne pour copier un lien vers le devis, et utilisez la recherche quand la liste s'allonge.</li>
                     </ul>
+                    <p>Lorsque vous confirmez un devis, il quitte cette liste et rejoint les Commandes confirmées, où vous pouvez continuer à enregistrer la correspondance qui suit.</p>
+
                     <div class="info-box">
                         <span>Vous ne travaillez pas avec des devis ? Masquez la section depuis Paramètres → Personnalisation.</span>
+                    </div>
+                </section>
+
+                <!-- Confirmed Sales Orders Section -->
+                <section id="sales-orders" class="guide-section">
+                    <h2><span class="material-symbols-outlined">receipt_long</span> <span>Commandes confirmées</span> <span class="feature-badge badge-plus">Plus</span></h2>
+                    <p>La section Commandes affiche les commandes déjà confirmées du contact, afin que la conversation qui suit la vente — livraisons, modifications de quantités, facturation, incidents — soit enregistrée sur la commande elle-même.</p>
+                    <p>Elle comble un vrai manque : dès qu'un devis est confirmé, il quitte la section Devis et aucune autre section ne le reprenait jusqu'ici. À partir de là, l'e-mail ne pouvait plus être enregistré que sur le contact, au moment précis où la correspondance est la plus dense.</p>
+
+                    <h3>Prérequis</h3>
+                    <ul>
+                        <li>Formule PLUS. Avec la formule gratuite, la section reste visible, nommée, avec un lien pour passer à PLUS — et elle n'envoie aucune requête à Odoo.</li>
+                        <li>Le module Ventes installé dans Odoo et le droit de lecture sur les commandes. La lecture seule suffit : contrairement aux Devis, cette section ne crée jamais de document, elle convient donc aussi aux profils qui suivent les commandes sans les modifier.</li>
+                    </ul>
+
+                    <h3>Ce que la liste affiche</h3>
+                    <ul>
+                        <li>Uniquement les commandes en cours : confirmées et actives, y compris verrouillées. Les commandes annulées et les devis non encore confirmés en sont exclus.</li>
+                        <li>Chaque ligne affiche la référence de la commande, son montant total avec la devise et sa date. Les plus récentes d'abord.</li>
+                        <li>Aucun filtre d'ancienneté : une commande compte tant qu'elle est en cours, quelle que soit sa date. Lorsqu'il y a plus de commandes que la liste n'en affiche, l'en-tête indique combien sont montrées sur le total.</li>
+                        <li>Dans la vue société, la liste inclut également les commandes des contacts rattachés à cette société.</li>
+                    </ul>
+
+                    <h3>Ce que vous pouvez faire</h3>
+                    <ul>
+                        <li>Cliquez sur une ligne pour ouvrir la commande dans Odoo.</li>
+                        <li>Cliquez sur l'icône enveloppe pour enregistrer l'e-mail ouvert dans la conversation de cette commande. Une commande où l'e-mail est déjà enregistré est signalée comme telle et n'accepte pas de doublon.</li>
+                        <li>Ouvrez le menu ⋮ de la ligne pour copier un lien vers la commande ou activer l'enregistrement automatique, afin que les e-mails suivants du fil soient enregistrés sur la commande sans intervention.</li>
+                        <li>Utilisez la recherche pour retrouver une commande par sa référence. C'est le moyen d'atteindre une commande ancienne qui ne figure pas parmi les plus récentes.</li>
+                    </ul>
+                    <p>La section ne crée pas de commandes : une commande naît de la confirmation d'un devis dans Odoo, pas de la lecture d'un e-mail.</p>
+
+                    <div class="info-box">
+                        <span>Vous ne suivez pas les commandes depuis votre messagerie ? Masquez la section depuis Paramètres → Personnalisation.</span>
                     </div>
                 </section>
 
@@ -606,6 +644,35 @@
                     <p><strong>Prérequis :</strong> <span>Module Odoo Helpdesk (Enterprise uniquement)</span></p>
                     <h3>Créer une tâche ou un ticket depuis un email</h3>
                     <p>Cliquez sur Créer dans la section. L'enregistrement est créé avec l'objet et le corps de l'email, ses pièces jointes sont envoyées en arrière-plan, et il s'ouvre dans Odoo dans un nouvel onglet pour compléter le reste. Pendant la création, le bouton affiche un état de traitement, et des clics répétés ne créent pas de doublons.</p>
+                </section>
+
+                <!-- Financial Insights Section -->
+                <section id="financial" class="guide-section">
+                    <h2><span class="material-symbols-outlined">account_balance</span> <span>Informations financières</span> <span class="feature-badge badge-plus">Plus</span></h2>
+                    <p>La section financière résume l'état du compte avec le contact — ce qu'il vous doit, ce que vous lui devez, ce qui reste à facturer — sans ouvrir la comptabilité dans Odoo.</p>
+                    <p>Les montants sont ceux de la société, pas de la personne : lorsque le contact est rattaché à une société mère dans Odoo, la section affiche les totaux de cette société.</p>
+
+                    <h3>Prérequis</h3>
+                    <ul>
+                        <li>Formule PLUS. Avec la formule gratuite, la section n'apparaît pas.</li>
+                        <li>Le module Facturation ou Comptabilité installé dans Odoo et le droit de lecture sur les factures. Sans ce droit, la section reste masquée au lieu d'afficher une erreur.</li>
+                    </ul>
+
+                    <h3>Ce qu'elle affiche</h3>
+                    <ul>
+                        <li><strong>En retard</strong>: <span>le montant échu et le nombre de factures concernées. Sur Enterprise avec le module de relances activé, la date de la prochaine relance et le niveau de relance s'affichent également. Le bloc informe : aucune action n'y est rattachée.</span></li>
+                        <li><strong>Encours clients</strong>: <span>ce que le contact vous doit.</span></li>
+                        <li><strong>Encours fournisseurs</strong>: <span>ce que vous devez au contact.</span></li>
+                        <li><strong>Limite de crédit</strong>: <span>la limite définie dans Odoo, lorsqu'il y en a une.</span></li>
+                        <li><strong>À facturer</strong>: <span>déjà livré, pas encore facturé.</span></li>
+                        <li><strong>Total facturé</strong>: <span>le total historique de cette société.</span></li>
+                        <li><strong>DSO (jours)</strong>: <span>le nombre de jours moyen avant paiement des factures.</span></li>
+                    </ul>
+                    <p>Un montant à zéro est omis plutôt qu'affiché à zéro : la section ne liste que ce qui a réellement une valeur. Quand rien n'a de valeur et qu'il n'y a aucun retard, la section entière ne s'affiche pas — c'est le cas normal d'un contact sans historique de facturation.</p>
+
+                    <div class="info-box">
+                        <span>Vous n'avez pas besoin des chiffres dans votre messagerie ? Masquez la section depuis Paramètres → Personnalisation.</span>
+                    </div>
                 </section>
 
                 <!-- Notification Organization Section -->
@@ -663,6 +730,11 @@
                     <div class="info-box">
                         <strong>Note :</strong> <span>Le raccourci n'apparaît qu'après avoir configuré un email de notification dans Paramètres > Notifications.</span>
                     </div>
+
+                    <h3>Naviguer par module</h3>
+                    <p>Le raccourci « Notifications Odoo » se déploie en sous-entrées — Opportunités, Tâches, Tickets, Factures, etc. —, chacune avec son propre compteur de non lus, pour aller directement aux notifications d'un module.</p>
+                    <p>Les notifications issues de modèles hors de ce catalogue sont regroupées sous une entrée générique « Odoo » plutôt que d'être écartées.</p>
+                    <p>Seules apparaissent les catégories des modules dont vous recevez effectivement des notifications.</p>
 
                     <h3>Personnalisation</h3>
                     <p>Chaque fonctionnalité de notification peut être activée/désactivée indépendamment dans Paramètres > Notifications :</p>
