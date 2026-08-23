@@ -62,7 +62,7 @@
                 "headline": "Odoo Gmail Integration Comparison: Chrome Extension vs Official Plugin",
                 "description": "Detailed comparison between Odoo Integration for Gmail Chrome extension and the official Odoo Gmail plugin. Compare speed, features, compatibility, and pricing.",
                 "datePublished": "2025-11-22T00:00:00+00:00",
-                "dateModified": "2026-02-22T00:00:00+00:00",
+                "dateModified": "2026-08-23T00:00:00+00:00",
                 "author": { "@id": "https://integrationnode.com/gmail-odoo/#organization" },
                 "publisher": { "@id": "https://integrationnode.com/gmail-odoo/#organization" },
                 "mainEntityOfPage": {
@@ -113,7 +113,7 @@
                         "name": "Does this extension have features the official plugin doesn't?",
                         "acceptedAnswer": {
                             "@type": "Answer",
-                            "text": "Yes, our PLUS plan includes real-time search across opportunities, tasks and tickets, the ability to hide unused sections to improve performance, enhanced email logging with attachments, and related contacts by domain."
+                            "text": "Yes. The official plugin shows contacts, the first 5 opportunities, tasks and tickets, and logs emails. Our extension also brings quotations and confirmed sales orders, financial insights with outstanding and overdue amounts, recent activities, related contacts by domain, multi-company support, real-time search with up to 50 records per section, auto-logging of a thread's replies, and Odoo notifications organised inside Gmail. The one thing the official plugin has and we do not is IAP company enrichment."
                         }
                     }
                 ]
@@ -204,6 +204,8 @@
                             <li><span class="check">✓</span> <span>Secties verbergen om gegevenslading te verminderen</span></li>
                             <li><span class="check">✓</span> <span>Verbeterd e-mail loggen met bijlagen</span></li>
                             <li><span class="check">✓</span> <span>Instellen met alleen je Odoo-URL — geen API-sleutel, geen code</span></li>
+                            <li><span class="check">✓</span> <span>Prijsopgaven, verkooporders en financiële gegevens in de zijbalk</span></li>
+                            <li><span class="check">✓</span> <span>Automatisch loggen: koppel een thread één keer, antwoorden blijven synchroon</span></li>
                         </ul>
                     </div>
                     <a href="https://chromewebstore.google.com/detail/hfnfieecjinfkhbhpoigfnnddpfoeomm/?utm_source=comparison&amp;utm_medium=content&amp;utm_campaign=vs_appsscript&amp;utm_content=card" target="_blank" class="btn btn-primary btn-block">Gratis Proberen</a>
@@ -224,6 +226,7 @@
                             <li><span class="cross-red">✗</span> <span>Tragere laadtijden (2-6 seconden)</span></li>
                             <li><span class="cross-red">✗</span> <span>Frequente onderbrekingen</span></li>
                             <li><span class="cross-red">✗</span> <span>Vereist codewijzigingen voor zelf-gehost</span></li>
+                            <li><span class="cross-red">✗</span> <span>Geen prijsopgaven, verkooporders of financiële gegevens</span></li>
                         </ul>
                     </div>
                     <a href="https://www.odoo.com/documentation/18.0/applications/general/integrations/mail_plugins/gmail.html" target="_blank" class="btn btn-outline btn-block">Officiële Plugin Bekijken</a>
@@ -324,6 +327,71 @@
                             <td>E-mail Loggen</td>
                             <td><span>Verbeterd</span></td>
                             <td><span>Basis</span></td>
+                        </tr>
+
+                        <!-- Odoo Data Section -->
+                        <tr class="section-header">
+                            <td colspan="3"><strong>Odoo-gegevens in de zijbalk</strong></td>
+                        </tr>
+                        <tr>
+                            <td>Contacten en bedrijfsinformatie</td>
+                            <td><span class="check-green">✓</span></td>
+                            <td><span class="check-green">✓</span></td>
+                        </tr>
+                        <tr>
+                            <td>Kansen, taken en tickets</td>
+                            <td><span class="check-green">✓</span> <span>5 in Free, tot 50 met PLUS</span></td>
+                            <td><span>Alleen de eerste 5</span></td>
+                        </tr>
+                        <tr>
+                            <td>Prijsopgaven en verkooporders</td>
+                            <td><span class="check-green">✓</span> (PLUS)</td>
+                            <td><span class="cross-red">✗</span></td>
+                        </tr>
+                        <tr>
+                            <td>Financiële inzichten (openstaand en achterstallig)</td>
+                            <td><span class="check-green">✓</span> (PLUS)</td>
+                            <td><span class="cross-red">✗</span></td>
+                        </tr>
+                        <tr>
+                            <td>Recente activiteiten</td>
+                            <td><span class="check-green">✓</span> (PLUS)</td>
+                            <td><span class="cross-red">✗</span></td>
+                        </tr>
+                        <tr>
+                            <td>Gerelateerde contacten per domein</td>
+                            <td><span class="check-green">✓</span> (PLUS)</td>
+                            <td><span class="cross-red">✗</span></td>
+                        </tr>
+                        <tr>
+                            <td>Multi-company ondersteuning</td>
+                            <td><span class="check-green">✓</span> (PLUS)</td>
+                            <td><span class="cross-red">✗</span></td>
+                        </tr>
+                        <tr>
+                            <td>Bedrijfsverrijking (IAP)</td>
+                            <td><span class="cross-red">✗</span></td>
+                            <td><span class="check-green">✓</span> <span>Vereist IAP-credits</span></td>
+                        </tr>
+
+                        <!-- Automation Section -->
+                        <tr class="section-header">
+                            <td colspan="3"><strong>Automatisering</strong></td>
+                        </tr>
+                        <tr>
+                            <td>Antwoorden in een thread automatisch loggen</td>
+                            <td><span class="check-green">✓</span> (PLUS)</td>
+                            <td><span class="cross-red">✗</span></td>
+                        </tr>
+                        <tr>
+                            <td>Odoo-meldingen georganiseerd in Gmail</td>
+                            <td><span class="check-green">✓</span> (PLUS)</td>
+                            <td><span class="cross-red">✗</span></td>
+                        </tr>
+                        <tr>
+                            <td>Actiemenu bij elk record</td>
+                            <td><span class="check-green">✓</span></td>
+                            <td><span class="cross-red">✗</span></td>
                         </tr>
 
                         <!-- Compatibility Section -->

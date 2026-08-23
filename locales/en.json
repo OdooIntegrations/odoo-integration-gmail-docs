@@ -1437,7 +1437,9 @@
         "feature5": "Hide sections to reduce data load",
         "feature6": "Enhanced email logging with attachments",
         "feature7": "Set up with just your Odoo URL — no API key, no code",
-        "cta": "Try It Free"
+        "cta": "Try It Free",
+        "feature8": "Quotations, sales orders and financial data in the sidebar",
+        "feature9": "Auto-logging: link a thread once and replies keep syncing"
       },
       "plugin": {
         "name": "Odoo Gmail Plugin",
@@ -1449,7 +1451,8 @@
         "feature4": "Slower load times (2-6 seconds)",
         "feature5": "Frequent disconnections",
         "feature6": "Requires code changes for self-hosted",
-        "cta": "View Official Plugin"
+        "cta": "View Official Plugin",
+        "feature7": "No quotations, sales orders or financial data"
       }
     },
     "table": {
@@ -1489,7 +1492,23 @@
       "apiKeyPlugin": "Setup-dependent",
       "store": "Store",
       "storeOurs": "Chrome Web Store",
-      "storePlugin": "Google Workspace Marketplace"
+      "storePlugin": "Google Workspace Marketplace",
+      "odooData": "Odoo Data in the Sidebar",
+      "contactsRow": "Contacts & company info",
+      "recordsRow": "Opportunities, tasks & tickets",
+      "recordsOurs": "5 free, up to 50 with PLUS",
+      "recordsPlugin": "First 5 only",
+      "quotationsRow": "Quotations & sales orders",
+      "financialRow": "Financial insights (outstanding & overdue)",
+      "activitiesRow": "Recent activities",
+      "relatedContactsRow": "Related contacts by domain",
+      "multiCompanyRow": "Multi-company support",
+      "enrichmentRow": "Company enrichment (IAP)",
+      "enrichmentPlugin": "Requires IAP credits",
+      "automation": "Automation",
+      "autoLogRow": "Auto-log a thread's replies",
+      "notificationsRow": "Odoo notifications organised in Gmail",
+      "recordMenuRow": "Actions menu on every record"
     },
     "onPremise": {
       "title": "Does the Odoo Gmail Plugin work on self-hosted / on-premise Odoo?",

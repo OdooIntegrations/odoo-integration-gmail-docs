@@ -1437,7 +1437,9 @@
         "feature5": "Ukryj sekcje, aby zmniejszyć obciążenie danych",
         "feature6": "Ulepszone logowanie e-maili z załącznikami",
         "feature7": "Konfiguracja przy użyciu samego adresu URL Odoo — bez klucza API, bez kodu",
-        "cta": "Wypróbuj za darmo"
+        "cta": "Wypróbuj za darmo",
+        "feature8": "Oferty, zamówienia sprzedaży i dane finansowe w panelu bocznym",
+        "feature9": "Auto-logowanie: połącz wątek raz, a odpowiedzi zapisują się same"
       },
       "plugin": {
         "name": "Odoo Gmail Plugin",
@@ -1449,7 +1451,8 @@
         "feature4": "Wolniejszy czas ładowania (2-6 sekund)",
         "feature5": "Częste rozłączenia",
         "feature6": "Wymaga zmian w kodzie dla samodzielnie hostowanych",
-        "cta": "Zobacz oficjalną wtyczkę"
+        "cta": "Zobacz oficjalną wtyczkę",
+        "feature7": "Brak ofert, zamówień sprzedaży i danych finansowych"
       }
     },
     "table": {
@@ -1489,7 +1492,23 @@
       "apiKeyPlugin": "Zależy od konfiguracji",
       "store": "Sklep",
       "storeOurs": "Chrome Web Store",
-      "storePlugin": "Google Workspace Marketplace"
+      "storePlugin": "Google Workspace Marketplace",
+      "odooData": "Dane Odoo w panelu bocznym",
+      "contactsRow": "Kontakty i dane firmy",
+      "recordsRow": "Szanse, zadania i zgłoszenia",
+      "recordsOurs": "5 w Free, do 50 z PLUS",
+      "recordsPlugin": "Tylko pierwszych 5",
+      "quotationsRow": "Oferty i zamówienia sprzedaży",
+      "financialRow": "Informacje finansowe (nierozliczone i przeterminowane)",
+      "activitiesRow": "Ostatnie aktywności",
+      "relatedContactsRow": "Powiązane kontakty według domeny",
+      "multiCompanyRow": "Obsługa wielu firm",
+      "enrichmentRow": "Wzbogacanie danych firmy (IAP)",
+      "enrichmentPlugin": "Wymaga kredytów IAP",
+      "automation": "Automatyzacja",
+      "autoLogRow": "Auto-logowanie odpowiedzi w wątku",
+      "notificationsRow": "Powiadomienia Odoo uporządkowane w Gmailu",
+      "recordMenuRow": "Menu akcji przy każdym rekordzie"
     },
     "migration": {
       "title": "Przechodzisz z Odoo Gmail Plugin?",

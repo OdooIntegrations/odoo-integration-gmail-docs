@@ -7,7 +7,7 @@
             "headline": "Comparatif Intégration Gmail Odoo : Extension Chrome vs Plugin Officiel",
             "description": "Comparaison détaillée entre l'extension Chrome Odoo Integration for Gmail et le plugin officiel Odoo Gmail. Comparez vitesse, fonctionnalités, compatibilité et prix.",
             "datePublished": "2025-11-22T00:00:00+00:00",
-            "dateModified": "2026-02-22T00:00:00+00:00",
+            "dateModified": "2026-08-23T00:00:00+00:00",
             "author": { "@id": "https://integrationnode.com/gmail-odoo/#organization" },
             "publisher": { "@id": "https://integrationnode.com/gmail-odoo/#organization" },
             "mainEntityOfPage": {
@@ -58,7 +58,7 @@
                     "name": "Cette extension a-t-elle des fonctionnalités que le plugin officiel n'a pas ?",
                     "acceptedAnswer": {
                         "@type": "Answer",
-                        "text": "Oui, notre plan PLUS inclut la recherche en temps réel dans les opportunités, tâches et tickets, la possibilité de masquer les sections inutilisées pour améliorer les performances, l'enregistrement d'emails amélioré avec pièces jointes, et les contacts associés par domaine."
+                        "text": "Oui. Le plugin officiel affiche les contacts, les 5 premières opportunités, tâches et tickets, et enregistre les emails. Notre extension ajoute les devis et les commandes de vente confirmées, des aperçus financiers avec les montants en cours et échus, les activités récentes, les contacts liés par domaine, le support multi-entreprises, la recherche en temps réel avec jusqu'à 50 enregistrements par section, l'auto-enregistrement des réponses d'un fil, et les notifications Odoo organisées dans Gmail. La seule chose que le plugin officiel a et que nous n'avons pas est l'enrichissement d'entreprise par IAP."
                     }
                 }
             ]

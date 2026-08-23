@@ -1437,7 +1437,9 @@
         "feature5": "Oculta secciones para reducir carga de datos",
         "feature6": "Registro de emails mejorado con adjuntos",
         "feature7": "Configúrala solo con la URL de tu Odoo — sin clave API, sin código",
-        "cta": "Probar Gratis"
+        "cta": "Probar Gratis",
+        "feature8": "Presupuestos, pedidos de venta e información financiera en la barra lateral",
+        "feature9": "Auto-registro: vincula un hilo una vez y las respuestas se sincronizan solas"
       },
       "plugin": {
         "name": "Odoo Gmail Plugin",
@@ -1449,7 +1451,8 @@
         "feature4": "Tiempos de carga más lentos (2-6 segundos)",
         "feature5": "Desconexiones frecuentes",
         "feature6": "Requiere cambios de código para self-hosted",
-        "cta": "Ver Plugin Oficial"
+        "cta": "Ver Plugin Oficial",
+        "feature7": "Sin presupuestos, pedidos de venta ni información financiera"
       }
     },
     "table": {
@@ -1489,7 +1492,23 @@
       "apiKeyPlugin": "Depende de la configuración",
       "store": "Tienda",
       "storeOurs": "Chrome Web Store",
-      "storePlugin": "Google Workspace Marketplace"
+      "storePlugin": "Google Workspace Marketplace",
+      "odooData": "Datos de Odoo en la barra lateral",
+      "contactsRow": "Contactos e información de empresa",
+      "recordsRow": "Oportunidades, tareas y tickets",
+      "recordsOurs": "5 en Free, hasta 50 con PLUS",
+      "recordsPlugin": "Solo los 5 primeros",
+      "quotationsRow": "Presupuestos y pedidos de venta",
+      "financialRow": "Información financiera (pendiente y vencido)",
+      "activitiesRow": "Actividades recientes",
+      "relatedContactsRow": "Contactos relacionados por dominio",
+      "multiCompanyRow": "Soporte multi-empresa",
+      "enrichmentRow": "Enriquecimiento de empresa (IAP)",
+      "enrichmentPlugin": "Requiere créditos IAP",
+      "automation": "Automatización",
+      "autoLogRow": "Auto-registro de las respuestas de un hilo",
+      "notificationsRow": "Notificaciones de Odoo organizadas en Gmail",
+      "recordMenuRow": "Menú de acciones en cada registro"
     },
     "migration": {
       "title": "¿Vienes del Odoo Gmail Plugin?",

@@ -62,7 +62,7 @@
                 "headline": "Odoo Gmail Integration Comparison: Chrome Extension vs Official Plugin",
                 "description": "Detailed comparison between Odoo Integration for Gmail Chrome extension and the official Odoo Gmail plugin. Compare speed, features, compatibility, and pricing.",
                 "datePublished": "2025-11-22T00:00:00+00:00",
-                "dateModified": "2026-02-22T00:00:00+00:00",
+                "dateModified": "2026-08-23T00:00:00+00:00",
                 "author": { "@id": "https://integrationnode.com/gmail-odoo/#organization" },
                 "publisher": { "@id": "https://integrationnode.com/gmail-odoo/#organization" },
                 "mainEntityOfPage": {
@@ -113,7 +113,7 @@
                         "name": "Does this extension have features the official plugin doesn't?",
                         "acceptedAnswer": {
                             "@type": "Answer",
-                            "text": "Yes, our PLUS plan includes real-time search across opportunities, tasks and tickets, the ability to hide unused sections to improve performance, enhanced email logging with attachments, and related contacts by domain."
+                            "text": "Yes. The official plugin shows contacts, the first 5 opportunities, tasks and tickets, and logs emails. Our extension also brings quotations and confirmed sales orders, financial insights with outstanding and overdue amounts, recent activities, related contacts by domain, multi-company support, real-time search with up to 50 records per section, auto-logging of a thread's replies, and Odoo notifications organised inside Gmail. The one thing the official plugin has and we do not is IAP company enrichment."
                         }
                     }
                 ]
@@ -204,6 +204,8 @@
                             <li><span class="check">✓</span> <span data-t="comparison.cards.extension.feature5"></span></li>
                             <li><span class="check">✓</span> <span data-t="comparison.cards.extension.feature6"></span></li>
                             <li><span class="check">✓</span> <span data-t="comparison.cards.extension.feature7"></span></li>
+                            <li><span class="check">✓</span> <span data-t="comparison.cards.extension.feature8"></span></li>
+                            <li><span class="check">✓</span> <span data-t="comparison.cards.extension.feature9"></span></li>
                         </ul>
                     </div>
                     <a href="https://chromewebstore.google.com/detail/hfnfieecjinfkhbhpoigfnnddpfoeomm/?utm_source=comparison&amp;utm_medium=content&amp;utm_campaign=vs_appsscript&amp;utm_content=card" target="_blank" class="btn btn-primary btn-block" data-t="comparison.cards.extension.cta"></a>
@@ -224,6 +226,7 @@
                             <li><span class="cross-red">✗</span> <span data-t="comparison.cards.plugin.feature4"></span></li>
                             <li><span class="cross-red">✗</span> <span data-t="comparison.cards.plugin.feature5"></span></li>
                             <li><span class="cross-red">✗</span> <span data-t="comparison.cards.plugin.feature6"></span></li>
+                            <li><span class="cross-red">✗</span> <span data-t="comparison.cards.plugin.feature7"></span></li>
                         </ul>
                     </div>
                     <a href="https://www.odoo.com/documentation/18.0/applications/general/integrations/mail_plugins/gmail.html" target="_blank" class="btn btn-outline btn-block" data-t="comparison.cards.plugin.cta"></a>
@@ -324,6 +327,71 @@
                             <td data-t="comparison.table.emailLogging"></td>
                             <td><span data-t="comparison.table.enhanced"></span></td>
                             <td><span data-t="comparison.table.basic"></span></td>
+                        </tr>
+
+                        <!-- Odoo Data Section -->
+                        <tr class="section-header">
+                            <td colspan="3"><strong data-t="comparison.table.odooData"></strong></td>
+                        </tr>
+                        <tr>
+                            <td data-t="comparison.table.contactsRow"></td>
+                            <td><span class="check-green">✓</span></td>
+                            <td><span class="check-green">✓</span></td>
+                        </tr>
+                        <tr>
+                            <td data-t="comparison.table.recordsRow"></td>
+                            <td><span class="check-green">✓</span> <span data-t="comparison.table.recordsOurs"></span></td>
+                            <td><span data-t="comparison.table.recordsPlugin"></span></td>
+                        </tr>
+                        <tr>
+                            <td data-t="comparison.table.quotationsRow"></td>
+                            <td><span class="check-green">✓</span> (PLUS)</td>
+                            <td><span class="cross-red">✗</span></td>
+                        </tr>
+                        <tr>
+                            <td data-t="comparison.table.financialRow"></td>
+                            <td><span class="check-green">✓</span> (PLUS)</td>
+                            <td><span class="cross-red">✗</span></td>
+                        </tr>
+                        <tr>
+                            <td data-t="comparison.table.activitiesRow"></td>
+                            <td><span class="check-green">✓</span> (PLUS)</td>
+                            <td><span class="cross-red">✗</span></td>
+                        </tr>
+                        <tr>
+                            <td data-t="comparison.table.relatedContactsRow"></td>
+                            <td><span class="check-green">✓</span> (PLUS)</td>
+                            <td><span class="cross-red">✗</span></td>
+                        </tr>
+                        <tr>
+                            <td data-t="comparison.table.multiCompanyRow"></td>
+                            <td><span class="check-green">✓</span> (PLUS)</td>
+                            <td><span class="cross-red">✗</span></td>
+                        </tr>
+                        <tr>
+                            <td data-t="comparison.table.enrichmentRow"></td>
+                            <td><span class="cross-red">✗</span></td>
+                            <td><span class="check-green">✓</span> <span data-t="comparison.table.enrichmentPlugin"></span></td>
+                        </tr>
+
+                        <!-- Automation Section -->
+                        <tr class="section-header">
+                            <td colspan="3"><strong data-t="comparison.table.automation"></strong></td>
+                        </tr>
+                        <tr>
+                            <td data-t="comparison.table.autoLogRow"></td>
+                            <td><span class="check-green">✓</span> (PLUS)</td>
+                            <td><span class="cross-red">✗</span></td>
+                        </tr>
+                        <tr>
+                            <td data-t="comparison.table.notificationsRow"></td>
+                            <td><span class="check-green">✓</span> (PLUS)</td>
+                            <td><span class="cross-red">✗</span></td>
+                        </tr>
+                        <tr>
+                            <td data-t="comparison.table.recordMenuRow"></td>
+                            <td><span class="check-green">✓</span></td>
+                            <td><span class="cross-red">✗</span></td>
                         </tr>
 
                         <!-- Compatibility Section -->

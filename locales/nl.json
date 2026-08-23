@@ -1437,7 +1437,9 @@
         "feature5": "Secties verbergen om gegevenslading te verminderen",
         "feature6": "Verbeterd e-mail loggen met bijlagen",
         "feature7": "Instellen met alleen je Odoo-URL — geen API-sleutel, geen code",
-        "cta": "Gratis Proberen"
+        "cta": "Gratis Proberen",
+        "feature8": "Prijsopgaven, verkooporders en financiële gegevens in de zijbalk",
+        "feature9": "Automatisch loggen: koppel een thread één keer, antwoorden blijven synchroon"
       },
       "plugin": {
         "name": "Odoo Gmail Plugin",
@@ -1449,7 +1451,8 @@
         "feature4": "Tragere laadtijden (2-6 seconden)",
         "feature5": "Frequente onderbrekingen",
         "feature6": "Vereist codewijzigingen voor zelf-gehost",
-        "cta": "Officiële Plugin Bekijken"
+        "cta": "Officiële Plugin Bekijken",
+        "feature7": "Geen prijsopgaven, verkooporders of financiële gegevens"
       }
     },
     "table": {
@@ -1489,7 +1492,23 @@
       "apiKeyPlugin": "Afhankelijk van installatie",
       "store": "Store",
       "storeOurs": "Chrome Web Store",
-      "storePlugin": "Google Workspace Marketplace"
+      "storePlugin": "Google Workspace Marketplace",
+      "odooData": "Odoo-gegevens in de zijbalk",
+      "contactsRow": "Contacten en bedrijfsinformatie",
+      "recordsRow": "Kansen, taken en tickets",
+      "recordsOurs": "5 in Free, tot 50 met PLUS",
+      "recordsPlugin": "Alleen de eerste 5",
+      "quotationsRow": "Prijsopgaven en verkooporders",
+      "financialRow": "Financiële inzichten (openstaand en achterstallig)",
+      "activitiesRow": "Recente activiteiten",
+      "relatedContactsRow": "Gerelateerde contacten per domein",
+      "multiCompanyRow": "Multi-company ondersteuning",
+      "enrichmentRow": "Bedrijfsverrijking (IAP)",
+      "enrichmentPlugin": "Vereist IAP-credits",
+      "automation": "Automatisering",
+      "autoLogRow": "Antwoorden in een thread automatisch loggen",
+      "notificationsRow": "Odoo-meldingen georganiseerd in Gmail",
+      "recordMenuRow": "Actiemenu bij elk record"
     },
     "migration": {
       "title": "Overstappen van de Odoo Gmail Plugin?",
