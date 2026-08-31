@@ -605,7 +605,9 @@
       "q6": "Q : L'extension lit-elle tous mes emails ?",
       "a6": "Non, l'extension n'accède qu'aux emails que vous consultez activement. Elle ne scanne pas toute votre boîte mail et ne lit pas les emails en arrière-plan.",
       "q7": "Q : Ma clé API est-elle stockée de manière sécurisée ?",
-      "a7": "Une clé API est facultative — la plupart des utilisateurs se connectent avec leur session Odoo et n'en créent jamais. Si vous en ajoutez une, elle est stockée dans le stockage sécurisé de Chrome (chrome.storage.sync), que Chrome chiffre avec les identifiants de votre compte utilisateur OS."
+      "a7": "Une clé API est facultative — la plupart des utilisateurs se connectent avec leur session Odoo et n'en créent jamais. Si vous en ajoutez une, elle est stockée dans le stockage sécurisé de Chrome (chrome.storage.sync), que Chrome chiffre avec les identifiants de votre compte utilisateur OS.",
+      "q8": "Q : Qu'envoie l'extension lorsqu'un problème survient ?",
+      "a8": "Le message d'erreur, une trace technique, la version de l'extension et un identifiant aléatoire d'installation ; jamais le contenu de vos e-mails, vos identifiants ni vos données Odoo. Ces rapports d'erreur sont envoyés même si les statistiques d'utilisation sont désactivées, car ils décrivent l'état de l'application et non ce que vous en faites. C'est ce qui permet de détecter et corriger un défaut sans que vous ayez à le signaler. Vous pouvez vous y opposer à tout moment en nous écrivant ; voir la politique de confidentialité."
     },
     "help": {
       "title": "Obtenir de l'aide",
@@ -953,7 +955,9 @@
       "posthog4": "A boolean flag indicating whether your Odoo user has access to more than one company (used to know whether multi-company features are relevant). The list of companies and their names are NOT sent.",
       "posthogPolicy": "Politique de Confidentialité de PostHog:",
       "optOut": "Désactiver:",
-      "optOutDesc": "Vous pouvez désactiver les analytiques à tout moment dans Paramètres > Compte > Confidentialité."
+      "optOutDesc": "Vous pouvez désactiver les statistiques d'utilisation à tout moment dans Paramètres > Compte > Confidentialité. Ce réglage couvre les statistiques d'utilisation ; les rapports d'erreur sont décrits ci-dessous.",
+      "errorReports": "Rapports d'erreur :",
+      "errorReportsDesc": "Les rapports d'erreur sont envoyés indépendamment du réglage des statistiques, car ils décrivent l'état de l'application et non votre activité. Chaque rapport contient le message d'erreur, la trace technique, la version de l'extension et l'identifiant aléatoire d'installation ; jamais le contenu des e-mails, les identifiants de connexion ni les données Odoo. La base légale est notre intérêt légitime à détecter et corriger les défauts. Vous pouvez vous y opposer à tout moment en écrivant à"
     },
     "dataSharing": {
       "title": "Partage de données avec des tiers",
@@ -962,7 +966,7 @@
       "yourOdoo": "Votre instance Odoo :",
       "yourOdooDesc": "L'Extension envoie des requêtes API à l'URL Odoo que vous configurez pour récupérer et créer des enregistrements",
       "polarDesc": "Uniquement pour la gestion des abonnements (email, statut d'abonnement, traitement des paiements)",
-      "posthogDesc": "Statistiques d'utilisation anonymes (utilisation des fonctionnalités, erreurs). Aucune PII ni contenu email/Odoo. Vous pouvez désactiver dans Paramètres > Compte > Confidentialité.",
+      "posthogDesc": "Statistiques d'utilisation anonymes (utilisation des fonctionnalités) et rapports d'erreur. Aucune donnée personnelle ni contenu d'e-mail/Odoo. Les statistiques d'utilisation peuvent être désactivées dans Paramètres > Compte > Confidentialité.",
       "doesNot": "L'Extension NE fait PAS :",
       "notSell": "Vendre vos données à des courtiers de données",
       "notAdvertising": "Partager des données à des fins publicitaires",

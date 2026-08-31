@@ -828,7 +828,9 @@
       "q6": "P: ¿La extensión lee todos mis emails?",
       "a6": "No, la extensión solo accede a los emails que ves activamente. No escanea todo tu buzón ni lee emails en segundo plano.",
       "q7": "P: ¿Mi API key se almacena de forma segura?",
-      "a7": "La API key es opcional — la mayoría de los usuarios se conectan con su sesión de Odoo y nunca crean una. Si añades una, se almacena en el almacenamiento seguro de Chrome (chrome.storage.sync), que Chrome encripta usando las credenciales de tu cuenta de usuario del SO."
+      "a7": "La API key es opcional — la mayoría de los usuarios se conectan con su sesión de Odoo y nunca crean una. Si añades una, se almacena en el almacenamiento seguro de Chrome (chrome.storage.sync), que Chrome encripta usando las credenciales de tu cuenta de usuario del SO.",
+      "q8": "P: ¿Qué envía la extensión cuando algo falla?",
+      "a8": "El mensaje de error, una traza técnica, la versión de la extensión y un identificador aleatorio de instalación; nunca el contenido de tus correos, tus credenciales ni tus datos de Odoo. Estos informes de fallo se envían aunque desactives la analítica de uso, porque describen el estado de la aplicación y no lo que haces con ella. Es lo que permite detectar y corregir un fallo sin que tengas que avisar. Puedes oponerte en cualquier momento escribiéndonos; los detalles están en la política de privacidad."
     },
     "help": {
       "title": "Obtener Ayuda",
@@ -953,7 +955,9 @@
       "posthog4": "Un flag booleano que indica si tu usuario de Odoo tiene acceso a más de una compañía (usado para saber si las funciones multi-compañía son relevantes). NO se envía la lista de compañías ni sus nombres.",
       "posthogPolicy": "Política de Privacidad de PostHog:",
       "optOut": "Desactivar:",
-      "optOutDesc": "Puedes desactivar las analíticas en cualquier momento en Configuración > Cuenta > Privacidad."
+      "optOutDesc": "Puedes desactivar la analítica de uso en cualquier momento en Ajustes > Cuenta > Privacidad. Ese ajuste cubre las estadísticas de uso; los informes de fallo se describen a continuación.",
+      "errorReports": "Informes de fallo:",
+      "errorReportsDesc": "Los informes de fallo se envían con independencia del ajuste de analítica, porque describen el estado de la aplicación y no tu actividad. Cada informe contiene el mensaje de error, la traza técnica, la versión de la extensión y el identificador aleatorio de instalación; nunca el contenido de los correos, las credenciales ni datos de Odoo. La base legal es nuestro interés legítimo en detectar y corregir fallos. Puedes oponerte en cualquier momento escribiendo a"
     },
     "dataSharing": {
       "title": "Compartir Datos con Terceros",
@@ -962,7 +966,7 @@
       "yourOdoo": "Tu Instancia de Odoo:",
       "yourOdooDesc": "La Extensión envía peticiones API a la URL de instancia de Odoo que configuras para recuperar y crear registros",
       "polarDesc": "Solo para gestión de suscripciones (email, estado de suscripción, procesamiento de pagos)",
-      "posthogDesc": "Estadísticas de uso anónimas (uso de funciones, errores). Sin PII ni contenido de email/Odoo. Puedes desactivarlo en Configuración > Cuenta > Privacidad.",
+      "posthogDesc": "Estadísticas de uso anónimas (uso de funciones) e informes de fallo. Sin datos personales ni contenido de correos/Odoo. Las estadísticas de uso se pueden desactivar en Ajustes > Cuenta > Privacidad.",
       "doesNot": "La Extensión NO:",
       "notSell": "Vende tus datos a intermediarios de datos",
       "notAdvertising": "Comparte datos con fines publicitarios",

@@ -605,7 +605,9 @@
       "q6": "D: L'estensione legge tutte le mie email?",
       "a6": "No, l'estensione accede solo alle email che visualizzi attivamente. Non scansiona l'intera casella di posta né legge le email in background.",
       "q7": "D: La mia chiave API è memorizzata in modo sicuro?",
-      "a7": "Una chiave API è facoltativa — la maggior parte degli utenti si connette con la propria sessione Odoo e non ne crea mai una. Se ne aggiungi una, viene memorizzata nello storage sicuro di Chrome (chrome.storage.sync), che Chrome crittografa usando le credenziali del tuo account utente del sistema operativo."
+      "a7": "Una chiave API è facoltativa — la maggior parte degli utenti si connette con la propria sessione Odoo e non ne crea mai una. Se ne aggiungi una, viene memorizzata nello storage sicuro di Chrome (chrome.storage.sync), che Chrome crittografa usando le credenziali del tuo account utente del sistema operativo.",
+      "q8": "D: Cosa invia l'estensione quando qualcosa non funziona?",
+      "a8": "Il messaggio di errore, una traccia tecnica, la versione dell'estensione e un identificativo casuale di installazione; mai il contenuto delle tue email, le tue credenziali o i tuoi dati di Odoo. Queste segnalazioni vengono inviate anche se disattivi le statistiche di utilizzo, perché descrivono lo stato dell'applicazione e non ciò che ne fai. È così che un guasto viene individuato e corretto senza che tu debba segnalarlo. Puoi opporti in qualsiasi momento scrivendoci; i dettagli sono nell'informativa sulla privacy."
     },
     "help": {
       "title": "Ottenere Aiuto",
@@ -953,7 +955,9 @@
       "posthog4": "A boolean flag indicating whether your Odoo user has access to more than one company (used to know whether multi-company features are relevant). The list of companies and their names are NOT sent.",
       "posthogPolicy": "Informativa sulla Privacy di PostHog:",
       "optOut": "Disattivare:",
-      "optOutDesc": "Puoi disattivare le analisi in qualsiasi momento in Impostazioni > Account > Privacy."
+      "optOutDesc": "Puoi disattivare le statistiche di utilizzo in qualsiasi momento in Impostazioni > Account > Privacy. Questa impostazione riguarda le statistiche di utilizzo; le segnalazioni di errore sono descritte di seguito.",
+      "errorReports": "Segnalazioni di errore:",
+      "errorReportsDesc": "Le segnalazioni di errore vengono inviate indipendentemente dall'impostazione delle statistiche, perché descrivono lo stato dell'applicazione e non la tua attività. Ogni segnalazione contiene il messaggio di errore, la traccia tecnica, la versione dell'estensione e l'identificativo casuale di installazione; mai il contenuto delle email, le credenziali o i dati di Odoo. La base giuridica è il nostro legittimo interesse a rilevare e correggere i guasti. Puoi opporti in qualsiasi momento scrivendo a"
     },
     "dataSharing": {
       "title": "Condivisione Dati con Terze Parti",
@@ -962,7 +966,7 @@
       "yourOdoo": "La Tua Istanza Odoo:",
       "yourOdooDesc": "L'Estensione invia richieste API all'URL dell'istanza Odoo che configuri per recuperare e creare record",
       "polarDesc": "Solo per la gestione degli abbonamenti (email, stato abbonamento, elaborazione pagamenti)",
-      "posthogDesc": "Statistiche di utilizzo anonime (utilizzo funzionalità, errori). Nessun dato personale o contenuto email/Odoo. Puoi disattivare in Impostazioni > Account > Privacy.",
+      "posthogDesc": "Statistiche di utilizzo anonime (uso delle funzioni) e segnalazioni di errore. Nessun dato personale né contenuto di email/Odoo. Le statistiche di utilizzo possono essere disattivate in Impostazioni > Account > Privacy.",
       "doesNot": "L'Estensione NON:",
       "notSell": "Vende i tuoi dati a broker di dati",
       "notAdvertising": "Condivide dati per scopi pubblicitari",

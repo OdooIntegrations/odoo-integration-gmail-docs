@@ -605,7 +605,9 @@
       "q6": "Q: Does the extension read all my emails?",
       "a6": "No, the extension only accesses emails you actively view. It does not scan your entire mailbox or read emails in the background.",
       "q7": "Q: Is my API key stored securely?",
-      "a7": "An API key is optional — most users connect with their Odoo session and never create one. If you do add one, it is stored in Chrome's secure storage (chrome.storage.sync), which Chrome encrypts using your OS user account credentials."
+      "a7": "An API key is optional — most users connect with their Odoo session and never create one. If you do add one, it is stored in Chrome's secure storage (chrome.storage.sync), which Chrome encrypts using your OS user account credentials.",
+      "q8": "Q: What does the extension send when something goes wrong?",
+      "a8": "The error message, a technical stack trace, the extension version and a random installation ID — never your email content, your credentials or your Odoo data. These crash reports are sent even when usage analytics is turned off, because they describe the state of the app and not what you do with it. It is how a fault gets found and fixed without you having to report it. You can object at any time by writing to us; see the privacy policy for details."
     },
     "help": {
       "title": "Getting Help",
@@ -953,7 +955,9 @@
       "posthog4": "A boolean flag indicating whether your Odoo user has access to more than one company (used to know whether multi-company features are relevant). The list of companies and their names are NOT sent.",
       "posthogPolicy": "PostHog Privacy Policy:",
       "optOut": "Opt-out:",
-      "optOutDesc": "You can disable analytics at any time in Settings > Account > Privacy."
+      "optOutDesc": "You can disable usage analytics at any time in Settings > Account > Privacy. That setting covers usage statistics; crash reports are described below.",
+      "errorReports": "Crash reports:",
+      "errorReportsDesc": "Crash reports are sent regardless of the analytics setting, because they describe the state of the application rather than your activity. Each report contains the error message, the technical stack trace, the extension version and the random installation ID — never email content, credentials or Odoo records. The legal basis is our legitimate interest in detecting and fixing faults. You can object at any time by writing to"
     },
     "dataSharing": {
       "title": "Third-Party Data Sharing",
@@ -962,7 +966,7 @@
       "yourOdoo": "Your Odoo Instance:",
       "yourOdooDesc": "The Extension sends API requests to the Odoo instance URL you configure to retrieve and create records",
       "polarDesc": "Only for subscription management (email, subscription status, payment processing)",
-      "posthogDesc": "Anonymous usage statistics (feature usage, errors). No PII or email/Odoo content. You can opt-out in Settings > Account > Privacy.",
+      "posthogDesc": "Anonymous usage statistics (feature usage) and crash reports. No PII or email/Odoo content. Usage statistics can be disabled in Settings > Account > Privacy.",
       "doesNot": "The Extension does NOT:",
       "notSell": "Sell your data to data brokers",
       "notAdvertising": "Share data for advertising purposes",

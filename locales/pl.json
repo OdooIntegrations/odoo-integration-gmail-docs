@@ -605,7 +605,9 @@
       "q6": "P: Czy rozszerzenie czyta wszystkie moje e-maile?",
       "a6": "Nie, rozszerzenie uzyskuje dostęp tylko do e-maili, które aktywnie przeglądasz. Nie skanuje całej skrzynki ani nie czyta e-maili w tle.",
       "q7": "P: Czy mój klucz API jest bezpiecznie przechowywany?",
-      "a7": "Klucz API jest opcjonalny — większość użytkowników łączy się przez swoją sesję Odoo i nigdy go nie tworzy. Jeśli go dodasz, jest przechowywany w bezpiecznym magazynie Chrome (chrome.storage.sync), który Chrome szyfruje przy użyciu poświadczeń Twojego konta użytkownika systemu operacyjnego."
+      "a7": "Klucz API jest opcjonalny — większość użytkowników łączy się przez swoją sesję Odoo i nigdy go nie tworzy. Jeśli go dodasz, jest przechowywany w bezpiecznym magazynie Chrome (chrome.storage.sync), który Chrome szyfruje przy użyciu poświadczeń Twojego konta użytkownika systemu operacyjnego.",
+      "q8": "P: Co rozszerzenie wysyła, gdy coś się psuje?",
+      "a8": "Komunikat błędu, techniczny ślad stosu, wersję rozszerzenia i losowy identyfikator instalacji — nigdy treści Twoich wiadomości, danych uwierzytelniających ani danych z Odoo. Raporty o błędach są wysyłane nawet przy wyłączonych statystykach użycia, ponieważ opisują stan aplikacji, a nie to, co z nią robisz. Dzięki temu awaria zostaje znaleziona i naprawiona bez Twojego zgłoszenia. W każdej chwili możesz wnieść sprzeciw, pisząc do nas; szczegóły w polityce prywatności."
     },
     "help": {
       "title": "Uzyskiwanie pomocy",
@@ -953,7 +955,9 @@
       "posthog4": "A boolean flag indicating whether your Odoo user has access to more than one company (used to know whether multi-company features are relevant). The list of companies and their names are NOT sent.",
       "posthogPolicy": "Polityka prywatności PostHog:",
       "optOut": "Rezygnacja:",
-      "optOutDesc": "Możesz wyłączyć analitykę w każdej chwili w Ustawienia > Konto > Prywatność."
+      "optOutDesc": "Statystyki użycia możesz wyłączyć w dowolnym momencie w Ustawienia > Konto > Prywatność. To ustawienie dotyczy statystyk użycia; raporty o błędach opisano poniżej.",
+      "errorReports": "Raporty o błędach:",
+      "errorReportsDesc": "Raporty o błędach są wysyłane niezależnie od ustawienia analityki, ponieważ opisują stan aplikacji, a nie Twoją aktywność. Każdy raport zawiera komunikat błędu, techniczny ślad stosu, wersję rozszerzenia oraz losowy identyfikator instalacji — nigdy treści wiadomości, danych uwierzytelniających ani danych z Odoo. Podstawą prawną jest nasz uzasadniony interes w wykrywaniu i usuwaniu awarii. W każdej chwili możesz wnieść sprzeciw, pisząc na adres"
     },
     "dataSharing": {
       "title": "Udostępnianie danych stronom trzecim",
@@ -962,7 +966,7 @@
       "yourOdoo": "Twoją instancją Odoo:",
       "yourOdooDesc": "Rozszerzenie wysyła żądania API do skonfigurowanego przez Ciebie URL instancji Odoo w celu pobierania i tworzenia rekordów",
       "polarDesc": "Tylko do zarządzania subskrypcjami (e-mail, status subskrypcji, przetwarzanie płatności)",
-      "posthogDesc": "Anonimowe statystyki użytkowania (użycie funkcji, błędy). Bez PII ani treści e-mail/Odoo. Możesz zrezygnować w Ustawienia > Konto > Prywatność.",
+      "posthogDesc": "Anonimowe statystyki użycia (korzystanie z funkcji) i raporty o błędach. Bez danych osobowych oraz treści wiadomości/Odoo. Statystyki użycia można wyłączyć w Ustawienia > Konto > Prywatność.",
       "doesNot": "Rozszerzenie NIE:",
       "notSell": "Sprzedaje Twoich danych brokerom danych",
       "notAdvertising": "Udostępnia danych w celach reklamowych",

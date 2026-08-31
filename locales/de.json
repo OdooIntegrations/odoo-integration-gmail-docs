@@ -605,7 +605,9 @@
       "q6": "F: Liest die Erweiterung alle meine E-Mails?",
       "a6": "Nein, die Erweiterung greift nur auf E-Mails zu, die Sie aktiv anzeigen. Sie scannt nicht Ihr gesamtes Postfach und liest keine E-Mails im Hintergrund.",
       "q7": "F: Wird mein API-Schlüssel sicher gespeichert?",
-      "a7": "Ein API-Schlüssel ist optional — die meisten Nutzer verbinden sich mit ihrer Odoo-Sitzung und erstellen nie einen. Wenn Sie einen hinzufügen, wird er im sicheren Chrome-Speicher (chrome.storage.sync) gespeichert, den Chrome mit den Anmeldedaten Ihres Betriebssystem-Benutzerkontos verschlüsselt."
+      "a7": "Ein API-Schlüssel ist optional — die meisten Nutzer verbinden sich mit ihrer Odoo-Sitzung und erstellen nie einen. Wenn Sie einen hinzufügen, wird er im sicheren Chrome-Speicher (chrome.storage.sync) gespeichert, den Chrome mit den Anmeldedaten Ihres Betriebssystem-Benutzerkontos verschlüsselt.",
+      "q8": "F: Was sendet die Erweiterung, wenn etwas schiefgeht?",
+      "a8": "Die Fehlermeldung, einen technischen Stacktrace, die Version der Erweiterung und eine zufällige Installations-ID – niemals Ihre E-Mail-Inhalte, Ihre Zugangsdaten oder Ihre Odoo-Daten. Diese Fehlerberichte werden auch dann gesendet, wenn die Nutzungsanalyse deaktiviert ist, denn sie beschreiben den Zustand der Anwendung und nicht Ihre Nutzung. So wird ein Fehler gefunden und behoben, ohne dass Sie ihn melden müssen. Sie können jederzeit Widerspruch einlegen, indem Sie uns schreiben; Details in der Datenschutzerklärung."
     },
     "help": {
       "title": "Hilfe erhalten",
@@ -953,7 +955,9 @@
       "posthog4": "A boolean flag indicating whether your Odoo user has access to more than one company (used to know whether multi-company features are relevant). The list of companies and their names are NOT sent.",
       "posthogPolicy": "PostHog Datenschutzrichtlinie:",
       "optOut": "Deaktivieren:",
-      "optOutDesc": "Sie können die Analytik jederzeit in Einstellungen > Konto > Datenschutz deaktivieren."
+      "optOutDesc": "Sie können die Nutzungsanalyse jederzeit unter Einstellungen > Konto > Datenschutz deaktivieren. Diese Einstellung betrifft Nutzungsstatistiken; Fehlerberichte werden unten beschrieben.",
+      "errorReports": "Fehlerberichte:",
+      "errorReportsDesc": "Fehlerberichte werden unabhängig von der Analyse-Einstellung gesendet, da sie den Zustand der Anwendung und nicht Ihre Aktivität beschreiben. Jeder Bericht enthält die Fehlermeldung, den technischen Stacktrace, die Version der Erweiterung und die zufällige Installations-ID – niemals E-Mail-Inhalte, Zugangsdaten oder Odoo-Daten. Rechtsgrundlage ist unser berechtigtes Interesse daran, Fehler zu erkennen und zu beheben. Sie können jederzeit Widerspruch einlegen, indem Sie schreiben an"
     },
     "dataSharing": {
       "title": "Datenweitergabe an Dritte",
@@ -962,7 +966,7 @@
       "yourOdoo": "Ihrer Odoo-Instanz:",
       "yourOdooDesc": "Die Erweiterung sendet API-Anfragen an die von Ihnen konfigurierte Odoo-URL, um Datensätze abzurufen und zu erstellen",
       "polarDesc": "Nur für die Abonnementverwaltung (E-Mail, Abonnementstatus, Zahlungsabwicklung)",
-      "posthogDesc": "Anonyme Nutzungsstatistiken (Funktionsnutzung, Fehler). Keine personenbezogenen Daten oder E-Mail/Odoo-Inhalte. Deaktivierung in Einstellungen > Konto > Datenschutz möglich.",
+      "posthogDesc": "Anonyme Nutzungsstatistiken (Funktionsnutzung) und Fehlerberichte. Keine personenbezogenen Daten und keine E-Mail-/Odoo-Inhalte. Nutzungsstatistiken können unter Einstellungen > Konto > Datenschutz deaktiviert werden.",
       "doesNot": "Die Erweiterung tut NICHT:",
       "notSell": "Ihre Daten an Datenhändler verkaufen",
       "notAdvertising": "Daten für Werbezwecke teilen",

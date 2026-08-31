@@ -605,7 +605,9 @@
       "q6": "P: A extensão lê todos os meus e-mails?",
       "a6": "Não, a extensão só acessa e-mails que você visualiza ativamente. Ela não escaneia toda a sua caixa de correio nem lê e-mails em segundo plano.",
       "q7": "P: Minha chave API é armazenada de forma segura?",
-      "a7": "A chave de API é opcional — a maioria dos utilizadores conecta-se com a sua sessão Odoo e nunca cria uma. Se adicionar uma, ela é armazenada no armazenamento seguro do Chrome (chrome.storage.sync), que o Chrome encripta usando as credenciais da sua conta de utilizador do sistema operativo."
+      "a7": "A chave de API é opcional — a maioria dos utilizadores conecta-se com a sua sessão Odoo e nunca cria uma. Se adicionar uma, ela é armazenada no armazenamento seguro do Chrome (chrome.storage.sync), que o Chrome encripta usando as credenciais da sua conta de utilizador do sistema operativo.",
+      "q8": "P: O que é que a extensão envia quando algo falha?",
+      "a8": "A mensagem de erro, um rastreio técnico, a versão da extensão e um identificador aleatório de instalação; nunca o conteúdo dos seus e-mails, as suas credenciais ou os seus dados do Odoo. Estes relatórios de falhas são enviados mesmo com as estatísticas de utilização desativadas, porque descrevem o estado da aplicação e não o que faz com ela. É assim que uma falha é encontrada e corrigida sem que tenha de a comunicar. Pode opor-se em qualquer momento escrevendo-nos; ver a política de privacidade."
     },
     "help": {
       "title": "Obtendo Ajuda",
@@ -953,7 +955,9 @@
       "posthog4": "A boolean flag indicating whether your Odoo user has access to more than one company (used to know whether multi-company features are relevant). The list of companies and their names are NOT sent.",
       "posthogPolicy": "Política de Privacidade do PostHog:",
       "optOut": "Desativar:",
-      "optOutDesc": "Você pode desativar as análises a qualquer momento em Configurações > Conta > Privacidade."
+      "optOutDesc": "Pode desativar as estatísticas de utilização em qualquer momento em Configurações > Conta > Privacidade. Essa configuração abrange as estatísticas de utilização; os relatórios de falhas são descritos abaixo.",
+      "errorReports": "Relatórios de falhas:",
+      "errorReportsDesc": "Os relatórios de falhas são enviados independentemente da configuração de análise, porque descrevem o estado da aplicação e não a sua atividade. Cada relatório contém a mensagem de erro, o rastreio técnico, a versão da extensão e o identificador aleatório de instalação; nunca o conteúdo dos e-mails, as credenciais ou dados do Odoo. A base legal é o nosso interesse legítimo em detetar e corrigir falhas. Pode opor-se em qualquer momento escrevendo para"
     },
     "dataSharing": {
       "title": "Compartilhamento de Dados com Terceiros",
@@ -962,7 +966,7 @@
       "yourOdoo": "Sua Instância Odoo:",
       "yourOdooDesc": "A Extensão envia solicitações de API para a URL da instância Odoo que você configura para recuperar e criar registros",
       "polarDesc": "Apenas para gerenciamento de assinaturas (e-mail, status da assinatura, processamento de pagamentos)",
-      "posthogDesc": "Estatísticas de uso anônimas (uso de recursos, erros). Sem PII ou conteúdo de e-mail/Odoo. Você pode desativar em Configurações > Conta > Privacidade.",
+      "posthogDesc": "Estatísticas de utilização anónimas (utilização de funcionalidades) e relatórios de falhas. Sem dados pessoais nem conteúdo de e-mail/Odoo. As estatísticas de utilização podem ser desativadas em Configurações > Conta > Privacidade.",
       "doesNot": "A Extensão NÃO:",
       "notSell": "Vende seus dados para corretores de dados",
       "notAdvertising": "Compartilha dados para fins publicitários",

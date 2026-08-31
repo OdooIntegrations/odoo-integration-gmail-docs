@@ -605,7 +605,9 @@
       "q6": "V: Leest de extensie al mijn e-mails?",
       "a6": "Nee, de extensie heeft alleen toegang tot e-mails die u actief bekijkt. Het scant niet uw hele mailbox en leest geen e-mails op de achtergrond.",
       "q7": "V: Wordt mijn API-sleutel veilig opgeslagen?",
-      "a7": "Een API-sleutel is optioneel — de meeste gebruikers verbinden met hun Odoo-sessie en maken er nooit een aan. Als u er een toevoegt, wordt deze opgeslagen in Chrome's beveiligde opslag (chrome.storage.sync), die Chrome versleutelt met de inloggegevens van uw OS-gebruikersaccount."
+      "a7": "Een API-sleutel is optioneel — de meeste gebruikers verbinden met hun Odoo-sessie en maken er nooit een aan. Als u er een toevoegt, wordt deze opgeslagen in Chrome's beveiligde opslag (chrome.storage.sync), die Chrome versleutelt met de inloggegevens van uw OS-gebruikersaccount.",
+      "q8": "V: Wat verzendt de extensie als er iets misgaat?",
+      "a8": "De foutmelding, een technische stacktrace, de versie van de extensie en een willekeurige installatie-ID — nooit de inhoud van uw e-mails, uw inloggegevens of uw Odoo-gegevens. Deze foutrapporten worden ook verzonden als gebruiksstatistieken zijn uitgeschakeld, omdat ze de toestand van de applicatie beschrijven en niet wat u ermee doet. Zo wordt een storing gevonden en verholpen zonder dat u die hoeft te melden. U kunt hiertegen bezwaar maken door ons te schrijven; zie het privacybeleid."
     },
     "help": {
       "title": "Hulp Krijgen",
@@ -953,7 +955,9 @@
       "posthog4": "A boolean flag indicating whether your Odoo user has access to more than one company (used to know whether multi-company features are relevant). The list of companies and their names are NOT sent.",
       "posthogPolicy": "PostHog Privacybeleid:",
       "optOut": "Uitschakelen:",
-      "optOutDesc": "U kunt analytics op elk moment uitschakelen in Instellingen > Account > Privacy."
+      "optOutDesc": "U kunt gebruiksstatistieken op elk moment uitschakelen via Instellingen > Account > Privacy. Die instelling betreft gebruiksstatistieken; foutrapporten worden hieronder beschreven.",
+      "errorReports": "Foutrapporten:",
+      "errorReportsDesc": "Foutrapporten worden verzonden ongeacht de analyse-instelling, omdat ze de toestand van de applicatie beschrijven en niet uw activiteit. Elk rapport bevat de foutmelding, de technische stacktrace, de versie van de extensie en de willekeurige installatie-ID — nooit e-mailinhoud, inloggegevens of Odoo-gegevens. De rechtsgrond is ons gerechtvaardigd belang om storingen op te sporen en te verhelpen. U kunt hiertegen op elk moment bezwaar maken door te schrijven naar"
     },
     "dataSharing": {
       "title": "Gegevens Delen met Derden",
@@ -962,7 +966,7 @@
       "yourOdoo": "Uw Odoo Instantie:",
       "yourOdooDesc": "De Extensie stuurt API-verzoeken naar de Odoo-instantie URL die u configureert om records op te halen en aan te maken",
       "polarDesc": "Alleen voor abonnementsbeheer (e-mail, abonnementsstatus, betalingsverwerking)",
-      "posthogDesc": "Anonieme gebruiksstatistieken (functiegebruik, fouten). Geen PII of e-mail/Odoo-inhoud. U kunt uitschakelen in Instellingen > Account > Privacy.",
+      "posthogDesc": "Anonieme gebruiksstatistieken (functiegebruik) en foutrapporten. Geen persoonsgegevens of e-mail-/Odoo-inhoud. Gebruiksstatistieken kunnen worden uitgeschakeld via Instellingen > Account > Privacy.",
       "doesNot": "De Extensie doet NIET:",
       "notSell": "Uw gegevens verkopen aan gegevensmakelaars",
       "notAdvertising": "Gegevens delen voor reclamedoeleinden",
