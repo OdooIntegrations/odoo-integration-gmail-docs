@@ -1244,6 +1244,14 @@
       "install": "Installer l'extension",
       "viewPricing": "Voir les tarifs"
     },
+    "v0822": {
+      "panel": "Le panneau s'ouvre sur les e-mails lents à charger",
+      "panelDesc": "Lorsque Gmail n'avait pas fini d'afficher le message, le panneau restait bloqué sur cet e-mail sans explication. Il s'ouvre désormais normalement.",
+      "attachmentNotice": "Les pièces jointes qui n'arrivent pas sont signalées",
+      "attachmentNoticeDesc": "Si un fichier ne peut pas être joint à la fiche, un message le nomme au lieu d'échouer en silence.",
+      "attachmentPartial": "Un fichier en échec ne bloque plus les autres",
+      "attachmentPartialDesc": "Lorsqu'une pièce jointe échouait, les fichiers restants n'étaient jamais envoyés. Ils le sont maintenant."
+    },
     "v0820": {
       "salesOrders": "Les commandes confirmées du contact",
       "salesOrdersDesc": "Une nouvelle section liste les commandes déjà confirmées du contact. Jusqu'ici, une commande quittait la section des devis dès sa confirmation et n'apparaissait nulle part ailleurs : les e-mails de livraison, de facturation ou d'incident ne pouvaient être enregistrés que sur le contact. Chaque ligne affiche la référence de la commande, son montant total et sa date, et vous pouvez enregistrer l'e-mail sur la commande."

@@ -1244,6 +1244,14 @@
       "install": "Extensie Installeren",
       "viewPricing": "Prijzen Bekijken"
     },
+    "v0822": {
+      "panel": "Het paneel opent ook bij traag ladende e-mails",
+      "panelDesc": "Als Gmail het bericht nog niet volledig had geladen, bleef het paneel bij die e-mail zonder uitleg hangen. Nu opent het gewoon.",
+      "attachmentNotice": "Bijlagen die niet aankomen worden gemeld",
+      "attachmentNoticeDesc": "Kan een bestand niet aan het record worden gekoppeld, dan noemt een melding het in plaats van stil te falen.",
+      "attachmentPartial": "Eén mislukt bestand blokkeert de rest niet meer",
+      "attachmentPartialDesc": "Als een bijlage mislukte, werden de overige bestanden nooit geüpload. Nu wel."
+    },
     "v0820": {
       "salesOrders": "Bevestigde orders van het contact",
       "salesOrdersDesc": "Een nieuwe sectie toont de al bevestigde verkooporders van het contact. Tot nu toe verdween een order bij de bevestiging uit de sectie Offertes en kwam die nergens anders terug, waardoor e-mails over levering, facturatie of klachten alleen op het contact konden worden gelogd. Elke regel toont de orderreferentie, het totaalbedrag en de datum, en je kunt de e-mail op de order loggen."

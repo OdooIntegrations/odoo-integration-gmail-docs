@@ -1244,6 +1244,14 @@
       "install": "Instalar Extensão",
       "viewPricing": "Ver Preços"
     },
+    "v0822": {
+      "panel": "O painel abre em e-mails que demoram a carregar",
+      "panelDesc": "Quando o Gmail ainda não tinha terminado de exibir a mensagem, o painel ficava travado nesse e-mail sem explicação. Agora ele abre normalmente.",
+      "attachmentNotice": "Anexos que não chegam são avisados",
+      "attachmentNoticeDesc": "Se um arquivo não puder ser anexado ao registro, um aviso o nomeia em vez de falhar em silêncio.",
+      "attachmentPartial": "Um arquivo com falha não bloqueia mais os demais",
+      "attachmentPartialDesc": "Quando um anexo falhava, os arquivos restantes nunca eram enviados. Agora são."
+    },
     "v0820": {
       "salesOrders": "Pedidos confirmados do contacto",
       "salesOrdersDesc": "Uma nova secção lista os pedidos de venda já confirmados do contacto. Até agora, um pedido saía da secção Orçamentos no momento em que era confirmado e não aparecia em nenhuma outra, pelo que os e-mails de entrega, faturação ou ocorrências só podiam ser registados no contacto. Cada linha mostra a referência do pedido, o valor total e a data, e pode registar o e-mail no pedido."

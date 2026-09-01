@@ -1244,6 +1244,14 @@
       "install": "Installa Estensione",
       "viewPricing": "Vedi Prezzi"
     },
+    "v0822": {
+      "panel": "Il pannello si apre nelle email lente a caricare",
+      "panelDesc": "Quando Gmail non aveva finito di mostrare il messaggio, il pannello restava bloccato su quell'email senza spiegazioni. Ora si apre normalmente.",
+      "attachmentNotice": "Gli allegati che non arrivano vengono segnalati",
+      "attachmentNoticeDesc": "Se un file non può essere allegato al record, un avviso lo indica invece di fallire in silenzio.",
+      "attachmentPartial": "Un file fallito non blocca più gli altri",
+      "attachmentPartialDesc": "Quando un allegato falliva, i file rimanenti non venivano mai caricati. Ora sì."
+    },
     "v0820": {
       "salesOrders": "Gli ordini confermati del contatto",
       "salesOrdersDesc": "Una nuova sezione elenca gli ordini di vendita già confermati del contatto. Finora un ordine usciva dalla sezione Preventivi nel momento della conferma e non compariva in nessun'altra, così le email su consegna, fatturazione o problemi potevano essere registrate solo sul contatto. Ogni riga mostra il riferimento dell'ordine, l'importo totale e la data, e puoi registrare l'email sull'ordine."

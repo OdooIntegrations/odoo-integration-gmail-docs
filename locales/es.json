@@ -1244,6 +1244,14 @@
       "install": "Instalar Extensión",
       "viewPricing": "Ver Precios"
     },
+    "v0822": {
+      "panel": "El panel se abre en correos que tardan en cargar",
+      "panelDesc": "Cuando Gmail no había terminado de mostrar el mensaje, el panel se quedaba muerto en ese correo sin explicación. Ahora se abre con normalidad.",
+      "attachmentNotice": "Se avisa de los adjuntos que no llegan",
+      "attachmentNoticeDesc": "Si un archivo no se puede adjuntar al registro, un aviso lo nombra en vez de fallar en silencio.",
+      "attachmentPartial": "Un archivo fallido ya no bloquea a los demás",
+      "attachmentPartialDesc": "Cuando un adjunto fallaba, los archivos restantes no llegaban a subirse. Ahora sí."
+    },
     "v0820": {
       "salesOrders": "Pedidos confirmados del contacto",
       "salesOrdersDesc": "Una sección nueva lista los pedidos de venta ya confirmados del contacto. Hasta ahora un pedido salía de la sección de Presupuestos en el momento de confirmarse y no aparecía en ninguna otra, así que los correos de entrega, facturación o incidencias solo podían registrarse contra el contacto. Cada fila muestra la referencia del pedido, su importe total y cuándo se realizó, y puedes registrar el correo en el pedido."

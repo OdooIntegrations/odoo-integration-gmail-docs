@@ -1244,6 +1244,14 @@
       "install": "Erweiterung installieren",
       "viewPricing": "Preise anzeigen"
     },
+    "v0822": {
+      "panel": "Das Panel öffnet sich auch bei langsam ladenden E-Mails",
+      "panelDesc": "Wenn Gmail die Nachricht noch nicht fertig geladen hatte, blieb das Panel bei dieser E-Mail ohne Erklärung leer. Jetzt öffnet es sich normal.",
+      "attachmentNotice": "Anhänge, die nicht ankommen, werden gemeldet",
+      "attachmentNoticeDesc": "Lässt sich eine Datei nicht an den Datensatz anhängen, nennt ein Hinweis sie, statt still zu scheitern.",
+      "attachmentPartial": "Eine fehlgeschlagene Datei blockiert die übrigen nicht mehr",
+      "attachmentPartialDesc": "Schlug ein Anhang fehl, wurden die restlichen Dateien nie hochgeladen. Jetzt schon."
+    },
     "v0820": {
       "salesOrders": "Bestätigte Aufträge des Kontakts",
       "salesOrdersDesc": "Ein neuer Bereich listet die bereits bestätigten Verkaufsaufträge des Kontakts auf. Bisher verschwand ein Auftrag mit der Bestätigung aus dem Bereich Angebote und tauchte nirgends sonst auf, sodass E-Mails zu Lieferung, Rechnung oder Reklamation nur am Kontakt protokolliert werden konnten. Jede Zeile zeigt die Auftragsreferenz, den Gesamtbetrag und das Datum, und Sie können die E-Mail am Auftrag protokollieren."

@@ -1244,6 +1244,14 @@
       "install": "Install Extension",
       "viewPricing": "View Pricing"
     },
+    "v0822": {
+      "panel": "The panel opens on slow-loading emails",
+      "panelDesc": "When Gmail hadn't finished rendering a message, the sidebar stayed dead on that email with no explanation. It now opens normally.",
+      "attachmentNotice": "Attachments that don't make it are reported",
+      "attachmentNoticeDesc": "If a file can't be attached to the record, a notice names it instead of failing silently.",
+      "attachmentPartial": "One failed file no longer blocks the rest",
+      "attachmentPartialDesc": "When an attachment failed, the remaining files were never uploaded. Now they are."
+    },
     "v0820": {
       "salesOrders": "Confirmed orders for the contact",
       "salesOrdersDesc": "A new section lists the sales orders already confirmed for the contact. Until now an order left the Quotations section the moment it was confirmed and appeared nowhere else, so emails about delivery, invoicing or issues could only be logged against the contact. Every row shows the order reference, its total and when it was placed, and you can log the email to the order."

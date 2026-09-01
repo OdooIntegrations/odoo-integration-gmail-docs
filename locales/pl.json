@@ -1244,6 +1244,14 @@
       "install": "Zainstaluj rozszerzenie",
       "viewPricing": "Zobacz cennik"
     },
+    "v0822": {
+      "panel": "Panel otwiera się także w wolno ładujących się wiadomościach",
+      "panelDesc": "Gdy Gmail nie zdążył wyświetlić treści wiadomości, panel pozostawał w niej martwy bez żadnego wyjaśnienia. Teraz otwiera się normalnie.",
+      "attachmentNotice": "Załączniki, które nie docierają, są zgłaszane",
+      "attachmentNoticeDesc": "Jeśli pliku nie da się dołączyć do rekordu, komunikat podaje jego nazwę zamiast po cichu zawieść.",
+      "attachmentPartial": "Jeden nieudany plik nie blokuje już pozostałych",
+      "attachmentPartialDesc": "Gdy załącznik zawiódł, pozostałe pliki nigdy nie były przesyłane. Teraz są."
+    },
     "v0820": {
       "salesOrders": "Potwierdzone zamówienia kontaktu",
       "salesOrdersDesc": "Nowa sekcja pokazuje zamówienia sprzedaży już potwierdzone dla kontaktu. Do tej pory zamówienie znikało z sekcji Oferty w chwili potwierdzenia i nie pojawiało się w żadnej innej, więc wiadomości o dostawie, fakturowaniu czy problemach można było zapisać tylko przy kontakcie. Każdy wiersz pokazuje numer zamówienia, jego łączną kwotę i datę, a wiadomość można zapisać przy zamówieniu."
