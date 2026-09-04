@@ -27,9 +27,37 @@ jobs:
           echo "USERS=$USERS" >> $GITHUB_ENV
           echo "Fetched user count: $USERS"
 
+      - name: Fetch country count from PostHog
+        env:
+          POSTHOG_API_KEY: ${{ secrets.POSTHOG_API_KEY }}
+        run: |
+          # Countries with at least one active user in the last 30 days.
+          # Never fails the job: on any error we keep the previous value.
+          PREVIOUS=$(jq -r '.countries // 0' assets/data/cws-stats.json)
+          COUNTRIES="$PREVIOUS"
+
+          if [ -z "$POSTHOG_API_KEY" ]; then
+            echo "::warning::POSTHOG_API_KEY not set — keeping previous country count ($PREVIOUS)"
+          else
+            RESPONSE=$(curl -sf -X POST "https://eu.posthog.com/api/projects/118699/query/" \
+              -H "Authorization: Bearer $POSTHOG_API_KEY" \
+              -H "Content-Type: application/json" \
+              -d '{"query":{"kind":"HogQLQuery","query":"SELECT uniqIf(properties.$geoip_country_code, notEmpty(properties.$geoip_country_code)) FROM events WHERE timestamp >= now() - INTERVAL 30 DAY"}}') || true
+
+            FETCHED=$(echo "$RESPONSE" | jq -r '.results[0][0] // empty' 2>/dev/null)
+
+            if echo "$FETCHED" | grep -qE '^[1-9][0-9]*$'; then
+              COUNTRIES="$FETCHED"
+              echo "Fetched country count: $COUNTRIES"
+            else
+              echo "::warning::PostHog query failed — keeping previous country count ($PREVIOUS)"
+            fi
+          fi
+
+          echo "COUNTRIES=$COUNTRIES" >> $GITHUB_ENV
+
       - name: Update stats file
         run: |
-          COUNTRIES=$(jq -r '.countries // 0' assets/data/cws-stats.json)
           jq -n \
             --arg users "$USERS" \
             --argjson countries "$COUNTRIES" \
@@ -43,5 +71,5 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add assets/data/cws-stats.json
-          git commit -m "chore: update CWS stats ($USERS users)"
+          git commit -m "chore: update CWS stats ($USERS users, $COUNTRIES countries)"
           git push
