@@ -1244,6 +1244,14 @@
       "install": "Zainstaluj rozszerzenie",
       "viewPricing": "Zobacz cennik"
     },
+    "v0830": {
+      "contactsMenu": "Menu akcji przy powiązanych kontaktach",
+      "contactsMenuDesc": "Każdy powiązany kontakt ma teraz własne menu: otwórz go w Odoo, napisz do niego, zadzwoń lub skopiuj jego adres e-mail albo telefon. Przy otwartej wersji roboczej możesz też wybrać, czy kontakt trafi do pola Do, czy do DW. Dostępne w planie PLUS.",
+      "panel": "Panel otwiera się nawet wtedy, gdy nie da się odczytać jakiejś informacji o wiadomości",
+      "panelDesc": "Jeśli drugorzędnej informacji o wiadomości, takiej jak data, nie dało się odczytać ze strony, panel pozostawał pusty. Teraz otwiera się z całą resztą, a zapisanie wiadomości nie zależy już od tej informacji.",
+      "settingsClick": "Ustawienia otwierają się za pierwszym kliknięciem",
+      "settingsClickDesc": "Po użyciu menu ustawień panele Ustawienia i Konto wymagały drugiego kliknięcia. Teraz otwierają się od razu."
+    },
     "v0822": {
       "panel": "Panel otwiera się także w wolno ładujących się wiadomościach",
       "panelDesc": "Gdy Gmail nie zdążył wyświetlić treści wiadomości, panel pozostawał w niej martwy bez żadnego wyjaśnienia. Teraz otwiera się normalnie.",

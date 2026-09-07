@@ -1244,6 +1244,14 @@
       "install": "Installa Estensione",
       "viewPricing": "Vedi Prezzi"
     },
+    "v0830": {
+      "contactsMenu": "Menu di azioni sui contatti correlati",
+      "contactsMenuDesc": "Ogni contatto correlato ha ora il proprio menu: aprirlo in Odoo, scrivergli, chiamarlo o copiare la sua email o il suo telefono. Con una bozza aperta puoi anche scegliere se il contatto va nel campo A o in copia. Disponibile nel piano PLUS.",
+      "panel": "Il pannello si apre anche se un dato del messaggio non è leggibile",
+      "panelDesc": "Se un dato secondario del messaggio, come la data, non poteva essere letto dalla pagina, il pannello restava vuoto. Ora si apre con tutto il resto e registrare un'email non dipende più da quel dato.",
+      "settingsClick": "Le impostazioni si aprono al primo clic",
+      "settingsClickDesc": "Dopo aver usato il menu delle impostazioni, i pannelli Impostazioni e Account richiedevano un secondo clic per rispondere. Ora si aprono subito."
+    },
     "v0822": {
       "panel": "Il pannello si apre nelle email lente a caricare",
       "panelDesc": "Quando Gmail non aveva finito di mostrare il messaggio, il pannello restava bloccato su quell'email senza spiegazioni. Ora si apre normalmente.",

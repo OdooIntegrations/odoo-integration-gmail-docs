@@ -1244,6 +1244,14 @@
       "install": "Install Extension",
       "viewPricing": "View Pricing"
     },
+    "v0830": {
+      "contactsMenu": "Actions menu on related contacts",
+      "contactsMenuDesc": "Each related contact now has its own menu: open it in Odoo, write to it, call it or copy its email or phone. With a draft open you can also choose whether the contact goes to the To field or to CC. Available on the PLUS plan.",
+      "panel": "The sidebar opens even when a message detail can't be read",
+      "panelDesc": "If a secondary detail of the message, such as its date, couldn't be read from the page, the sidebar stayed blank. It now opens with everything else, and logging an email no longer depends on that detail.",
+      "settingsClick": "Settings open on the first click",
+      "settingsClickDesc": "After using the settings menu, the Settings and Account panels needed a second click to respond. They now open right away."
+    },
     "v0822": {
       "panel": "The panel opens on slow-loading emails",
       "panelDesc": "When Gmail hadn't finished rendering a message, the sidebar stayed dead on that email with no explanation. It now opens normally.",

@@ -1244,6 +1244,14 @@
       "install": "Instalar Extensão",
       "viewPricing": "Ver Preços"
     },
+    "v0830": {
+      "contactsMenu": "Menu de ações nos contatos relacionados",
+      "contactsMenuDesc": "Cada contato relacionado agora tem o seu próprio menu: abrir no Odoo, escrever, ligar ou copiar o e-mail ou o telefone. Com um rascunho aberto, você também escolhe se o contato vai para o campo Para ou para Cópia. Disponível no plano PLUS.",
+      "panel": "O painel abre mesmo quando um dado da mensagem não pode ser lido",
+      "panelDesc": "Se um dado secundário da mensagem, como a data, não podia ser lido da página, o painel ficava em branco. Agora ele abre com todo o resto, e registrar um e-mail não depende mais desse dado.",
+      "settingsClick": "As configurações abrem no primeiro clique",
+      "settingsClickDesc": "Depois de usar o menu de configurações, os painéis Configurações e Conta precisavam de um segundo clique para responder. Agora abrem na hora."
+    },
     "v0822": {
       "panel": "O painel abre em e-mails que demoram a carregar",
       "panelDesc": "Quando o Gmail ainda não tinha terminado de exibir a mensagem, o painel ficava travado nesse e-mail sem explicação. Agora ele abre normalmente.",

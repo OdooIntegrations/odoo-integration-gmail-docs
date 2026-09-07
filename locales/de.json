@@ -1244,6 +1244,14 @@
       "install": "Erweiterung installieren",
       "viewPricing": "Preise anzeigen"
     },
+    "v0830": {
+      "contactsMenu": "Aktionsmenü bei verwandten Kontakten",
+      "contactsMenuDesc": "Jeder verwandte Kontakt hat jetzt sein eigenes Menü: in Odoo öffnen, ihm schreiben, ihn anrufen oder seine E-Mail-Adresse oder Telefonnummer kopieren. Bei einem offenen Entwurf wählen Sie außerdem, ob der Kontakt ins An-Feld oder in Kopie kommt. Im PLUS-Tarif verfügbar.",
+      "panel": "Das Panel öffnet sich auch, wenn eine Angabe der Nachricht nicht gelesen werden kann",
+      "panelDesc": "Wenn eine sekundäre Angabe der Nachricht, etwa das Datum, auf der Seite nicht gelesen werden konnte, blieb das Panel leer. Jetzt öffnet es sich mit allem Übrigen, und das Protokollieren einer E-Mail hängt nicht mehr von dieser Angabe ab.",
+      "settingsClick": "Die Einstellungen öffnen sich beim ersten Klick",
+      "settingsClickDesc": "Nach dem Einstellungsmenü brauchten die Fenster Einstellungen und Konto einen zweiten Klick, um zu reagieren. Jetzt öffnen sie sich sofort."
+    },
     "v0822": {
       "panel": "Das Panel öffnet sich auch bei langsam ladenden E-Mails",
       "panelDesc": "Wenn Gmail die Nachricht noch nicht fertig geladen hatte, blieb das Panel bei dieser E-Mail ohne Erklärung leer. Jetzt öffnet es sich normal.",

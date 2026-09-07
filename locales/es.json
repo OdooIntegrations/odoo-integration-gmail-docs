@@ -1244,6 +1244,14 @@
       "install": "Instalar Extensión",
       "viewPricing": "Ver Precios"
     },
+    "v0830": {
+      "contactsMenu": "Menú de acciones en los contactos relacionados",
+      "contactsMenuDesc": "Cada contacto relacionado tiene ahora su propio menú: abrirlo en Odoo, escribirle, llamarle o copiar su correo o teléfono. Con una redacción abierta también puedes elegir si el contacto va al campo Para o a Copia. Disponible en el plan PLUS.",
+      "panel": "El panel se abre aunque no se pueda leer algún dato del mensaje",
+      "panelDesc": "Si un dato secundario del mensaje, como su fecha, no se podía leer de la página, el panel se quedaba en blanco. Ahora se abre con todo lo demás, y registrar un correo ya no depende de ese dato.",
+      "settingsClick": "Los ajustes se abren al primer clic",
+      "settingsClickDesc": "Después de usar el menú de ajustes, los paneles de Ajustes y de Cuenta necesitaban un segundo clic para responder. Ahora se abren de inmediato."
+    },
     "v0822": {
       "panel": "El panel se abre en correos que tardan en cargar",
       "panelDesc": "Cuando Gmail no había terminado de mostrar el mensaje, el panel se quedaba muerto en ese correo sin explicación. Ahora se abre con normalidad.",

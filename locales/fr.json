@@ -1244,6 +1244,14 @@
       "install": "Installer l'extension",
       "viewPricing": "Voir les tarifs"
     },
+    "v0830": {
+      "contactsMenu": "Menu d'actions sur les contacts associés",
+      "contactsMenuDesc": "Chaque contact associé dispose désormais de son propre menu : l'ouvrir dans Odoo, lui écrire, l'appeler ou copier son e-mail ou son téléphone. Avec un brouillon ouvert, vous pouvez aussi choisir si le contact va dans le champ À ou en copie. Disponible avec le plan PLUS.",
+      "panel": "Le panneau s'ouvre même si une donnée du message ne peut pas être lue",
+      "panelDesc": "Si une donnée secondaire du message, comme sa date, ne pouvait pas être lue sur la page, le panneau restait vide. Il s'ouvre désormais avec tout le reste, et l'enregistrement d'un e-mail ne dépend plus de cette donnée.",
+      "settingsClick": "Les paramètres s'ouvrent au premier clic",
+      "settingsClickDesc": "Après avoir utilisé le menu des paramètres, les panneaux Paramètres et Compte demandaient un second clic pour répondre. Ils s'ouvrent maintenant immédiatement."
+    },
     "v0822": {
       "panel": "Le panneau s'ouvre sur les e-mails lents à charger",
       "panelDesc": "Lorsque Gmail n'avait pas fini d'afficher le message, le panneau restait bloqué sur cet e-mail sans explication. Il s'ouvre désormais normalement.",

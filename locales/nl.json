@@ -1244,6 +1244,14 @@
       "install": "Extensie Installeren",
       "viewPricing": "Prijzen Bekijken"
     },
+    "v0830": {
+      "contactsMenu": "Actiemenu bij gerelateerde contacten",
+      "contactsMenuDesc": "Elk gerelateerd contact heeft nu een eigen menu: openen in Odoo, mailen, bellen of het e-mailadres of telefoonnummer kopiëren. Met een concept open kies je ook of het contact naar het Aan-veld of naar CC gaat. Beschikbaar in het PLUS-abonnement.",
+      "panel": "Het paneel opent ook als een gegeven van het bericht niet gelezen kan worden",
+      "panelDesc": "Als een secundair gegeven van het bericht, zoals de datum, niet van de pagina gelezen kon worden, bleef het paneel leeg. Nu opent het met al het overige, en het loggen van een e-mail hangt niet meer van dat gegeven af.",
+      "settingsClick": "Instellingen openen bij de eerste klik",
+      "settingsClickDesc": "Na gebruik van het instellingenmenu hadden de panelen Instellingen en Account een tweede klik nodig. Nu openen ze meteen."
+    },
     "v0822": {
       "panel": "Het paneel opent ook bij traag ladende e-mails",
       "panelDesc": "Als Gmail het bericht nog niet volledig had geladen, bleef het paneel bij die e-mail zonder uitleg hangen. Nu opent het gewoon.",
